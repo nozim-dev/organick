@@ -5,6 +5,7 @@ function App() {
         Hello world!
       </h1>
       <h1 className="text-blue-700">hello i'am Javohir </h1>
+      <h1>Hello Javokhir I'm a Teacher</h1>
     </>
   );
 }
