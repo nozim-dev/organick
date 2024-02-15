@@ -18,6 +18,9 @@ export default {
       "Roboto": "Roboto, sans-serif",
       "Open-Sans": "Open Sans, sans-serif"
     },
+    fontSize: {
+      "7xl": "70px",
+    },
     extend: {},
   },
   plugins: [],
