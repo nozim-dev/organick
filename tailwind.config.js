@@ -12,7 +12,8 @@ export default {
       "gray-200": "#D4D4D4",
       "white-50": "#F9F8F8",
       "green-50": "#EFF6F1",
-      "blue-80": "#525C60"
+      "blue-80": "#525C60",
+      "qizil": "red"
     },
     fontFamily: {
       "Roboto": "Roboto, sans-serif",
@@ -20,6 +21,14 @@ export default {
     },
     fontSize: {
       "7xl": "70px",
+      "5xl": "50px",
+      "4xl": "40px",
+      "3.8xl": "38px",
+      "3.5xl": "35px",
+      "3xl": "30px",
+      "2.5xl": "25px",
+      "2xl": "20px",
+      "md": "18px",
     },
     extend: {},
   },
