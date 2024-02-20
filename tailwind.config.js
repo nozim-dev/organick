@@ -30,7 +30,11 @@ export default {
       "2xl": "20px",
       "md": "18px",
     },
-    extend: {},
+
+
+
+    extend: {
+    },
   },
   plugins: [],
 }
