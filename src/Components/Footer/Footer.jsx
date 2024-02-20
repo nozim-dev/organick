@@ -1,37 +1,42 @@
 import React from "react";
 import { style } from "..//..//utils/style";
+import backgroundImage from "./img/Image.png";
 const Footer = () => {
   return (
     <footer>
-      <span className=" relative z-10 flex  items-center place-content-center  ">
-        <h1 className=" w-[357px] text-[50px]   absolute z-30 text-white-50 mr-[900px] ">
-          Subscribe to our Newsletter
-        </h1>
+      <div className="relative flex items-center place-content-center max-w-[1400px] mx-auto">
         <img
-          className="   z-0 w-[1400px] h-[323px] object-cover rounded-3xl "
-          src="https://s3-alpha-sig.figma.com/img/ae9d/3ab9/dda533867a4554d47ee6807bc68972ed?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ECx4vAPbn9PlipOd3FliImAKbF8ZUf7H6SmSVKUa4viafexvsPwPMqq~gzhatka~kp6Zs4WfFVIQ~FRABBAywJ6~iVMuqO47xhFR4lQWimBwU3me4PU5NSdzHmw-IgSUf1hTu~LQVtOAwBojrq7fv9Bg5HVNG850aY5KiY5PQeD8I~6dACaEwKYtnniGvqJPr8HDJFq7tZ0XgQMXLpzTXus2rrSvDUghH139ajOx3U8CucLwDE~pq2yBu4CnTT4oFAPdbcxSeEVtreosJ~rExjhMjfUN8H3dIGtq5yGChQpzhXDV1e16tXDfr0U7lRK-EZAu-a0UBCDKt~8n3a2OTQ__"
+          className="z-0 w-full h-[323px]  object-cover rounded-3xl"
+          src={backgroundImage}
           alt=""
         />
-        <label class="absolute flex  ml-[700px]">
-          <input
-            type="text"
-            class=" w-[349px] h-[80px]  peer block min-h-[auto] w-full rounded-[16px] border-0 bg-white-50 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear "
-            placeholder="Your Email Address"
-          />
+        <div className="absolute z-2 w-full flex items-center justify-between px-[71px]">
+          <h1 className="text-5xl text-white-50 font-Roboto font-extrabold">
+            Subscribe to <br /> our Newsletter
+          </h1>
+          <label class="flex w-full max-w-[50%] justify-end">
+            <input
+              type="text"
+              class="placeholder:italic placeholder:font-Roboto placeholder:text-md placeholder:text-[#ABABAB] h-[80px] block w-full max-w-[349px] rounded-[16px] border-0 bg-white-50 px-[23px] py-[28px] leading-[1.6] focus:outline-gray-200 "
+              placeholder="Your Email Address"
+            />
 
-          <button
-            type="button"
-            class="  w-[220px] h-[80px] rounded-[16px] text-white-50  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 ml-[10px] me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Subscribe</button>
-        </label>
-        <form></form>
-      </span>
+            <button
+              type="button"
+              class="w-full max-w-[220px] h-[80px] rounded-[16px] text-white-50 bg-blue-700 font-Roboto font-bold text-2xl px-5 py-2.5 ml-[10px] me-2 mb-2 transition-all duration-75 hover:bg-[#274C5Bf0]"
+            >
+              Subscribe
+            </button>
+          </label>
+        </div>
+      </div>
       <br />
       <br />
       <br />
-      <div class=" mx-auto w-full ">
-        <div class="  flex justify-center  text-end     lg:py-10 ">
-          <div class="      p-10   ">
-            <h2 class=" font-bold  mb-7 text-2.5xl  text-blue-700  dark:text-white">
+      <div class=" mx-auto w-full">
+        <div class="flex justify-center text-end lg:py-10">
+          <div class="p-10">
+            <h2 class="font-bold mb-7 text-2.5xl text-blue-700 dark:text-white">
               Contact Us
             </h2>
             <ul class="text-gray-500 blue-80 font-medium ">
@@ -56,8 +61,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div class="max-w-[700px]  text-center p-0 border-x-2 ">
-            <div class=" flex justify-center ">
+          <div class="max-w-[700px] text-center p-0 border border-y-0 border-x-gray-200">
+            <div class="flex justify-center">
               <span className="mr-[10px]">
                 <svg
                   width="39"
@@ -167,7 +172,7 @@ const Footer = () => {
             </p>
             <div class="follow gap-x-5 flex justify-center">
               <div class="w-[56px] h-[56px] rounded-full bg-green-50 relative">
-                <span className="absolute top-[50%] right-[17px] translate-y-[-50%]">
+                <span className="absolute top-[50%] right-[17px] translate-y-[-50%] cursor-pointer">
                   <svg
                     width="20"
                     height="20"
@@ -187,7 +192,7 @@ const Footer = () => {
                 </span>
               </div>
               <div class="w-[56px] h-[56px] rounded-full bg-green-50 relative">
-                <span className="absolute top-[50%] right-[17px] translate-y-[-50%]">
+                <span className="absolute top-[50%] right-[17px] translate-y-[-50%] cursor-pointer">
                   <svg
                     width="20"
                     height="20"
@@ -205,7 +210,7 @@ const Footer = () => {
                 </span>
               </div>
               <div class="w-[56px] h-[56px] rounded-full bg-green-50 relative">
-                <span className="absolute top-[50%] right-[17px] translate-y-[-50%]">
+                <span className="absolute top-[50%] right-[17px] translate-y-[-50%] cursor-pointer">
                   <svg
                     width="21"
                     height="18"
@@ -221,7 +226,7 @@ const Footer = () => {
                 </span>
               </div>
               <div class="w-[56px] h-[56px] rounded-full bg-green-50 relative">
-                <span className="absolute top-[50%] right-[17px] translate-y-[-50%]">
+                <span className="absolute top-[50%] right-[17px] translate-y-[-50%] cursor-pointer">
                   <svg
                     width="20"
                     height="21"
