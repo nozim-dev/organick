@@ -10,8 +10,8 @@ const NotFound = () => {
   return (
     <div>
       <Header />
-      <div className=" relative flex items-center place-content-center  mx-auto ">
-        <div className="  relative flex">
+      <div className="relative flex items-center place-content-center mx-auto ">
+        <div className=" relative flex">
           <img
             className="h-[898px] z-0 w-full   "
             src={backgroundImage}
@@ -25,7 +25,7 @@ const NotFound = () => {
             />
           </span>
         </div>
-        <div className="absolute  flex w-full max-w-[65%] justify-end ">
+        <div className="absolute flex w-full max-w-[65%] justify-end ">
           <div className=" block  text-center ">
             <h1 className=" w-full  max-w-auto h-[50%] text-[#8FA8A8] font-Roboto font-bold text-[312px]  ">
               404
