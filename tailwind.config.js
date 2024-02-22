@@ -17,7 +17,8 @@ export default {
     },
     fontFamily: {
       "Roboto": "Roboto, sans-serif",
-      "Open-Sans": "Open Sans, sans-serif"
+      "Open-Sans": "Open Sans, sans-serif",
+      "Yellowtail": "Yellowtail, cursive"
     },
     fontSize: {
       "7xl": "70px",
@@ -30,9 +31,6 @@ export default {
       "2xl": "20px",
       "md": "18px",
     },
-
-
-
     extend: {
     },
   },

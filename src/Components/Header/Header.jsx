@@ -1,5 +1,6 @@
 import React from "react";
 import { style } from "../../utils/style";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -109,24 +110,24 @@ const Header = () => {
           <h1 className={style.NavLogo}>Organick</h1>
         </div>
         <nav className={`${style.FlexBetween} w-full max-w-[564px]`}>
-          <a href="/" className={style.NavLink}>
+          <Link to="/home" className={style.NavLink}>
             Home
-          </a>
-          <a href="/" className={style.NavLink}>
+          </Link>
+          <Link to="/about" className={style.NavLink}>
             About
-          </a>
-          <a href="/" className={style.NavLink}>
+          </Link>
+          <Link to="/pages" className={style.NavLink}>
             Pages
-          </a>
-          <a href="/" className={style.NavLink}>
+          </Link>
+          <Link to="/shop" className={style.NavLink}>
             Shop
-          </a>
-          <a href="/" className={style.NavLink}>
+          </Link>
+          <Link to="/projects" className={style.NavLink}>
             Projects
-          </a>
-          <a href="/" className={style.NavLink}>
+          </Link>
+          <Link to="/blog" className={style.NavLink}>
             News
-          </a>
+          </Link>
         </nav>
         <div className={`${style.FlexBetween} w-full max-w-[553px] gap-[18px]`}>
           <label

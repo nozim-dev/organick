@@ -1,26 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import NotFound from "./pages/NotFound/NotFound";
 import About from "./pages/About/About";
 import Blog from "./pages/Blog/Blog";
 import Main from "./pages/Main/Main.jsx";
+import GeneralLayout from "./Layouts/GeneralLayout.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <GeneralLayout />,
     errorElement: <NotFound />,
     children: [
       {
-        path: "about",
-        element: <About />,
+        path: "/",
+        element: <Main />,
       },
       {
-        path: "main",
-        element: <Main />,
+        path: "about",
+        element: <About />,
       },
       {
         path: "blog",
