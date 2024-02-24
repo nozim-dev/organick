@@ -18,7 +18,7 @@ const Button = ({ text, isIcon, type }) => {
 
   return (
     <Link
-      className={`w-full max-w-[224px] px-[39px] py-[28px] flex items-center rounded-[16px] gap-[10px] font-Roboto font-bold text-2xl border-[2px] transition-all duration-75 hover:bg-[transparent] ${type}`}
+      className={`cursor-pointer w-full max-w-[224px] px-[39px] py-[28px] flex items-center rounded-[16px] gap-[10px] font-Roboto font-bold text-2xl border-[2px] transition-all duration-75 hover:bg-[transparent] ${type}`}
     >
       {text}
       {isIcon ? (

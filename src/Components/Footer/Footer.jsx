@@ -3,7 +3,7 @@ import { style } from "..//..//utils/style";
 const Footer = () => {
   return (
     <footer>
-      <span className=" relative z-10 flex  items-center place-content-center  ">
+      <span className="mt-[176px] relative z-10 flex items-center place-content-center  ">
         <h1 className=" w-[357px] text-[50px]   absolute z-30 text-white-50 mr-[900px] ">
           Subscribe to our Newsletter
         </h1>
@@ -21,7 +21,10 @@ const Footer = () => {
 
           <button
             type="button"
-            class="  w-[220px] h-[80px] rounded-[16px] text-white-50  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 ml-[10px] me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Subscribe</button>
+            class="  w-[220px] h-[80px] rounded-[16px] text-white-50  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 ml-[10px] me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          >
+            Subscribe
+          </button>
         </label>
         <form></form>
       </span>
@@ -29,7 +32,7 @@ const Footer = () => {
       <br />
       <br />
       <div class=" mx-auto w-full ">
-        <div class="  flex justify-center  text-end     lg:py-10 ">
+        <div class="flex justify-center text-end lg:py-10">
           <div class="      p-10   ">
             <h2 class=" font-bold  mb-7 text-2.5xl  text-blue-700  dark:text-white">
               Contact Us
