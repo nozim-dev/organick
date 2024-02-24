@@ -3,7 +3,9 @@ import { style } from "..//..//utils/style";
 import backgroundImage from "./img/Image.png";
 const Footer = () => {
   return (
+    
     <footer>
+      <br /><br /> <br /><br />
       <div className="relative flex items-center place-content-center max-w-[1400px] mx-auto">
         <img
           className="z-0 w-full h-[323px]  object-cover rounded-3xl"
