@@ -140,21 +140,31 @@ const Main = () => {
         </div>
       </section>
 
-      <div className="flex">
-        {products.map((product, id) => (
-          <div key={id}>
-            <img
-              src={product.image}
-              style={{ width: "150px", height: "150px", objectFit: "contain" }}
-              alt=""
-            />
-            <span>{product.category}</span>
-            <h1>{product.title}</h1>
-            <del>{product.oldPrice}</del>
-            <h5>{product.price}</h5>
-          </div>
-        ))}
-      </div>
+      <section>
+        <h5 className={`${style.SectionSubtitle} text-[#7EB693]`}>
+          Categories
+        </h5>
+        <h1 className={`${style.Title} `}>Our Products</h1>
+        <div className="flex">
+          {products.map((product, id) => (
+            <div key={id}>
+              <img
+                src={product.image}
+                style={{
+                  width: "150px",
+                  height: "150px",
+                  objectFit: "contain",
+                }}
+                alt=""
+              />
+              <span>{product.category}</span>
+              <h1>{product.title}</h1>
+              <del>{product.oldPrice}</del>
+              <h5>{product.price}</h5>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };
