@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Background from "./images/background.png";
 import Background1 from "./images/Photo.jpg";
 import Background2 from "./images/Photo1.jpg";
@@ -8,8 +8,25 @@ import Icon2 from "./images/Icon1.png";
 
 import Button from "../../Components/Button/Button";
 import { style } from "../../utils/style";
+import axios from "axios";
 
 const Main = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/products")
+      .then(function (response) {
+        // success
+        // console.log(response.data);
+        setProducts(response.data);
+      })
+      .catch(function (err) {
+        // error
+        console.log(err);
+      });
+  }, []);
+
   return (
     <div>
       <section className="relative">
@@ -69,14 +86,7 @@ const Main = () => {
           </div>
         </div>
       </section>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <section className="w-full max-w-[1920px] mx-auto py-[85px] flex justify-center bg-[#F9F8F8]">
+      <section className="w-full max-w-[1920px] mx-auto py-[186px] px-[100px] flex justify-center bg-[#F9F8F8] mt-[190px]">
         <div className="w-full ">
           <img src={Background3} alt="" className="w-full max-w-[911px]" />
         </div>
@@ -92,26 +102,30 @@ const Main = () => {
             had ceased to been the industry's standard dummy text ever since the
             1500s, when an unknown printer took a galley.
           </p>
-          <div>
-            <div>
-              <div>
-                <img src={Icon1} alt="" />
+          <div className="grid gap-[30px] my-[46px]">
+            <div className="flex gap-[19px]">
+              <div className="w-[101px] h-[101]">
+                <img src={Icon1} alt="" className="w-full h-full" />
               </div>
               <div>
-                <h2>Organic Foods Only</h2>
-                <p>
+                <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold">
+                  Organic Foods Only
+                </h2>
+                <p className="text-md font-Open-Sans text-blue-80 font-normal mt-[7px] leading-[165.4%] max-w-[444px]">
                   Simply dummy text of the printing and typesetting industry.
                   Lorem Ipsum
                 </p>
               </div>
             </div>
-            <div>
-              <div>
-                <img src={Icon1} alt="" />
+            <div className="flex gap-[19px]">
+              <div className="w-[101px] h-[101]">
+                <img src={Icon2} alt="" className="w-full h-full" />
               </div>
               <div>
-                <h2>Quality Standards</h2>
-                <p>
+                <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold">
+                  Quality Standards
+                </h2>
+                <p className="text-md font-Open-Sans text-blue-80 font-normal mt-[7px] leading-[165.4%] max-w-[444px]">
                   Simply dummy text of the printing and typesetting industry.
                   Lorem Ipsum
                 </p>
@@ -121,10 +135,26 @@ const Main = () => {
           <Button
             text="Shop Now"
             isIcon={true}
-            type="bg-blue-700 text-[#fff] border-bue-700"
+            type="bg-blue-700 text-[#fff] border-bue-700 hover:text-blue-700"
           />
         </div>
       </section>
+
+      <div className="flex">
+        {products.map((product, id) => (
+          <div key={id}>
+            <img
+              src={product.image}
+              style={{ width: "150px", height: "150px", objectFit: "contain" }}
+              alt=""
+            />
+            <span>{product.category}</span>
+            <h1>{product.title}</h1>
+            <del>{product.oldPrice}</del>
+            <h5>{product.price}</h5>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

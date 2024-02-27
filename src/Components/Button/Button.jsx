@@ -18,7 +18,7 @@ const Button = ({ text, isIcon, type }) => {
 
   return (
     <Link
-      className={`cursor-pointer w-full max-w-[224px] px-[39px] py-[28px] flex items-center rounded-[16px] gap-[10px] font-Roboto font-bold text-2xl border-[2px] transition-all duration-75 hover:bg-[transparent] ${type}`}
+      className={`cursor-pointer w-full max-w-[224px] px-[39px] py-[28px] flex items-center justify-center rounded-[16px] gap-[10px] font-Roboto font-bold text-2xl border-[2px] transition-all duration-75 hover:bg-[transparent] ${type}`}
     >
       {text}
       {isIcon ? (
@@ -33,8 +33,8 @@ const Button = ({ text, isIcon, type }) => {
             <path
               d="M4.47641 1.12891L7.87095 4.19342L4.47641 7.25794M7.39949 4.19342H0.516113"
               stroke="white"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </span>

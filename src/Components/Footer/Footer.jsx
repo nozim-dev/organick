@@ -12,16 +12,16 @@ const Footer = () => {
           src="https://s3-alpha-sig.figma.com/img/ae9d/3ab9/dda533867a4554d47ee6807bc68972ed?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ECx4vAPbn9PlipOd3FliImAKbF8ZUf7H6SmSVKUa4viafexvsPwPMqq~gzhatka~kp6Zs4WfFVIQ~FRABBAywJ6~iVMuqO47xhFR4lQWimBwU3me4PU5NSdzHmw-IgSUf1hTu~LQVtOAwBojrq7fv9Bg5HVNG850aY5KiY5PQeD8I~6dACaEwKYtnniGvqJPr8HDJFq7tZ0XgQMXLpzTXus2rrSvDUghH139ajOx3U8CucLwDE~pq2yBu4CnTT4oFAPdbcxSeEVtreosJ~rExjhMjfUN8H3dIGtq5yGChQpzhXDV1e16tXDfr0U7lRK-EZAu-a0UBCDKt~8n3a2OTQ__"
           alt=""
         />
-        <label class="absolute flex  ml-[700px]">
+        <label className="absolute flex  ml-[700px]">
           <input
             type="text"
-            class=" w-[349px] h-[80px]  peer block min-h-[auto]  rounded-[16px] border-0 bg-white-50 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear "
+            className=" w-[349px] h-[80px]  peer block min-h-[auto]  rounded-[16px] border-0 bg-white-50 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear "
             placeholder="Your Email Address"
           />
 
           <button
             type="button"
-            class="  w-[220px] h-[80px] rounded-[16px] text-white-50  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 ml-[10px] me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            className="  w-[220px] h-[80px] rounded-[16px] text-white-50  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 ml-[10px] me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             Subscribe
           </button>
@@ -31,36 +31,36 @@ const Footer = () => {
       <br />
       <br />
       <br />
-      <div class=" mx-auto w-full ">
-        <div class="flex justify-center text-end lg:py-10">
-          <div class="      p-10   ">
-            <h2 class=" font-bold  mb-7 text-2.5xl  text-blue-700  dark:text-white">
+      <div className=" mx-auto w-full ">
+        <div className="flex justify-center text-end lg:py-10">
+          <div className="      p-10   ">
+            <h2 className=" font-bold  mb-7 text-2.5xl  text-blue-700  dark:text-white">
               Contact Us
             </h2>
-            <ul class="text-gray-500 blue-80 font-medium ">
-              <li class="mb-4 block">
+            <ul className="text-gray-500 blue-80 font-medium ">
+              <li className="mb-4 block">
                 <h1>Email</h1>
-                <a href="#" class=" hover:underline font-light">
+                <a href="#" className=" hover:underline font-light">
                   needhelp@Organia.com
                 </a>
               </li>
-              <li class="mb-4 block ">
+              <li className="mb-4 block ">
                 <h1>Phone</h1>
-                <a href="#" class="hover:underline font-light">
+                <a href="#" className="hover:underline font-light">
                   666 888 888
                 </a>
               </li>
-              <li class="mb-4 block">
+              <li className="mb-4 block">
                 <h1>Address</h1>
-                <a href="#" class="hover:underline  font-light">
+                <a href="#" className="hover:underline  font-light">
                   88 road, borklyn street, USA
                 </a>
               </li>
             </ul>
           </div>
 
-          <div class="max-w-[700px]  text-center p-0 border-x-2 ">
-            <div class=" flex justify-center ">
+          <div className="max-w-[700px]  text-center p-0 border-x-2 ">
+            <div className=" flex justify-center ">
               <span className="mr-[10px]">
                 <svg
                   width="39"
@@ -72,104 +72,104 @@ const Footer = () => {
                   <path
                     d="M1.85059 42.0684H19.2909H36.7312"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M5.79102 48.5L19.291 48.5L32.791 48.5"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M18.791 1.50002L18.791 8.50002L18.791 15.5"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M18.8657 14.7842V41.2158"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M29.9254 4.55275L18.8657 15.637"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M34.1792 8.81593L18.8657 24.1633"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M36.7314 15.6367L18.8657 32.6894"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M37.5821 23.3106L18.8657 42.0685"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M37.582 31.8369L27.373 42.0685"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M1 31.8369L11.209 42.0685"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M8.65674 4.55275L18.8657 15.637"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M4.40283 8.81593L18.8655 24.1633"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M1.85059 14.7842L18.8655 32.6895"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M1 22.458L18.8657 41.2159"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                   <path
                     d="M19.291 54.8579C9.19019 54.8579 1 46.4056 1 35.9772V20.0228C1 9.5963 9.19019 1.14211 19.291 1.14211C29.3937 1.14211 37.5821 9.5963 37.5821 20.0228V35.9772C37.5839 46.4056 29.3937 54.8579 19.291 54.8579Z"
                     stroke="#7EB693"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeMiterlimit="10"
                   />
                 </svg>
               </span>
 
               <h1 className={style.NavLogo}>Organick</h1>
             </div>
-            <p class=" p-4 pt-20 text-center text-gray-500 blue-80 font-normal text-2xl">
+            <p className=" p-4 pt-20 text-center text-gray-500 blue-80 font-normal text-2xl">
               Simply dummy text of the printing and typesetting industry.Lorem
               Ipsum simply dummy text of the printing
             </p>
-            <div class="follow gap-x-5 flex justify-center">
-              <div class="w-[56px] h-[56px] rounded-full bg-green-50 relative">
+            <div className="follow gap-x-5 flex justify-center">
+              <div className="w-[56px] h-[56px] rounded-full bg-green-50 relative">
                 <span className="absolute top-[50%] right-[17px] translate-y-[-50%]">
                   <svg
                     width="20"
@@ -189,7 +189,7 @@ const Footer = () => {
                   </svg>
                 </span>
               </div>
-              <div class="w-[56px] h-[56px] rounded-full bg-green-50 relative">
+              <div className="w-[56px] h-[56px] rounded-full bg-green-50 relative">
                 <span className="absolute top-[50%] right-[17px] translate-y-[-50%]">
                   <svg
                     width="20"
@@ -199,15 +199,15 @@ const Footer = () => {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M19.2828 10.0001C19.2828 4.87304 14.9657 0.71582 9.64141 0.71582C4.31711 0.71582 0 4.87304 0 10.0001C0 14.634 3.52514 18.475 8.13494 19.1721V12.6847H5.68628V10.0001H8.13494V7.95469C8.13494 5.62822 9.5747 4.34209 11.7767 4.34209C12.8317 4.34209 13.9353 4.52364 13.9353 4.52364V6.80866H12.7189C11.5219 6.80866 11.1475 7.52405 11.1475 8.25933V10.0001H13.8212L13.3942 12.6847H11.1479V19.173C15.7577 18.4762 19.2828 14.6353 19.2828 10.0001Z"
                       fill="#274C5B"
                     />
                   </svg>
                 </span>
               </div>
-              <div class="w-[56px] h-[56px] rounded-full bg-green-50 relative">
+              <div className="w-[56px] h-[56px] rounded-full bg-green-50 relative">
                 <span className="absolute top-[50%] right-[17px] translate-y-[-50%]">
                   <svg
                     width="21"
@@ -223,7 +223,7 @@ const Footer = () => {
                   </svg>
                 </span>
               </div>
-              <div class="w-[56px] h-[56px] rounded-full bg-green-50 relative">
+              <div className="w-[56px] h-[56px] rounded-full bg-green-50 relative">
                 <span className="absolute top-[50%] right-[17px] translate-y-[-50%]">
                   <svg
                     width="20"
@@ -242,44 +242,44 @@ const Footer = () => {
             </div>
           </div>
 
-          <div class="  p-10   ">
-            <h2 class=" font-bold  mb-7 text-2.5xl  text-blue-700  dark:text-white">
+          <div className="  p-10   ">
+            <h2 className=" font-bold  mb-7 text-2.5xl  text-blue-700  dark:text-white">
               Utility Pages
             </h2>
-            <ul class="text-gray-500 blue-80 font-medium  ">
-              <li class="mb-4 ">
-                <a href="#" class=" hover:underline font-light">
+            <ul className="text-gray-500 blue-80 font-medium  ">
+              <li className="mb-4 ">
+                <a href="#" className=" hover:underline font-light">
                   Style Guide
                 </a>
               </li>
-              <li class="mb-4 block ">
-                <a href="#" class="hover:underline font-light">
+              <li className="mb-4 block ">
+                <a href="#" className="hover:underline font-light">
                   404 Not Found
                 </a>
               </li>
-              <li class="mb-4 block">
-                <a href="#" class="hover:underline  font-light">
+              <li className="mb-4 block">
+                <a href="#" className="hover:underline  font-light">
                   Password Protected
                 </a>
               </li>
-              <li class="mb-4">
-                <a href="#" class=" hover:underline font-light">
+              <li className="mb-4">
+                <a href="#" className=" hover:underline font-light">
                   Licences
                 </a>
               </li>
-              <li class="mb-4 block ">
-                <a href="#" class="hover:underline font-light">
+              <li className="mb-4 block ">
+                <a href="#" className="hover:underline font-light">
                   Changelog
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <p class=" w-full h-px my-3 bg-gray-200 border-0 dark:bg-gray-700"></p>
-        <div class="  bg-gray-100 dark:bg-gray-700 text-center ">
-          <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
+        <p className=" w-full h-px my-3 bg-gray-200 border-0 dark:bg-gray-700"></p>
+        <div className="  bg-gray-100 dark:bg-gray-700 text-center ">
+          <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
             Copyright ©{" "}
-            <a class="text-2xl text-gray-600 dark:text-white" href="">
+            <a className="text-2xl text-gray-600 dark:text-white" href="">
               Organick
             </a>
           </span>

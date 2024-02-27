@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "id": "0",
+      "category": "Vegetable",
+      "title": "Calabrese Broccoli",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo1.png"
+    },
+    {
+      "id": "1",
+      "category": "Vegetable",
+      "title": "Fresh Banana Fruites",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo2.png"
+    },
+    {
+      "id": "2",
+      "category": "Vegetable",
+      "title": "White Nuts",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo3.png"
+    },
+    {
+      "id": "3",
+      "category": "Vegetable",
+      "title": "Vegan Red Tomato",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo4.png"
+    },
+    {
+      "id": "4",
+      "category": "Vegetable",
+      "title": "Mung Bean",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo5.png"
+    },
+    {
+      "id": "5",
+      "category": "Vegetable",
+      "title": "Brown Hazelnut",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo6.png"
+    },
+    {
+      "id": "6",
+      "category": "Vegetable",
+      "title": "Eggs",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo7.png"
+    },
+    {
+      "id": "7",
+      "category": "Vegetable",
+      "title": "Zelco Suji Elaichi Rusk",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo8.png"
+    }
+  ]
+}
