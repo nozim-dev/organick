@@ -151,6 +151,11 @@ const Main = () => {
             <Card product={product} id={id} />
           ))}
         </div>
+        <Button
+          text="Load More"
+          isIcon={true}
+          type="bg-blue-700 text-[#fff] border-bue-700 hover:text-blue-700 mx-auto mt-[122px]"
+        />
       </section>
     </div>
   );
