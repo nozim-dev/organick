@@ -4,7 +4,7 @@ const Card = ({ product, id }) => {
   return (
     <div
       key={id}
-      className="w-full max-w-[335px] bg-white-50 rounded-[30px] pl-[30px] pr-[26px] pt-[29px] pb-[17px]"
+      className="w-full max-w-[335px] h-[483px] bg-white-50 rounded-[30px] pl-[30px] pr-[26px] pt-[29px] pb-[17px]"
     >
       <img
         src={product.image}
@@ -15,7 +15,7 @@ const Card = ({ product, id }) => {
         }}
         alt=""
       />
-      <span>{product.category}</span>
+      <span >{product.category}</span>
       <h1>{product.title}</h1>
       <del>{product.oldPrice}</del>
       <h5>{product.price}</h5>
