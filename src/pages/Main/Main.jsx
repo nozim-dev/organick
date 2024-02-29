@@ -146,7 +146,7 @@ const Main = () => {
           Categories
         </h5>
         <h1 className={`${style.Title} text-center`}>Our Products</h1>
-        <div className="flex mt-[40px] flex-wrap gap-[20px]">
+        <div className="justify-center my-[20px] w-full max-w-[1920px] mx-auto flex flex-wrap gap-[20px]">
           {products.map((product, id) => (
             <Card product={product} id={id} />
           ))}
