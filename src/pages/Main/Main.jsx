@@ -170,3 +170,7 @@ const Main = () => {
 };
 
 export default Main;
+
+
+// front-end run qilish: npm run dev
+// backend run qilish: npx json-server backend/Product/product.json
