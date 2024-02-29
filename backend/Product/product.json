@@ -10,7 +10,7 @@
     },
     {
       "id": "1",
-      "category": "Vegetable",
+      "category": "Fresh",
       "title": "Fresh Banana Fruites",
       "price": "$13.00",
       "oldPrice": "$20.00",
@@ -18,7 +18,7 @@
     },
     {
       "id": "2",
-      "category": "Vegetable",
+      "category": "Millets",
       "title": "White Nuts",
       "price": "$13.00",
       "oldPrice": "$20.00",
@@ -34,7 +34,7 @@
     },
     {
       "id": "4",
-      "category": "Vegetable",
+      "category": "Health",
       "title": "Mung Bean",
       "price": "$13.00",
       "oldPrice": "$20.00",
@@ -42,7 +42,7 @@
     },
     {
       "id": "5",
-      "category": "Vegetable",
+      "category": "Nuts",
       "title": "Brown Hazelnut",
       "price": "$13.00",
       "oldPrice": "$20.00",
@@ -50,7 +50,7 @@
     },
     {
       "id": "6",
-      "category": "Vegetable",
+      "category": "Fresh",
       "title": "Eggs",
       "price": "$13.00",
       "oldPrice": "$20.00",
@@ -58,11 +58,45 @@
     },
     {
       "id": "7",
-      "category": "Vegetable",
+      "category": "Fresh",
       "title": "Zelco Suji Elaichi Rusk",
       "price": "$13.00",
       "oldPrice": "$20.00",
       "image": "backend/Product/images/Photo8.png"
+    }
+  ],
+  "offerProduct": [
+    {
+      "id": "0",
+      "category": "Vegetable",
+      "title": "Calabrese Broccoli",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo1.png"
+    },
+    {
+      "id": "0",
+      "category": "Vegetable",
+      "title": "Calabrese Broccoli",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo1.png"
+    },
+    {
+      "id": "0",
+      "category": "Vegetable",
+      "title": "Calabrese Broccoli",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo1.png"
+    },
+    {
+      "id": "0",
+      "category": "Vegetable",
+      "title": "Calabrese Broccoli",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo1.png"
     }
   ]
 }
