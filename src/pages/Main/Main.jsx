@@ -9,6 +9,7 @@ import Icon2 from "./images/Icon1.png";
 import Button from "../../Components/Button/Button";
 import { style } from "../../utils/style";
 import axios from "axios";
+import Card from "./Components/Card";
 
 const Main = () => {
   const [products, setProducts] = useState([]);
@@ -140,28 +141,14 @@ const Main = () => {
         </div>
       </section>
 
-      <section>
-        <h5 className={`${style.SectionSubtitle} text-[#7EB693]`}>
+      <section className="w-full max-w-[1400px] mx-auto mt-[176px]">
+        <h5 className={`${style.SectionSubtitle} text-[#7EB693] text-center`}>
           Categories
         </h5>
-        <h1 className={`${style.Title} `}>Our Products</h1>
-        <div className="flex">
+        <h1 className={`${style.Title} text-center`}>Our Products</h1>
+        <div className="flex mt-[40px] flex-wrap gap-[20px]">
           {products.map((product, id) => (
-            <div key={id}>
-              <img
-                src={product.image}
-                style={{
-                  width: "150px",
-                  height: "150px",
-                  objectFit: "contain",
-                }}
-                alt=""
-              />
-              <span>{product.category}</span>
-              <h1>{product.title}</h1>
-              <del>{product.oldPrice}</del>
-              <h5>{product.price}</h5>
-            </div>
+            <Card product={product} id={id} />
           ))}
         </div>
       </section>
@@ -170,7 +157,6 @@ const Main = () => {
 };
 
 export default Main;
-
 
 // front-end run qilish: npm run dev
 // backend run qilish: npx json-server backend/Product/product.json
