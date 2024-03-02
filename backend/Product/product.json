@@ -65,14 +65,38 @@
       "image": "backend/Product/images/Photo8.png"
     }
   ],
+
+
+
+
+
+
+
+
   "offerProduct": [
     {
       "id": "0",
       "category": "Vegetable",
-      "title": "Calabrese Broccoli",
+      "title": "Mung Bean",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo1.png"
+      "image": "backend/Product/images/Photo9.png"
+    },
+    {
+      "id": "0",
+      "category": "Vegetable",
+      "title": "Brown Hazelnut",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo10.png"
+    },
+    {
+      "id": "0",
+      "category": "Vegetable",
+      "title": "Onion",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo11.png"
     },
     {
       "id": "0",
@@ -80,23 +104,7 @@
       "title": "Calabrese Broccoli",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo1.png"
-    },
-    {
-      "id": "0",
-      "category": "Vegetable",
-      "title": "Calabrese Broccoli",
-      "price": "$13.00",
-      "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo1.png"
-    },
-    {
-      "id": "0",
-      "category": "Vegetable",
-      "title": "Calabrese Broccoli",
-      "price": "$13.00",
-      "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo1.png"
+      "image": "backend/Product/images/Photo12.png"
     }
   ]
 }

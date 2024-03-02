@@ -10,6 +10,7 @@ import Button from "../../Components/Button/Button";
 import { style } from "../../utils/style";
 import axios from "axios";
 import Card from "./Components/Card";
+import Card1 from "./Components/Card1";
 
 const Main = () => {
   const [products, setProducts] = useState([]);
@@ -28,6 +29,22 @@ const Main = () => {
       });
   }, []);
 
+  const [offerProduct, setofferProduct] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/offerProduct")
+      .then(function (response) {
+        // success
+        // console.log(response.data);
+        setofferProduct(response.data);
+      })
+      .catch(function (err) {
+        // error
+        console.log(err);
+      });
+  }, []);
+
   return (
     <div>
       <section className="relative">
@@ -39,7 +56,7 @@ const Main = () => {
           />
         </div>
         <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-70%] w-full max-w-[1413px] mx-auto">
-          <h5 className={`${style.SectionSubtitle}text-[#68A47F]`}>
+          <h5 className={`${style.SectionSubtitle} text-[#68A47F]`}>
             100% Natural Food
           </h5>
           <h1 className="font-Roboto font-extrabold text-7xl leading-[82.03px] text-blue-700 mb-[27px]">
@@ -141,6 +158,8 @@ const Main = () => {
         </div>
       </section>
 
+      {/* product */}
+
       <section className="w-full max-w-[1400px] mx-auto mt-[176px]">
         <h5 className={`${style.SectionSubtitle} text-[#7EB693] text-center`}>
           Categories
@@ -156,6 +175,31 @@ const Main = () => {
           isIcon={true}
           type="bg-blue-700 text-[#fff] border-bue-700 hover:text-blue-700 mx-auto mt-[122px]"
         />
+      </section>
+
+      {/* offerProduct  */}
+
+      <section className=" w-full max-w-[1920px]  mx-auto   mt-[176px] bg-blue-700  py-[156px] pl-[259px]   ">
+        <div className="w-full flex">
+          <div className="block">
+            <h5 className={`${style.SectionSubtitle} text-[#7EB693] `}>
+              Offer
+            </h5>
+            <h1 className=" font-Roboto text-5xl leading-[58.59px] font-extrabold text-[#FFFFFF] ">
+              We Offer Organic For You
+            </h1>
+          </div>
+          <Button
+            text="View All Poduct"
+            isIcon={true}
+            type="w-full max-w-[256px]  text-blue-700 bg-yellow-300 hover:text-white-50 mx-auto mt-[35px]  "
+          />
+        </div>
+        <div className=" my-[39px] w-full max-w-[1920px] mx-auto flex flex-wrap gap-[20px] ">
+          {offerProduct.map((product, id) => (
+            <Card product={product} id={id} />
+          ))}
+        </div>
       </section>
     </div>
   );
