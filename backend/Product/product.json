@@ -65,14 +65,6 @@
       "image": "backend/Product/images/Photo8.png"
     }
   ],
-
-
-
-
-
-
-
-
   "offerProduct": [
     {
       "id": "0",
@@ -83,7 +75,7 @@
       "image": "backend/Product/images/Photo9.png"
     },
     {
-      "id": "0",
+      "id": "1",
       "category": "Vegetable",
       "title": "Brown Hazelnut",
       "price": "$13.00",
@@ -91,7 +83,7 @@
       "image": "backend/Product/images/Photo10.png"
     },
     {
-      "id": "0",
+      "id": "2",
       "category": "Vegetable",
       "title": "Onion",
       "price": "$13.00",
@@ -99,12 +91,35 @@
       "image": "backend/Product/images/Photo11.png"
     },
     {
-      "id": "0",
+      "id": "3",
       "category": "Vegetable",
       "title": "Calabrese Broccoli",
       "price": "$13.00",
       "oldPrice": "$20.00",
       "image": "backend/Product/images/Photo12.png"
+    }
+  ],
+  "CarouselData": [
+    {
+      "id": 0,
+      "img": "backend/Product/images/avatarWm.jpg",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
+      "name": "Sara Taylor",
+      "job": "Consumer"
+    },
+    {
+      "id": 1,
+      "img": "backend/Product/images/avatarWm.jpg",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
+      "name": "Sara Taylor",
+      "job": "Consumer"
+    },
+    {
+      "id": 2,
+      "img": "backend/Product/images/avatarWm.jpg",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
+      "name": "Sara Taylor",
+      "job": "Consumer"
     }
   ]
 }
