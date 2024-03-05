@@ -193,7 +193,7 @@ const Main = () => {
         <h1 className={`${style.Title} text-center`}>Our Products</h1>
         <div className="justify-center my-[20px] w-full max-w-[1920px] mx-auto flex flex-wrap gap-[20px]">
           {products.map((product, id) => (
-            <Card product={product} id={id} />
+            <Card product={product} id={id} key={id} />
           ))}
         </div>
         <Button
@@ -334,19 +334,19 @@ const Main = () => {
             <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8">
               <h1 className={`${style.Title}`}>285</h1>
               <p className={`${style.SubTitle} text-blue-700 font-semibold`}>
-              Active Product
+                Active Product
               </p>
             </div>
             <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8">
               <h1 className={`${style.Title}`}>350+</h1>
               <p className={`${style.SubTitle} text-blue-700 font-semibold`}>
-              Organic Orchads
+                Organic Orchads
               </p>
             </div>
             <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8">
               <h1 className={`${style.Title}`}>25+</h1>
               <p className={`${style.SubTitle} text-blue-700 font-semibold`}>
-              Years of Farming
+                Years of Farming
               </p>
             </div>
           </div>
@@ -374,7 +374,7 @@ const Main = () => {
           </div>
           <div className="my-[39px] w-full flex flex-wrap justify-between gap-[20px]">
             {offerProduct.map((product, id) => (
-              <Card product={product} id={id} />
+              <Card product={product} id={id} key={id} />
             ))}
           </div>
         </div>
@@ -434,7 +434,7 @@ const Main = () => {
         <div className="w-full mx-auto flex flex-wrap justify-between gap-[30px] ">
           <div className=" relative flex justify-center items-center">
             <div className="relative w-full max-w-[612px]">
-              <img src={organikimg} alt="" className="w-full"/>
+              <img src={organikimg} alt="" className="w-full" />
             </div>
             <div className="absolute w-full max-w-[320px] rounded-[20px] px-[83px] py-[33px] bg-[#FFFFFF]">
               <p className="text-blue-700 font-Roboto text-2.5xl leading-[29.3px]">
@@ -454,7 +454,7 @@ const Main = () => {
           </div>
           <div className="relative flex justify-center items-center">
             <div className="relative w-full max-w-[612px] ">
-              <img src={organikimg2} alt="" className="w-full"/>
+              <img src={organikimg2} alt="" className="w-full" />
             </div>
             <div className="absolute w-full max-w-[320px] rounded-[20px] px-[83px] py-[33px] bg-[#FFFFFF]">
               <p className="text-blue-700 font-Roboto text-2.5xl leading-[29.3px]">

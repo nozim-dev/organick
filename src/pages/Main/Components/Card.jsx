@@ -16,15 +16,15 @@ const Card = ({ product, id }) => {
           alt=""
         />
       </div>
-      <h1 class="text-2xl font-Roboto font-semibold text-blue-700 leading-[23.44px] mt-[12px] pb-[13px] border-b-[1px] border-[#DEDDDD]">
+      <h1 className="text-2xl font-Roboto font-semibold text-blue-700 leading-[23.44px] mt-[12px] pb-[13px] border-b-[1px] border-[#DEDDDD]">
         {product.title}
       </h1>
       <div className="flex justify-between items-center mt-[6px]">
         <div className="flex gap-[8px] items-center">
-          <del class="text-[15px] font-Open-Sans font-semibold text-[#B8B8B8] leading-[20.43px]">
+          <del className="text-[15px] font-Open-Sans font-semibold text-[#B8B8B8] leading-[20.43px]">
             {product.oldPrice}
           </del>
-          <h5 class="text-[18px] font-bold text-blue-700 font-Open-Sans leading-[24.51px] ">
+          <h5 className="text-[18px] font-bold text-blue-700 font-Open-Sans leading-[24.51px] ">
             {product.price}
           </h5>
         </div>

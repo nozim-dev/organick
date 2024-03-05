@@ -1,5 +1,6 @@
 import React from "react";
 import { style } from "..//..//utils/style";
+import Background from "./img/Image.png";
 const Footer = () => {
   return (
     <footer>
@@ -9,8 +10,7 @@ const Footer = () => {
         </h1>
         <img
           className="z-0 w-[1400px] h-[323px] object-cover rounded-3xl "
-          src="https://s3-alpha-sig.figma.com/img/ae9d/3ab9/dda533867a4554d47ee6807bc68972ed?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ECx4vAPbn9PlipOd3FliImAKbF8ZUf7H6SmSVKUa4viafexvsPwPMqq~gzhatka~kp6Zs4WfFVIQ~FRABBAywJ6~iVMuqO47xhFR4lQWimBwU3me4PU5NSdzHmw-IgSUf1hTu~LQVtOAwBojrq7fv9Bg5HVNG850aY5KiY5PQeD8I~6dACaEwKYtnniGvqJPr8HDJFq7tZ0XgQMXLpzTXus2rrSvDUghH139ajOx3U8CucLwDE~pq2yBu4CnTT4oFAPdbcxSeEVtreosJ~rExjhMjfUN8H3dIGtq5yGChQpzhXDV1e16tXDfr0U7lRK-EZAu-a0UBCDKt~8n3a2OTQ__"
-          alt=""
+          src={Background}
         />
         <label className="absolute flex  ml-[700px]">
           <input

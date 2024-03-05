@@ -31,8 +31,21 @@ export default {
       "2xl": "20px",
       "md": "18px",
     },
-    extend: {
-    },
+    screens: {
+      "lg1550": {
+        "max": "1550px"
+      },
+      "lg1060": {
+        "max": "1060px"
+      },
+      "lg912": {
+        "max": "912px"
+      },
+      "md787": {
+        "max": "787px"
+      },
+      "mdMin787": "787px"
+    }
   },
   plugins: [],
 }
