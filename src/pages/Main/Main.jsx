@@ -401,21 +401,21 @@ const Main = () => {
                 Econis is a Friendly <br /> Organic Store
               </h1>
               <div className="block mt-[25px]">
-                <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold mt-[20px]">
+                <h2 className="text-2.5xl font-Roboto text-blue-700 font-medium mt-[20px]">
                   Organic Foods Only
                 </h2>
                 <p className="text-md font-Open-Sans text-blue-80 font-normal mt-[7px] leading-[29.77px] max-w-[635px]">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptat
                   accusantium doloremque laudantium. Sed ut perspiciatis.
                 </p>
-                <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold mt-[20px]">
+                <h2 className="text-2.5xl font-Roboto text-blue-700 font-medium mt-[20px]">
                   Organic Foods Only
                 </h2>
                 <p className="text-md font-Open-Sans text-blue-80 font-normal mt-[7px] leading-[29.77px] max-w-[635px]">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptat
                   accusantium doloremque laudantium. Sed ut perspiciatis.
                 </p>{" "}
-                <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold mt-[20px]">
+                <h2 className="text-2.5xl font-Roboto text-blue-700 font-medium mt-[20px]">
                   Organic Foods Only
                 </h2>
                 <p className="text-md font-Open-Sans text-blue-80 font-normal mt-[7px] leading-[29.77px] max-w-[635px]">
