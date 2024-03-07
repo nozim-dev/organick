@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Banner from "../../Components/Banner/Banner";
+import BlogBanner from "./images/banner.png";
 
 const Blog = () => {
   return (
-    <div>Blog</div>
-  )
-}
+    <div>
+      <section>
+        <Banner title="Recent  News" img={BlogBanner} />
+      </section>
+    </div>
+  );
+};
 
-export default Blog
+export default Blog;

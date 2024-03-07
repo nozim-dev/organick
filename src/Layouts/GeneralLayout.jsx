@@ -5,7 +5,7 @@ import Footer from "../Components/Footer/Footer";
 
 const GeneralLayout = () => {
   return (
-    <div>
+    <div className="border border-[red]">
       <Header />
       <Outlet />
       <Footer />

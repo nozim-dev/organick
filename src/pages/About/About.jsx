@@ -1,45 +1,28 @@
 import React from "react";
-import AboutBanner from "./images/AboutBanner.png";
+import Banner from "../../Components/Banner/Banner";
+import { style } from "../../utils/style";
+import AboutBanner from "./images/Banner.png";
 import AboutImage from "./images/AboutImage.png";
 import AboutIcon from "./images/AboutIcon.png";
 import AboutIcon1 from "./images/AboutIcon1.png";
-
-
-
-
-
 import Button from "../../Components/Button/Button";
-import { style } from "../../utils/style";
-import axios from "axios";
-import Card from "../Main/Components/Card";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-
 
 const About = () => {
-  return <div>
-    <section>
-    <div className="w-full h-[450px] max-w-[1920px] mx-auto max-h-[450px]">
-          <img
-            className="w-full h-full object-cover"
-            src={AboutBanner}
-            alt="Background"
-          />
-        </div>
-    </section>
-    <section className=" max-w-[1920px] mx-auto py-[186px] pr-[100px] flex justify-center bg-[#F9F8F8] mt-[68px]">
+  return (
+    <div>
+      <section>
+        <Banner title="About Us" img={AboutBanner} />
+      </section>
+      <section className=" max-w-[1920px] mx-auto py-[186px] pr-[100px] flex justify-center bg-[#F9F8F8] mt-[68px]">
         <div className="w-full h-[764px] max-h-[764px] max-w-[737px] ">
           <img src={AboutImage} alt="" className="h-full object-cover " />
         </div>
-
-        <div className="w-full w-[847px] h-[648px] ">
+        <div className="w-full max-w-[847px] h-[648px] ">
           <h5 className={`${style.SectionSubtitle} text-[#7EB693]`}>
             About Us
           </h5>
           <h1 className={`${style.Title} `}>
-          We do Creative <br /> Things for Success
+            We do Creative <br /> Things for Success
           </h1>
           <p className={`${style.SubTitle} mt-[14px] mr-[12px] max-w-[690px]`}>
             Simply dummy text of the printing and typesetting industry. Lorem
@@ -57,9 +40,8 @@ const About = () => {
               </div>
               <div>
                 <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold">
-                Modern Agriculture <br /> Equipment
+                  Modern Agriculture <br /> Equipment
                 </h2>
-                
               </div>
             </div>
             <div className="flex gap-[19px]">
@@ -68,9 +50,8 @@ const About = () => {
               </div>
               <div>
                 <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold">
-                No growth <br /> hormones are used
+                  No growth <br /> hormones are used
                 </h2>
-                
               </div>
             </div>
           </div>
@@ -81,7 +62,8 @@ const About = () => {
           />
         </div>
       </section>
-  </div>;
+    </div>
+  );
 };
 
 export default About;

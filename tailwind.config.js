@@ -7,13 +7,12 @@ export default {
   theme: {
     colors: {
       "blue-700": "#274C5B",
-      "green-300": "#7EB693",
+      "blue-80": "#525C60",
       "yellow-300": "#EFD372",
       "gray-200": "#D4D4D4",
       "white-50": "#F9F8F8",
+      "green-300": "#7EB693",
       "green-50": "#EFF6F1",
-      "blue-80": "#525C60",
-      "qizil": "red"
     },
     fontFamily: {
       "Roboto": "Roboto, sans-serif",
@@ -35,14 +34,26 @@ export default {
       "lg1550": {
         "max": "1550px"
       },
+      "lg1400": {
+        "max": "1400px"
+      },
+      "lg1200": {
+        "max": "1200px"
+      },
       "lg1060": {
         "max": "1060px"
       },
       "lg912": {
         "max": "912px"
       },
+      "lg877": {
+        "max": "877px"
+      },
       "md787": {
         "max": "787px"
+      },
+      "sm450": {
+        "max": "450px"
       },
       "mdMin787": "787px"
     }

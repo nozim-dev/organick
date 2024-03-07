@@ -1,4 +1,13 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
+import Button from "../../Components/Button/Button";
+import Card from "./Components/Card";
+import { style } from "../../utils/style";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+// Images
 import Background from "./images/background.png";
 import Background1 from "./images/Photo.jpg";
 import Background2 from "./images/Photo1.jpg";
@@ -10,15 +19,6 @@ import EcoFriendly from "./images/EcoFraindly.jpg";
 import organikimg from "./images/organikimg.jpg";
 import organikimg1 from "./images/organikimg1.jpg";
 import organikimg2 from "./images/organikimg2.jpg";
-
-import Button from "../../Components/Button/Button";
-import { style } from "../../utils/style";
-import axios from "axios";
-import Card from "./Components/Card";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
 
 const Main = () => {
   const [products, setProducts] = useState([]);
@@ -72,68 +72,74 @@ const Main = () => {
   return (
     <div>
       <section className="relative">
-        <div className="w-full h-[898px] max-w-[1920px] mx-auto max-h-[898px]">
+        <div className="w-full h-[898px] max-w-[1920px] mx-auto max-h-[898px] md787:h-[92vh]">
           <img
             className="w-full h-full object-cover"
             src={Background}
             alt="Background"
           />
         </div>
-        <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-70%] w-full max-w-[1413px] mx-auto">
-          <h5 className={`${style.SectionSubtitle} text-[#68A47F]`}>
+        <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-70%] w-full max-w-[1413px] mx-auto lg1550:px-[15px] md787:translate-y-[-50%]">
+          <h5 className={`${style.SectionSubtitle} text-[#68A47F] `}>
             100% Natural Food
           </h5>
-          <h1 className="font-Roboto font-extrabold text-7xl leading-[82.03px] text-blue-700 mb-[27px]">
-            Choose the best <br /> healthier way <br /> of life
+          <h1 className="font-Roboto font-extrabold text-7xl leading-[82.03px] text-blue-700 mb-[27px] md787:text-[52px] md787:leading-[62px] sm450:text-[42px] sm450:leading-[52px]">
+            Choose the best <br className="sm450:hidden" /> healthier way
+            <br className="sm450:hidden" /> of life
           </h1>
           <Button
             text="Explore Now"
             isIcon={true}
-            type="bg-yellow-300 text-blue-700 border-yellow-300"
+            type="bg-yellow-300 text-blue-700 border-yellow-300 "
           />
         </div>
       </section>
 
-      <section className="relative w-full flex flex-wrap justify-center gap-[36px]  mt-[196px]">
-        <div className="flex items-center">
-          <img
-            className="w-[682px] object-cover rounded-[30px] "
-            src={Background1}
-            alt="Background"
-          />
-          <div className="absolute ml-[54px] mt-[54px]">
-            <h5 className="w-full max-w-[131px] font-Yellowtail text-[36px] text-[#ffff] mb-[8px]">
+      <section className="relative w-full flex flex-wrap justify-center gap-[36px] mt-[196px] lg877:my-[60px] sm450:px-[15px]">
+        <div className="flex items-center h-[367px] w-full max-w-[682px] px-[54px] relative lg1400:max-w-[582px] lg1400:h-[267px] lg1200:max-w-[482px] lg1200:h-[220px] lg1060:max-w-[420px] lg1060:h-[200px] lg877:max-w-[600px] lg877:h-[220px] sm450:h-[180px] sm450:px-[24px]">
+          <div className="w-full absolute left-0 top-0 h-full">
+            <img
+              className="w-full object-cover rounded-[30px] h-full"
+              src={Background1}
+              alt="Background"
+            />
+          </div>
+          <div className="relative z-1">
+            <h5 className="font-Yellowtail text-[36px] text-[#ffff] mb-[8px] lg1060:text-[22px]">
               Natural !!
             </h5>
-            <h1 className="w-full max-w-[277px] font-Roboto font-extrabold text-4xl text-[white] mb-[27px]">
+            <h1 className="font-Roboto font-extrabold text-4xl text-[white] lg1200:text-[32px] lg1200:leading-[36.88px] lg1060:text-[28px] lg1060:leading-[32px] sm450:text-[24px] sm450:leading-[28px]">
               Get Garden <br />
               Fresh Fruits
             </h1>
           </div>
         </div>
-
-        <div className="flex items-center ">
-          <img
-            className="w-[682px] object-cover rounded-[30px] "
-            src={Background2}
-            alt="Background"
-          />
-
-          <div className=" absolute  ml-[54px] mt-[54px]">
-            <h5 className=" w-full max-w-[131px] font-Yellowtail text-[36px] text-[#68A47F]  mb-[8px]">
+        <div className="flex items-center h-[367px] w-full max-w-[682px] px-[54px] relative lg1400:max-w-[582px] lg1400:h-[267px] lg1200:max-w-[482px] lg1200:h-[220px] lg1060:max-w-[420px] lg1060:h-[200px] lg877:max-w-[600px] lg877:h-[220px] sm450:h-[180px] sm450:px-[24px]">
+          <div className="w-full absolute left-0 top-0 h-full">
+            <img
+              className="w-full object-cover rounded-[30px] h-full"
+              src={Background2}
+              alt="Background"
+            />
+          </div>
+          <div className="relative z-1">
+            <h5 className="font-Yellowtail text-[36px] text-[#68A47F] mb-[8px] lg1060:text-[22px]">
               Offer !!
             </h5>
-            <h1 className="w-full max-w-[277px] font-Roboto font-extrabold text-4xl text-blue-700 mb-[27px]">
+            <h1 className="font-Roboto font-extrabold text-4xl text-blue-700 lg1200:text-[32px] lg1200:leading-[36.88px] lg1060:text-[28px] lg1060:leading-[32px] sm450:text-[24px] sm450:leading-[28px]">
               Get 10% off <br /> on Vegetables
             </h1>
           </div>
         </div>
       </section>
 
-
-      <section className="w-full max-w-[1920px] mx-auto py-[186px] px-[100px] flex justify-center bg-[#F9F8F8] mt-[190px]  lg1060:mt-[150px] lg1550:block lg1550:px-[0px] ">
+      <section className="w-full max-w-[1920px] mx-auto py-[186px] px-[100px] flex justify-center bg-[#F9F8F8] lg1550:block lg1550:px-[0px] ">
         <div className="w-full min-w-[911px] lg912:min-w-[101px] ">
-          <img src={Background3} alt="" className="w-full  min-w-[911px] lg912:min-w-[101px]" />
+          <img
+            src={Background3}
+            alt=""
+            className="w-full  min-w-[911px] lg912:min-w-[101px]"
+          />
         </div>
         <div className="w-full lg1550:px-[100px] ">
           <h5 className={`${style.SectionSubtitle} text-[#7EB693]  `}>
@@ -150,7 +156,11 @@ const Main = () => {
           <div className="grid gap-[30px] my-[46px]">
             <div className="flex gap-[19px]">
               <div className="w-[101px] h-[101]  ">
-                <img src={Icon1} alt="" className="w-full min-w-[101px]  md787:min-w-[71px]"/>
+                <img
+                  src={Icon1}
+                  alt=""
+                  className="w-full min-w-[101px]  md787:min-w-[71px]"
+                />
               </div>
               <div>
                 <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold md787:text-2xl ">
@@ -164,7 +174,11 @@ const Main = () => {
             </div>
             <div className="flex gap-[19px]">
               <div className="w-[101px] h-[101]">
-                <img src={Icon2} alt="" className="w-full min-w-[101px] md787:min-w-[71px] "/>
+                <img
+                  src={Icon2}
+                  alt=""
+                  className="w-full min-w-[101px] md787:min-w-[71px] "
+                />
               </div>
               <div>
                 <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold md787:text-2xl ">
@@ -385,7 +399,7 @@ const Main = () => {
 
       <section className="w-full max-w-[1920px] mx-auto">
         <div className="flex items-center w-full relative">
-          <div className="w-full max-w-[952px] h-[931px] flex justify-center  lg1550: max-w-[1000px]  lg1060:w-full lg1060: max-w-[1300px]">
+          <div className="w-full max-w-[952px] h-[931px] flex justify-center lg1550:max-w-[1000px]  lg1060:w-full lg1060:max-w-[1300px]">
             <img
               src={EcoFriendly}
               className="w-full h-full object-cover"
