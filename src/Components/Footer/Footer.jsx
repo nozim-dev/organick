@@ -5,28 +5,29 @@ const Footer = () => {
   return (
     <footer>
       <span className="mt-[176px] relative z-10 flex items-center place-content-center  ">
-        <h1 className=" w-[357px] text-[50px]   absolute z-30 text-white-50 mr-[900px] ">
-          Subscribe to our Newsletter
-        </h1>
         <img
-          className="z-0 w-[1400px] h-[323px] object-cover rounded-3xl "
+          className="z-0 w-full max-w-[1400px] h-[323px] object-cover rounded-3xl"
           src={Background}
         />
-        <label className="absolute flex  ml-[700px]">
+
+        <h1 className=" w-full max-w-[357px] text-[50px] absolute z-30 text-white-50 mr-[900px] ">
+          Subscribe to our Newsletter
+        </h1>
+
+        <label className="absolute flex ">
           <input
             type="text"
-            className=" w-[349px] h-[80px]  peer block min-h-[auto]  rounded-[16px] border-0 bg-white-50 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear "
+            className=" w-[349px] h-[80px] rounded-[16px] border-0 bg-white-50 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear "
             placeholder="Your Email Address"
           />
 
           <button
             type="button"
-            className="  w-[220px] h-[80px] rounded-[16px] text-white-50  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 ml-[10px] me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            className="w-full max-w-[220px] h-[80px] rounded-[16px] text-white-50  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 ml-[10px] me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             Subscribe
           </button>
         </label>
-        <form></form>
       </span>
       <br />
       <br />
@@ -276,13 +277,32 @@ const Footer = () => {
           </div>
         </div>
         <p className=" w-full h-px my-3 bg-gray-200 border-0 dark:bg-gray-700"></p>
-        <div className="  bg-gray-100 dark:bg-gray-700 text-center ">
-          <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
-            Copyright ©{" "}
-            <a className="text-2xl text-gray-600 dark:text-white" href="">
-              Organick
+        <div class="container w-full max-w-[1920px] align-center text-center ">
+          <div class="mb-9 flex justify-center">
+            <a
+              href="#!"
+              class="text-white hover:text-primary-500 transition duration-300"
+            >
+              <i class="fab fa-facebook-f"></i>
             </a>
-          </span>
+            <a
+              href="#!"
+              class="ml-4 text-white hover:text-primary-500 transition duration-300"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="#!"
+              class="ml-4 text-white hover:text-primary-500 transition duration-300"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+
+            <p class="text-sm text-neutral-400 dark:text-neutral-300">
+              &copy; 2024 Organick. All rights reserved.ing reserved 
+            </p>
+
         </div>
       </div>
     </footer>

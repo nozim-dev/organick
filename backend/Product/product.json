@@ -109,16 +109,16 @@
     },
     {
       "id": 1,
-      "img": "backend/Product/images/avatarWm.jpg",
+      "img": "backend/Product/images/carausel1.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
-      "name": "Sara Taylor",
+      "name": "Matt Round",
       "job": "Consumer"
     },
     {
       "id": 2,
-      "img": "backend/Product/images/avatarWm.jpg",
+      "img": "backend/Product/images/carausel2.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
-      "name": "Sara Taylor",
+      "name": "Charle Georg",
       "job": "Consumer"
     }
   ]
