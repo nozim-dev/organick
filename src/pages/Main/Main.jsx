@@ -94,48 +94,49 @@ const Main = () => {
         </div>
       </section>
 
-      <section className="relative mx-auto w-full flex justify-center place-items-center gap-[36px]  mt-[196px]">
-        <div className="">
+      <section className="relative w-full flex flex-wrap justify-center gap-[36px]  mt-[196px]">
+        <div className="flex items-center">
           <img
-            className="w-[682px] h-[367px] object-cover rounded-[30px] "
+            className="w-[682px] object-cover rounded-[30px] "
             src={Background1}
             alt="Background"
           />
-          <div className="absolute top-1/2 left-1/2 translate-x-[-46%] translate-y-[-45%] w-full max-w-[1413px] mx-auto">
-            <h5 className="font-Yellowtail text-[36px] text-[#ffff] mb-[8px]">
+          <div className="absolute ml-[54px] mt-[54px]">
+            <h5 className="w-full max-w-[131px] font-Yellowtail text-[36px] text-[#ffff] mb-[8px]">
               Natural !!
             </h5>
-            <h1 className="font-Roboto font-extrabold text-4xl text-[white] mb-[27px]">
+            <h1 className="w-full max-w-[277px] font-Roboto font-extrabold text-4xl text-[white] mb-[27px]">
               Get Garden <br />
               Fresh Fruits
             </h1>
           </div>
         </div>
 
-        <div>
+        <div className="flex items-center ">
           <img
-            className="w-[682px] h-[367px] object-cover rounded-[30px] "
+            className="w-[682px] object-cover rounded-[30px] "
             src={Background2}
             alt="Background"
           />
-          <div className="absolute top-1/2 left-1/2 translate-x-[35%] translate-y-[-45%]  max-w-[1413px] mx-auto">
-            <h5 className="font-Yellowtail text-[36px] text-[#68A47F]  mb-[8px]">
-              Natural !!
+
+          <div className=" absolute  ml-[54px] mt-[54px]">
+            <h5 className=" w-full max-w-[131px] font-Yellowtail text-[36px] text-[#68A47F]  mb-[8px]">
+              Offer !!
             </h5>
-            <h1 className="font-Roboto font-extrabold text-4xl text-blue-700 mb-[27px]">
-              Get Garden <br />
-              Fresh Fruits
+            <h1 className="w-full max-w-[277px] font-Roboto font-extrabold text-4xl text-blue-700 mb-[27px]">
+              Get 10% off <br /> on Vegetables
             </h1>
           </div>
         </div>
       </section>
 
-      <section className="w-full max-w-[1920px] mx-auto py-[186px] px-[100px] flex justify-center bg-[#F9F8F8] mt-[190px]">
-        <div className="w-full ">
-          <img src={Background3} alt="" className="w-full max-w-[911px]" />
+
+      <section className="w-full max-w-[1920px] mx-auto py-[186px] px-[100px] flex justify-center bg-[#F9F8F8] mt-[190px]  lg1060:mt-[150px] lg1550:block lg1550:px-[0px] ">
+        <div className="w-full min-w-[911px] lg912:min-w-[101px] ">
+          <img src={Background3} alt="" className="w-full  min-w-[911px] lg912:min-w-[101px]" />
         </div>
-        <div className="w-full">
-          <h5 className={`${style.SectionSubtitle} text-[#7EB693]`}>
+        <div className="w-full lg1550:px-[100px] ">
+          <h5 className={`${style.SectionSubtitle} text-[#7EB693]  `}>
             About Us
           </h5>
           <h1 className={`${style.Title} `}>
@@ -148,14 +149,14 @@ const Main = () => {
           </p>
           <div className="grid gap-[30px] my-[46px]">
             <div className="flex gap-[19px]">
-              <div className="w-[101px] h-[101]">
-                <img src={Icon1} alt="" className="w-full h-full" />
+              <div className="w-[101px] h-[101]  ">
+                <img src={Icon1} alt="" className="w-full min-w-[101px]  md787:min-w-[71px]"/>
               </div>
               <div>
-                <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold">
+                <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold md787:text-2xl ">
                   Organic Foods Only
                 </h2>
-                <p className="text-md font-Open-Sans text-blue-80 font-normal mt-[7px] leading-[165.4%] max-w-[444px]">
+                <p className="text-md font-Open-Sans text-blue-80 font-normal mt-[7px] leading-[165.4%] max-w-[444px] md787:text-[16px] ">
                   Simply dummy text of the printing and typesetting industry.
                   Lorem Ipsum
                 </p>
@@ -163,13 +164,13 @@ const Main = () => {
             </div>
             <div className="flex gap-[19px]">
               <div className="w-[101px] h-[101]">
-                <img src={Icon2} alt="" className="w-full h-full" />
+                <img src={Icon2} alt="" className="w-full min-w-[101px] md787:min-w-[71px] "/>
               </div>
               <div>
-                <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold">
+                <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold md787:text-2xl ">
                   Quality Standards
                 </h2>
-                <p className="text-md font-Open-Sans text-blue-80 font-normal mt-[7px] leading-[165.4%] max-w-[444px]">
+                <p className="text-md font-Open-Sans text-blue-80 font-normal mt-[7px] leading-[165.4%] max-w-[444px] md787:text-[16px] ">
                   Simply dummy text of the printing and typesetting industry.
                   Lorem Ipsum
                 </p>
@@ -205,7 +206,7 @@ const Main = () => {
 
       {/* Testimonial */}
 
-      <section className="relative mt-[200px] flex py-[164px] justify-center items-center max-w-[1920px] mx-auto">
+      <section className="relative mt-[200px] flex py-[164px]  justify-center items-center max-w-[1920px] mx-auto lg1060:px-[30px]">
         <div className="absolute top-0 left-0 w-full h-full">
           <img
             src={SectionBackground}
@@ -324,7 +325,7 @@ const Main = () => {
               </Swiper>
             </div>
           </div>
-          <div className="w-full max-w-[1030px] mx-auto flex items-center justify-between">
+          <div className="w-full max-w-[1030px] mx-auto flex px-[20px] items-center justify-between lg1060:block lg1060:justify-center lg1060:max-w-[250px] ">
             <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8">
               <h1 className={`${style.Title}`}>100%</h1>
               <p className={`${style.SubTitle} text-blue-700 font-semibold`}>
@@ -384,7 +385,7 @@ const Main = () => {
 
       <section className="w-full max-w-[1920px] mx-auto">
         <div className="flex items-center w-full relative">
-          <div className="w-full max-w-[952px] h-[931px] flex justify-center">
+          <div className="w-full max-w-[952px] h-[931px] flex justify-center  lg1550: max-w-[1000px]  lg1060:w-full lg1060: max-w-[1300px]">
             <img
               src={EcoFriendly}
               className="w-full h-full object-cover"
