@@ -121,5 +121,103 @@
       "name": "Charle Georg",
       "job": "Consumer"
     }
+  ],
+  "ShopProducts": [
+    {
+      "id": "0",
+      "category": "Vegetable",
+      "title": "Calabrese Broccoli",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo1.png"
+    },
+    {
+      "id": "1",
+      "category": "Fresh",
+      "title": "Fresh Banana Fruites",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo2.png"
+    },
+    {
+      "id": "2",
+      "category": "Millets",
+      "title": "White Nuts",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo3.png"
+    },
+    {
+      "id": "3",
+      "category": "Vegetable",
+      "title": "Vegan Red Tomato",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo4.png"
+    },
+    {
+      "id": "4",
+      "category": "Health",
+      "title": "Mung Bean",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo5.png"
+    },
+    {
+      "id": "5",
+      "category": "Nuts",
+      "title": "Brown Hazelnut",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo6.png"
+    },
+    {
+      "id": "6",
+      "category": "Fresh",
+      "title": "Eggs",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo7.png"
+    },
+    {
+      "id": "7",
+      "category": "Fresh",
+      "title": "Zelco Suji Elaichi Rusk",
+      "price": "$13.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo8.png"
+    },
+    {
+      "id": "8",
+      "category": "Health",
+      "title": "Mung Bean",
+      "price": "$11.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo13.png"
+    },
+    {
+      "id": "9",
+      "category": "Nuts",
+      "title": "White Hazelnut",
+      "price": "$12.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo14.png"
+    },
+    {
+      "id": "10",
+      "category": "Fresh",
+      "title": "Fresh Corn",
+      "price": "$17.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo15.png"
+    },
+    {
+      "id": "11",
+      "category": "Fresh",
+      "title": "Organic Almonds",
+      "price": "$15.00",
+      "oldPrice": "$20.00",
+      "image": "backend/Product/images/Photo16.png"
+    }
   ]
 }

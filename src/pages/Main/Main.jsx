@@ -14,11 +14,11 @@ import organikimg2 from "./images/organikimg2.jpg";
 import Button from "../../Components/Button/Button";
 import { style } from "../../utils/style";
 import axios from "axios";
-import Card from "./Components/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Card from "../../Components/Card";
 
 const Main = () => {
   const [products, setProducts] = useState([]);
@@ -29,7 +29,8 @@ const Main = () => {
       .then(function (response) {
         // success
         // console.log(response.data);
-        setProducts(response.data);``
+        setProducts(response.data);
+        ``;
       })
       .catch(function (err) {
         // error
@@ -130,7 +131,6 @@ const Main = () => {
         </div>
       </section>
 
-
       <section className="w-full max-w-[1920px] mx-auto py-[186px] px-[100px] flex justify-center bg-[#F9F8F8] mt-[190px]  lg1060:mt-[150px] lg1550:block lg1550:px-[0px] ">
         <div className="w-full   ">
           <img src={Background3} alt="" className="w-full " />
@@ -150,7 +150,11 @@ const Main = () => {
           <div className="grid gap-[30px] my-[46px]">
             <div className="flex gap-[19px]">
               <div className="w-[101px] h-[101]  ">
-                <img src={Icon1} alt="" className="w-full min-w-[101px]  md787:min-w-[71px]"/>
+                <img
+                  src={Icon1}
+                  alt=""
+                  className="w-full min-w-[101px]  md787:min-w-[71px]"
+                />
               </div>
               <div>
                 <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold md787:text-2xl ">
@@ -164,7 +168,11 @@ const Main = () => {
             </div>
             <div className="flex gap-[19px]">
               <div className="w-[101px] h-[101]">
-                <img src={Icon2} alt="" className="w-full min-w-[101px] md787:min-w-[71px] "/>
+                <img
+                  src={Icon2}
+                  alt=""
+                  className="w-full min-w-[101px] md787:min-w-[71px] "
+                />
               </div>
               <div>
                 <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold md787:text-2xl ">
@@ -384,8 +392,8 @@ const Main = () => {
       {/* Eco Friendly section  */}
 
       <section className="w-full max-w-[1920px] mx-auto">
-        <div className="flex items-center w-full relative lg1400:align-center lg1400:justify-center">
-          <div className="w-full max-w-[952px] h-[931px] flex justify-center lg1400:w-full lg1400:max-w-full lg1060:w-full ">
+        <div className="flex justify-end items-center w-full relative h-[931px] lg1400:align-center lg1400:justify-center lg1400:px-[15px]">
+          <div className="absolute left-0 top-0 w-full max-w-[952px] h-full lg1400:w-full lg1400:max-w-full lg1060:w-full ">
             <img
               src={EcoFriendly}
               className="w-full h-full object-cover"
@@ -393,8 +401,8 @@ const Main = () => {
             />
           </div>
 
-          <div className="absolute right-60 w-full max-w-[789px] lg1400:right-20 lg1400:flex lg1400:align-center lg1400:justify-center ">
-            <div className=" bg-[#FFFFFF] pl-[86px] pt-[86px] pb-[86px] rounded-[30px]">
+          <div className="flex justify-end w-full max-w-[789px] lg1400:flex lg1400:align-center lg1400:justify-center relative z-2 max-h-[723px] translate-x-[-40%] lg1400:translate-x-[0]">
+            <div className="bg-[#FFFFFF] pl-[89px] pt-[78px] pb-[77px] rounded-[30px]">
               <h5 className={`${style.SectionSubtitle} text-[#7EB693] `}>
                 Eco Friendly
               </h5>

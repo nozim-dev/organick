@@ -32,7 +32,7 @@ const Footer = () => {
       <br />
       <br />
       <br />
-      <div className="  mx-auto w-full max-w-[1920px] ">
+      <div className="mx-auto w-full max-w-[1920px] ">
         <div className="flex justify-center text-end lg:py-10 lg1300:flex flex-wrap">
           <div className="      p-10   ">
             <h2 className=" font-bold  mb-7 text-2.5xl  text-blue-700  dark:text-white">
@@ -277,32 +277,31 @@ const Footer = () => {
           </div>
         </div>
         <p className=" w-full h-px my-3 bg-gray-200 border-0 dark:bg-gray-700"></p>
-        <div class="container w-full max-w-[1920px] align-center text-center ">
-          <div class="mb-9 flex justify-center">
+        <div className="container w-full max-w-[1920px] align-center text-center ">
+          <div className="mb-9 flex justify-center">
             <a
               href="#!"
-              class="text-white hover:text-primary-500 transition duration-300"
+              className="text-white hover:text-primary-500 transition duration-300"
             >
-              <i class="fab fa-facebook-f"></i>
+              <i className="fab fa-facebook-f"></i>
             </a>
             <a
               href="#!"
-              class="ml-4 text-white hover:text-primary-500 transition duration-300"
+              className="ml-4 text-white hover:text-primary-500 transition duration-300"
             >
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </a>
             <a
               href="#!"
-              class="ml-4 text-white hover:text-primary-500 transition duration-300"
+              className="ml-4 text-white hover:text-primary-500 transition duration-300"
             >
-              <i class="fab fa-instagram"></i>
+              <i className="fab fa-instagram"></i>
             </a>
           </div>
 
-            <p class="text-sm text-neutral-400 dark:text-neutral-300">
-              &copy; 2024 Organick. All rights reserved.ing reserved 
-            </p>
-
+          <p className="text-sm text-neutral-400 dark:text-neutral-300">
+            &copy; 2024 Organick. All rights reserved.ing reserved
+          </p>
         </div>
       </div>
     </footer>

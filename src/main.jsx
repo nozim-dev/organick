@@ -7,6 +7,9 @@ import About from "./pages/About/About";
 import Blog from "./pages/Blog/Blog";
 import Main from "./pages/Main/Main.jsx";
 import GeneralLayout from "./Layouts/GeneralLayout.jsx";
+import MainShop from "./pages/Shop/MainShop.jsx";
+import ShopsLayout from "./Layouts/ShopsLayout.jsx";
+import Item from "./pages/Shop/Item.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +28,21 @@ const router = createBrowserRouter([
       {
         path: "blog",
         element: <Blog />,
+      },
+      {
+        path: "shop",
+        element: <ShopsLayout />,
+        errorElement: <NotFound />,
+        children: [
+          {
+            path: "/shop",
+            element: <MainShop />,
+          },
+          {
+            path: ":shopId",
+            element: <Item />,
+          },
+        ],
       },
     ],
   },
