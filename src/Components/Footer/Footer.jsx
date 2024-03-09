@@ -32,8 +32,8 @@ const Footer = () => {
       <br />
       <br />
       <br />
-      <div className=" mx-auto w-full ">
-        <div className="flex justify-center text-end lg:py-10">
+      <div className="  mx-auto w-full max-w-[1920px] ">
+        <div className="flex justify-center text-end lg:py-10 lg1300:flex flex-wrap">
           <div className="      p-10   ">
             <h2 className=" font-bold  mb-7 text-2.5xl  text-blue-700  dark:text-white">
               Contact Us

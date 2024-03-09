@@ -29,7 +29,7 @@ const Main = () => {
       .then(function (response) {
         // success
         // console.log(response.data);
-        setProducts(response.data);
+        setProducts(response.data);``
       })
       .catch(function (err) {
         // error
@@ -132,8 +132,8 @@ const Main = () => {
 
 
       <section className="w-full max-w-[1920px] mx-auto py-[186px] px-[100px] flex justify-center bg-[#F9F8F8] mt-[190px]  lg1060:mt-[150px] lg1550:block lg1550:px-[0px] ">
-        <div className="w-full min-w-[911px] lg912:min-w-[101px] ">
-          <img src={Background3} alt="" className="w-full  min-w-[911px] lg912:min-w-[101px]" />
+        <div className="w-full   ">
+          <img src={Background3} alt="" className="w-full " />
         </div>
         <div className="w-full lg1550:px-[100px] ">
           <h5 className={`${style.SectionSubtitle} text-[#7EB693]  `}>
@@ -325,26 +325,26 @@ const Main = () => {
               </Swiper>
             </div>
           </div>
-          <div className="w-full max-w-[1030px] mx-auto flex px-[20px] items-center justify-between lg1060:block lg1060:justify-center lg1060:max-w-[250px] ">
-            <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8">
+          <div className="w-full max-w-[1030px]  flex flex-wrap px-[20px] items-center justify-around mx-auto  gap-[20px] lg877:flex lg877:gap-[23px] 677:gap-[30px]     ">
+            <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8 lg1060:w-[180px] lg1060:h-[180px] lg950:w-[160px] lg1060:h-[160px]">
               <h1 className={`${style.Title}`}>100%</h1>
               <p className={`${style.SubTitle} text-blue-700 font-semibold`}>
                 Organic
               </p>
             </div>
-            <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8">
+            <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8 lg1060:w-[180px] lg1060:h-[180px] lg950:w-[160px] lg950:h-[160px]">
               <h1 className={`${style.Title}`}>285</h1>
               <p className={`${style.SubTitle} text-blue-700 font-semibold`}>
                 Active Product
               </p>
             </div>
-            <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8">
+            <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8 lg1060:w-[180px] lg1060:h-[180px] lg950:w-[160px] lg950:h-[160px]">
               <h1 className={`${style.Title}`}>350+</h1>
               <p className={`${style.SubTitle} text-blue-700 font-semibold`}>
                 Organic Orchads
               </p>
             </div>
-            <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8">
+            <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8 lg1060:w-[180px] lg1060:h-[180px] lg950:w-[160px] lg950:h-[160px]">
               <h1 className={`${style.Title}`}>25+</h1>
               <p className={`${style.SubTitle} text-blue-700 font-semibold`}>
                 Years of Farming
@@ -384,8 +384,8 @@ const Main = () => {
       {/* Eco Friendly section  */}
 
       <section className="w-full max-w-[1920px] mx-auto">
-        <div className="flex items-center w-full relative">
-          <div className="w-full max-w-[952px] h-[931px] flex justify-center  lg1550: max-w-[1000px]  lg1060:w-full lg1060: max-w-[1300px]">
+        <div className="flex items-center w-full relative lg1400:align-center lg1400:justify-center">
+          <div className="w-full max-w-[952px] h-[931px] flex justify-center lg1400:w-full lg1400:max-w-full lg1060:w-full ">
             <img
               src={EcoFriendly}
               className="w-full h-full object-cover"
@@ -393,7 +393,7 @@ const Main = () => {
             />
           </div>
 
-          <div className="absolute inset right-60 w-full max-w-[789px]">
+          <div className="absolute right-60 w-full max-w-[789px] lg1400:right-20 lg1400:flex lg1400:align-center lg1400:justify-center ">
             <div className=" bg-[#FFFFFF] pl-[86px] pt-[86px] pb-[86px] rounded-[30px]">
               <h5 className={`${style.SectionSubtitle} text-[#7EB693] `}>
                 Eco Friendly
@@ -473,4 +473,3 @@ export default Main;
 
 // front-end run qilish: npm run dev
 // backend run qilish: npx json-server backend/Product/product.json
-``
