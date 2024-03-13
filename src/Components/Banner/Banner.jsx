@@ -5,7 +5,7 @@ const Banner = ({ title, img }) => {
     <div className="h-[450px] max-w-[1920px] mx-auto max-h-[450px] flex justify-center items-center relative">
       <div className="w-full h-full absolute top-0 left-0">
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-full object-"
           src={img}
           alt="Background"
         />

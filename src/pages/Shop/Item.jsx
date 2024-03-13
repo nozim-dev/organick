@@ -6,6 +6,7 @@ const Item = () => {
   return (
     <div>
       <Banner title="Shop Single" img={SingleBanner} />
+      secion 
     </div>
   );
 };

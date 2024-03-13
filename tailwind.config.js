@@ -13,6 +13,7 @@ export default {
       "white-50": "#F9F8F8",
       "green-300": "#7EB693",
       "green-50": "#EFF6F1",
+      "white":"#FFFFFF",
     },
     fontFamily: {
       "Roboto": "Roboto, sans-serif",
@@ -37,6 +38,9 @@ export default {
       "lg1550": {
         "max": "1550px"
       },
+      "lg1435": {
+        "max": "1435px"
+      },
       "lg1400": {
         "max": "1400px"
       },
@@ -49,6 +53,7 @@ export default {
       "lg1060": {
         "max": "1060px"
       },
+      
       "lg950": {
         "max": "950px"
       },
@@ -63,6 +68,9 @@ export default {
       },
       "md677": {
         "max": "677px"
+      },
+      "md550": {
+        "max": "550px"
       },
       "sm450": {
         "max": "450px"
