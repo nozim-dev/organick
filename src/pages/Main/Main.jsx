@@ -10,7 +10,6 @@ import EcoFriendly from "./images/EcoFraindly.jpg";
 import organikimg from "./images/organikimg.jpg";
 import organikimg1 from "./images/organikimg1.jpg";
 import organikimg2 from "./images/organikimg2.jpg";
-
 import Button from "../../Components/Button/Button";
 import { style } from "../../utils/style";
 import axios from "axios";
@@ -72,30 +71,32 @@ const Main = () => {
 
   return (
     <div>
-      <section className="relative">
-        <div className="w-full h-[898px] max-w-[1920px] mx-auto max-h-[898px]">
+      <section className="w-full relative flex justify-start items-center border border-[red] max-w-[1920px] mx-auto h-[100vh] max-h-[898px] px-[80px] sm520:px-[15px]">
+        <div className="absolute top-0 left-0 w-full h-full">
           <img
             className="w-full h-full object-cover"
             src={Background}
             alt="Background"
           />
         </div>
-        <div className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-70%] w-full max-w-[1413px] mx-auto">
-          <h5 className={`${style.SectionSubtitle} text-[#68A47F]`}>
+        <div className="relative z-2 sm520:bg-[fff] sm520:backdrop-blur-[5px] sm520:px-[15px] sm520:py-[25px] sm520:rounded-[12px]">
+          <h5
+            className={`${style.SectionSubtitle} text-[#68A47F] sm472:text-center`}
+          >
             100% Natural Food
           </h5>
-          <h1 className="font-Roboto font-extrabold text-7xl leading-[82.03px] text-blue-700 mb-[27px]">
-            Choose the best <br /> healthier way <br /> of life
+          <h1 className="font-Roboto font-extrabold text-7xl leading-[82.03px] text-blue-700 mb-[27px] md677:text-[62px] md677:leading-[65px] sm472:text-[46px] sm472:leading-[52px] sm472:text-center sm320:text-[38px] sm320:leading-[42px]">
+            Choose the best <br className="md677:hidden" /> healthier way
+            <br className="md677:hidden" /> of life
           </h1>
           <Button
             text="Explore Now"
             isIcon={true}
-            type="bg-yellow-300 text-blue-700 border-yellow-300"
+            type="bg-yellow-300 text-blue-700 border-yellow-300 sm472:mx-auto"
           />
         </div>
       </section>
-
-      <section className="relative w-full flex flex-wrap justify-center gap-[36px]  mt-[196px]">
+      <section className="relative w-full flex justify-center gap-[36px] mt-[196px] lg1400:px-[15px]">
         <div className="flex items-center">
           <img
             className="w-[682px] object-cover rounded-[30px] "
@@ -103,16 +104,15 @@ const Main = () => {
             alt="Background"
           />
           <div className="absolute ml-[54px] mt-[54px]">
-            <h5 className="w-full max-w-[131px] font-Yellowtail text-[36px] text-[#ffff] mb-[8px]">
+            <h5 className="w-full font-Yellowtail text-[36px] text-[#ffff] mb-[8px]">
               Natural !!
             </h5>
-            <h1 className="w-full max-w-[277px] font-Roboto font-extrabold text-4xl text-[white] mb-[27px]">
+            <h1 className="w-full font-Roboto font-extrabold text-4xl text-[white] mb-[27px]">
               Get Garden <br />
               Fresh Fruits
             </h1>
           </div>
         </div>
-
         <div className="flex items-center ">
           <img
             className="w-[682px] object-cover rounded-[30px] "
@@ -121,16 +121,15 @@ const Main = () => {
           />
 
           <div className=" absolute  ml-[54px] mt-[54px]">
-            <h5 className=" w-full max-w-[131px] font-Yellowtail text-[36px] text-[#68A47F]  mb-[8px]">
+            <h5 className=" w-full font-Yellowtail text-[36px] text-[#68A47F]  mb-[8px]">
               Offer !!
             </h5>
-            <h1 className="w-full max-w-[277px] font-Roboto font-extrabold text-4xl text-blue-700 mb-[27px]">
+            <h1 className="w-full font-Roboto font-extrabold text-4xl text-blue-700 mb-[27px]">
               Get 10% off <br /> on Vegetables
             </h1>
           </div>
         </div>
       </section>
-
       <section className="w-full max-w-[1920px] mx-auto py-[186px] px-[100px] flex justify-center bg-[#F9F8F8] mt-[190px]  lg1060:mt-[150px] lg1550:block lg1550:px-[0px] ">
         <div className="w-full   ">
           <img src={Background3} alt="" className="w-full " />
@@ -192,9 +191,7 @@ const Main = () => {
           />
         </div>
       </section>
-
       {/* product */}
-
       <section className="w-full max-w-[1400px] mx-auto mt-[176px]">
         <h5 className={`${style.SectionSubtitle} text-[#7EB693] text-center`}>
           Categories
@@ -211,9 +208,7 @@ const Main = () => {
           type="bg-blue-700 text-[#fff] border-bue-700 hover:text-blue-700 mx-auto mt-[122px]"
         />
       </section>
-
       {/* Testimonial */}
-
       <section className="relative mt-[200px] flex py-[164px]  justify-center items-center max-w-[1920px] mx-auto lg1060:px-[30px]">
         <div className="absolute top-0 left-0 w-full h-full">
           <img
@@ -361,9 +356,7 @@ const Main = () => {
           </div>
         </div>
       </section>
-
       {/* offerProduct  */}
-
       <section className="w-full max-w-[1920px] mx-auto mt-[176px] bg-blue-700 py-[156px] ">
         <div className="w-full max-w-[1440px] mx-auto">
           <div className="w-full flex justify-between items-end">
@@ -388,9 +381,7 @@ const Main = () => {
           </div>
         </div>
       </section>
-
       {/* Eco Friendly section  */}
-
       <section className="w-full max-w-[1920px] mx-auto">
         <div className="flex justify-end items-center w-full relative h-[931px] lg1400:align-center lg1400:justify-center lg1400:px-[15px]">
           <div className="absolute left-0 top-0 w-full max-w-[952px] h-full lg1400:w-full lg1400:max-w-full lg1060:w-full ">
@@ -436,9 +427,7 @@ const Main = () => {
           </div>
         </div>
       </section>
-
       {/* Organic Galery section */}
-
       <section className="w-full max-w-[1920px] mx-auto bg-[#F1F8F4] py-[187px]">
         <div className="w-full mx-auto flex flex-wrap justify-between gap-[30px] ">
           <div className=" relative flex justify-center items-center">

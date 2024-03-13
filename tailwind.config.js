@@ -64,8 +64,20 @@ export default {
       "md677": {
         "max": "677px"
       },
+      "sm520": {
+        "max": "520px"
+      },
+      "sm472": {
+        "max": "472px"
+      },
       "sm450": {
         "max": "450px"
+      },
+      "sm385": {
+        "max": "385px"
+      },
+      "sm320": {
+        "max": "320px"
       },
       "mdMin787": "787px"
     }
