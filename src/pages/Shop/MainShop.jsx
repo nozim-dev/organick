@@ -1,33 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Banner from "./../../Components/Banner/Banner";
 import ShopBanner from "./img/Image.png";
-import axios from "axios";
 import Card from "../../Components/Card";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData, useNavigation } from "react-router-dom";
+let api = "http://localhost:3000/ShopProducts";
 
 const MainShop = () => {
-  const [ShopProducts, setShopProducts] = useState([]);
+  const result = useLoaderData();
+  const navigation = useNavigation();
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:3000/ShopProducts")
-      .then(function (response) {
-        // success
-        // console.log(response.data);
-        setShopProducts(response.data);
-        ``;
-      })
-      .catch(function (err) {
-        // error
-        console.log(err);
-      });
-  }, []);
+  if (navigation.state === "loading") {
+    return <h1>loading....</h1>;
+  }
+
   return (
     <div>
       <Banner title="Shop" img={ShopBanner} />
       <div className="justify-center my-[90px] w-full max-w-[1400px] mx-auto flex flex-wrap gap-[20px]">
-        {ShopProducts.map((product, id) => (
-          <Link to={product.id} key={id}>
+        {result.map((product, id) => (
+          <Link to={`${product.id}`} key={id}>
             <Card product={product} id={id} />
           </Link>
         ))}
@@ -37,3 +28,10 @@ const MainShop = () => {
 };
 
 export default MainShop;
+
+export const dataLoader = async () => {
+  const res = await fetch(api);
+  const jsonResult = await res.json();
+
+  return jsonResult;
+};

@@ -35,7 +35,7 @@ const NotFound = () => {
             </p>
             <Link
               to="/"
-              class="flex w-[275px] h-[79px] rounded-[16px] pl-[49px] mt-[36px] text-white-50 bg-blue-700 font-Roboto font-bold text-2xl px-5 py-6  ml-[20px] transition-all duration-75 hover:bg-[#274C5Bf0]"
+              className="flex w-[275px] h-[79px] rounded-[16px] pl-[49px] mt-[36px] text-white-50 bg-blue-700 font-Roboto font-bold text-2xl px-5 py-6  ml-[20px] transition-all duration-75 hover:bg-[#274C5Bf0]"
             >
               Go to Homepage
               <img

@@ -329,7 +329,7 @@ const Main = () => {
             </div>
           </div>
           <div className="w-full max-w-[1030px]  flex flex-wrap px-[20px] items-center justify-around mx-auto  gap-[20px] lg877:flex lg877:gap-[23px] 677:gap-[30px]     ">
-            <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8 lg1060:w-[180px] lg1060:h-[180px] lg950:w-[160px] lg1060:h-[160px]">
+            <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8 lg1060:w-[180px] lg1060:h-[180px] lg950:w-[160px]">
               <h1 className={`${style.Title}`}>100%</h1>
               <p className={`${style.SubTitle} text-blue-700 font-semibold`}>
                 Organic

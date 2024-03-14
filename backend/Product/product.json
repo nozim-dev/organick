@@ -129,7 +129,8 @@
       "title": "Calabrese Broccoli",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo1.png"
+      "image": "backend/Product/images/Photo1.png",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
       "id": "1",
@@ -137,7 +138,8 @@
       "title": "Fresh Banana Fruites",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo2.png"
+      "image": "backend/Product/images/Photo2.png",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
       "id": "2",
@@ -145,7 +147,8 @@
       "title": "White Nuts",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo3.png"
+      "image": "backend/Product/images/Photo3.png",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
       "id": "3",
@@ -153,7 +156,8 @@
       "title": "Vegan Red Tomato",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo4.png"
+      "image": "backend/Product/images/Photo4.png",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
       "id": "4",
@@ -161,7 +165,8 @@
       "title": "Mung Bean",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo5.png"
+      "image": "backend/Product/images/Photo5.png",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
       "id": "5",
@@ -169,7 +174,8 @@
       "title": "Brown Hazelnut",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo6.png"
+      "image": "backend/Product/images/Photo6.png",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
       "id": "6",
@@ -177,7 +183,8 @@
       "title": "Eggs",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo7.png"
+      "image": "backend/Product/images/Photo7.png",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
       "id": "7",
@@ -185,7 +192,8 @@
       "title": "Zelco Suji Elaichi Rusk",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo8.png"
+      "image": "backend/Product/images/Photo8.png",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
       "id": "8",
@@ -193,7 +201,8 @@
       "title": "Mung Bean",
       "price": "$11.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo13.png"
+      "image": "backend/Product/images/Photo13.png",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
       "id": "9",
@@ -201,7 +210,8 @@
       "title": "White Hazelnut",
       "price": "$12.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo14.png"
+      "image": "backend/Product/images/Photo14.png",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
       "id": "10",
@@ -209,7 +219,8 @@
       "title": "Fresh Corn",
       "price": "$17.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo15.png"
+      "image": "backend/Product/images/Photo15.png",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
       "id": "11",
@@ -217,7 +228,9 @@
       "title": "Organic Almonds",
       "price": "$15.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo16.png"
+      "image": "backend/Product/images/Photo16.png",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     }
-  ]
+  ],
+  "Blogs": []
 }
