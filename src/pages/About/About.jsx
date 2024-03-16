@@ -22,7 +22,7 @@ import twiter from "./images/Twiter.png";
 import spicy from "./images/spicy.png";
 import spicy1 from "./images/spicy1.png";
 import spicy3 from "./images/spicy3.png";
-import spicy4 from "./images/spicy4.png";
+
 
 const About = () => {
   return (
@@ -266,7 +266,7 @@ const About = () => {
                   alt=""
                 />
               </div>
-              <div className="w-full flex items-end justify-end max-w-[449px] h-[130px] bg-[#F9F8F8] hover:bg-[#FFFFFF] hover:shadow-lg shadow-5-strong transition duration-700 ease-in-out rounded-b-[30px] px-[28px] py-[35px] ">
+              <div className="w-full flex items-end justify-end max-w-[449px] h-[130px] bg-[#F9F8F8] hover:bg-[#FFFFFF] hover:shadow-lg shadow-5-strong transition duration-700 ease-in-out rounded-b-[30px] px-[28px] py-[20px] ">
                 <div className="w-full block ">
                   <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold">
                     Giovani Bacardo
@@ -300,7 +300,7 @@ const About = () => {
                   alt=""
                 />
               </div>
-              <div className="w-full flex items-end justify-end max-w-[449px] h-[130px] bg-[#F9F8F8] hover:bg-[#FFFFFF] hover:shadow-lg shadow-5-strong transition duration-700 ease-in-out rounded-b-[30px] px-[28px] py-[35px] ">
+              <div className="w-full flex items-end justify-end max-w-[449px] h-[130px] bg-[#F9F8F8] hover:bg-[#FFFFFF] hover:shadow-lg shadow-5-strong transition duration-700 ease-in-out rounded-b-[30px] px-[28px] py-[20px] ">
                 <div className="w-full block ">
                   <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold">
                     Marianne Loreno
@@ -340,7 +340,7 @@ const About = () => {
                   alt=""
                 />
               </div>
-              <div className="w-full flex items-end justify-end max-w-[449px] h-[130px] bg-[#F9F8F8] hover:bg-[#FFFFFF] hover:shadow-lg shadow-5-strong transition duration-700 ease-in-out rounded-b-[30px] px-[28px] py-[35px] ">
+              <div className="w-full flex items-end justify-end max-w-[449px] h-[130px] bg-[#F9F8F8] hover:bg-[#FFFFFF] hover:shadow-lg shadow-5-strong transition duration-700 ease-in-out rounded-b-[30px] px-[28px] py-[20px]">
                 <div className="w-full block ">
                   <h2 className="text-2.5xl font-Roboto text-blue-700 font-extrabold">
                     Marianne Loreno
@@ -378,49 +378,59 @@ const About = () => {
 
       {/* About Us  */}
 
-      <section className="w-full mx-auto max-w-[1920px] bg-blue-700">
+      <section className="w-full mx-auto max-w-[1920px] py-[188px] flex justify-center bg-blue-700 mt-[202px]">
         <div className="block">
           <div className="w-full">
-            <div className="pt-[188px] text-center">
+            <div className="text-center">
               <h5 className={`${style.SectionSubtitle} text-[#7EB693]`}>
                 Team
               </h5>
               <div className=" text-center ">
-                <h1 className={`${style.Title} text-white`}>Our Organic Experts</h1>
+                <h1 className={`${style.Title} text-white`}>
+                  Our Organic Experts
+                </h1>
               </div>
             </div>
           </div>
-          <div className="w-full flex max-w-[1420px] justify-center gap-[21px] mt-[42px] ">
-            <div className="w-full ">
-              <div className="w-full  max-w-[334px] rounded-[30px] ">
-                  <div className="">
-                    <img src={spicy} className="w-full rounded-[30px] " alt="" />
-                  </div>
-                  <h2 className="text-2.5xl font-Roboto text-white font-extrabold">
-                    Marianne Loreno
-                  </h2>
+          <div className="flex flex-wrap gap-[21px] mt-[42px] text-center justify-center">
+            <div className="">
+              <div className=" max-w-[334px] rounded-[30px] ">
+                <div className="w-full">
+                  <img src={spicy} className="w-full rounded-[30px] " alt="" />
+                </div>
+                <h2 className="text-2.5xl font-Roboto text-white font-extrabold">
+                  Spicy
+                </h2>
               </div>
             </div>
-            <div className="w-full flex">
+            <div className=" flex">
               <div className="w-full max-w-[334px]  rounded-[30px]">
-                  <div className="">
-                    <img src={spicy1} className="w-full rounded-[30px] " alt="" />
-                  </div>
+                <div className="w-full">
+                  <img src={spicy1} className="w-full rounded-[30px] " alt="" />
+                </div>
+                <h2 className="text-2.5xl font-Roboto text-white font-extrabold">
+                  Nuts & Feesd
+                </h2>
               </div>
             </div>
-            <div className="w-full flex">
+            <div className="">
               <div className="w-full max-w-[334px]  rounded-[30px]">
-                  <div className="">
-                    <img src={spicy3} className="w-full rounded-[30px]  " alt="" />
-                  </div>
-                  
+                <div className="w-full">
+                  <img src={spicy3} className="w-full rounded-[30px]" alt="" />
+                </div>
+                <h2 className="text-2.5xl font-Roboto text-white font-extrabold">
+                  Fruits
+                </h2>
               </div>
             </div>
-            <div className="w-full flex">
+            <div className="">
               <div className="w-full max-w-[334px]  rounded-[30px]">
-                  <div className="">
-                    <img src={spicy4} className="w-full rounded-[30px]  " alt="" />
-                  </div>
+                <div className="w-full">
+                  <img src={spicy3} className="w-full rounded-[30px]" alt="" />
+                </div>
+                <h2 className="text-2.5xl font-Roboto text-white font-extrabold">
+                  Vegetables
+                </h2>
               </div>
             </div>
           </div>

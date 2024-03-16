@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full ${style.FlexCenter} py-[66px] lg1060:py-[11px] lg1550:px-[6px]`}
+      className={`w-full ${style.FlexCenter} py-[66px] lg1550:py-[20px] lg1550:px-[15px] lg1060:py-[11px] lg1550:px-[6px]`}
     >
       <div
         className={`w-full max-w-[1595px] ${style.FlexBetween} gap-[15px] md787:gap-[12px] `}
