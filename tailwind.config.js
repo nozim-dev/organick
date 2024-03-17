@@ -79,7 +79,13 @@ export default {
       "sm320": {
         "max": "320px"
       },
+      "mdMin1920": "1920px",
       "mdMin787": "787px"
+    },
+    extend: {
+      boxShadow: {
+        '1xl': '-4px 10px 12px 0 #DBD1B5',
+      }
     }
   },
   plugins: [],

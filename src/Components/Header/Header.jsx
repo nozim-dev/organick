@@ -135,8 +135,45 @@ const Header = () => {
           <NavLink to="/about" className={style.NavLink}>
             About
           </NavLink>
-          <NavLink to="/pages" className={style.NavLink}>
-            Pages
+          <NavLink to="/pages" className={`${style.NavLink} relative group`}>
+            <h1 className="flex gap-[8px] items-center">
+              Pages
+              <span className="w-[8px] h-[6px] flex justify-center items-center ">
+                <svg
+                  width="8"
+                  height="6"
+                  viewBox="0 0 8 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.791016 1.5L3.79102 4.5L6.79102 1.5"
+                    stroke="#274C5B"
+                    className="transition group-hover:stroke-green-300"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+            </h1>
+            <div className="absolute top-[100%] left-[-50%] w-[160px] bg-white-50 rounded-[6px] px-[24px] py-[22px] z-[2] gap-[12px] hidden group-hover:grid">
+              <NavLink className={style.NavLink} to="/service">
+                Service
+              </NavLink>
+              <NavLink className={style.NavLink} to="/team">
+                Our team
+              </NavLink>
+              <NavLink className={style.NavLink} to="/portfolio">
+                Portfolio
+              </NavLink>
+              <NavLink className={style.NavLink} to="/contact">
+                Contact
+              </NavLink>
+              <NavLink className={style.NavLink} to="/licenses">
+                Lisenses
+              </NavLink>
+            </div>
           </NavLink>
           <NavLink to="/shop" className={style.NavLink}>
             Shop
@@ -279,8 +316,48 @@ const Header = () => {
               <NavLink to="/about" className={style.NavLink}>
                 About
               </NavLink>
-              <NavLink to="/pages" className={style.NavLink}>
-                Pages
+              <NavLink
+                to="/pages"
+                className={`${style.NavLink} group grid justify-center`}
+              >
+                <h1 className="w-full flex justify-center gap-[8px] items-center">
+                  Pages
+                  <span className="w-[8px] h-[6px] flex justify-center items-center ">
+                    <svg
+                      width="8"
+                      height="6"
+                      viewBox="0 0 8 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.791016 1.5L3.79102 4.5L6.79102 1.5"
+                        stroke="#274C5B"
+                        className="transition group-hover:stroke-green-300"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </h1>
+                <div className="relative w-full grid border-[#004900] rounded-[6px] z-[2] gap-[12px] max-h-[0] overflow-hidden p-[0] border-[0] transition duration-500 group-hover:max-h-[100%] group-hover:px-[24px] group-hover:py-[22px] group-hover:border group-hover:transition">
+                  <NavLink className={style.NavLink} to="/service">
+                    Service
+                  </NavLink>
+                  <NavLink className={style.NavLink} to="/team">
+                    Our team
+                  </NavLink>
+                  <NavLink className={style.NavLink} to="/portfolio">
+                    Portfolio
+                  </NavLink>
+                  <NavLink className={style.NavLink} to="/contact">
+                    Contact
+                  </NavLink>
+                  <NavLink className={style.NavLink} to="/licenses">
+                    Lisenses
+                  </NavLink>
+                </div>
               </NavLink>
               <NavLink to="/shop" className={style.NavLink}>
                 Shop

@@ -17,7 +17,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import Card from "../../Components/Card";
+import Card from "../../Components/Card/Card";
 
 const Main = () => {
   const [products, setProducts] = useState([]);
@@ -71,7 +71,7 @@ const Main = () => {
 
   return (
     <div>
-      <section className="w-full relative flex justify-start items-center border border-[red] max-w-[1920px] mx-auto h-[100vh] max-h-[898px] px-[80px] sm520:px-[15px]">
+      <section className="w-full relative flex justify-start items-center max-w-[1920px] mx-auto h-[100vh] max-h-[898px] px-[80px] sm520:px-[15px]">
         <div className="absolute top-0 left-0 w-full h-full">
           <img
             className="w-full h-full object-cover"
@@ -470,3 +470,6 @@ export default Main;
 
 // front-end run qilish: npm run dev
 // backend run qilish: npx json-server backend/Product/product.json
+// gitni ulash github bilan
+// git config --global user.name "FIRST_NAME LAST_NAME"
+// git config --global user.email "MY_NAME@example.com"

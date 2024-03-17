@@ -10,6 +10,7 @@ import GeneralLayout from "./Layouts/GeneralLayout.jsx";
 import MainShop, { dataLoader } from "./pages/Shop/MainShop.jsx";
 import ShopsLayout from "./Layouts/ShopsLayout.jsx";
 import Item, { postLoader } from "./pages/Shop/Item.jsx";
+import Service from "./pages/Service/Service.jsx";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
             loader: postLoader,
           },
         ],
+      },
+      {
+        path: "service",
+        element: <Service />,
       },
     ],
   },
