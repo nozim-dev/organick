@@ -20,6 +20,7 @@ const Item = () => {
       <h5>{result.id}</h5>
       <h1>{result.title}</h1>
       <p>{result.text}</p>
+
     </div>
   );
 };

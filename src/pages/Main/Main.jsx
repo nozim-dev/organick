@@ -329,7 +329,7 @@ const Main = () => {
             </div>
           </div>
           <div className="w-full max-w-[1030px]  flex flex-wrap px-[20px] items-center justify-around mx-auto  gap-[20px] lg877:flex lg877:gap-[23px] 677:gap-[30px]     ">
-            <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8 lg1060:w-[180px] lg1060:h-[180px] lg950:w-[160px]">
+            <div className="p-[11px] bg-[#f1f1f1] w-[211px] h-[211px] rounded-full flex flex-col items-center justify-center mt-[102px] outline outline-[6px] outline-green-300 outline-offset-8 lg1060:w-[180px] lg1060:h-[180px] lg950:w-[160px] lg950:h-[160px]">
               <h1 className={`${style.Title}`}>100%</h1>
               <p className={`${style.SubTitle} text-blue-700 font-semibold`}>
                 Organic
@@ -393,14 +393,14 @@ const Main = () => {
           </div>
 
           <div className="flex justify-end w-full max-w-[789px] lg1400:flex lg1400:align-center lg1400:justify-center relative z-2 max-h-[723px] translate-x-[-40%] lg1400:translate-x-[0]">
-            <div className="bg-[#FFFFFF] pl-[89px] pt-[78px] pb-[77px] rounded-[30px]">
+            <div className="bg-[#FFFFFF] pl-[89px] pt-[78px] pb-[77px] rounded-[30px] md677:p-10 md677:h-full">
               <h5 className={`${style.SectionSubtitle} text-[#7EB693] `}>
                 Eco Friendly
               </h5>
-              <h1 className="w-full max-w-[700px] font-Roboto text-5xl leading-[58.59px] font-extrabold text-blue-700 ">
+              <h1 className={`${style.Title}`}>
                 Econis is a Friendly <br /> Organic Store
               </h1>
-              <div className="block mt-[25px]">
+              <div className="block mt-[25px] lg1400:px-[10px]">
                 <h2 className="text-2.5xl font-Roboto text-blue-700 font-medium mt-[20px]">
                   Organic Foods Only
                 </h2>

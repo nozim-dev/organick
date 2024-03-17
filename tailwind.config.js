@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
       "blue-700": "#274C5B",
@@ -13,11 +10,12 @@ export default {
       "white-50": "#F9F8F8",
       "green-300": "#7EB693",
       "green-50": "#EFF6F1",
+      white: "#FFFFFF",
     },
     fontFamily: {
-      "Roboto": "Roboto, sans-serif",
+      Roboto: "Roboto, sans-serif",
       "Open-Sans": "Open Sans, sans-serif",
-      "Yellowtail": "Yellowtail, cursive"
+      Yellowtail: "Yellowtail, cursive",
     },
     fontSize: {
       "7xl": "70px",
@@ -28,57 +26,60 @@ export default {
       "3xl": "30px",
       "2.5xl": "25px",
       "2xl": "20px",
-      "md": "18px",
+      md: "18px",
     },
     screens: {
-      "lg1690": {
-        "max": "1690px"
+      lg1690: {
+        max: "1690px",
       },
-      "lg1550": {
-        "max": "1550px"
+      lg1550: {
+        max: "1550px",
       },
-      "lg1400": {
-        "max": "1400px"
+      lg1435: {
+        max: "1435px",
       },
-      "lg1300": {
-        "max": "1300px"
+      lg1400: {
+        max: "1400px",
       },
-      "lg1200": {
-        "max": "1200px"
+      lg1300: {
+        max: "1300px",
       },
-      "lg1060": {
-        "max": "1060px"
+      lg1200: {
+        max: "1200px",
       },
-      "lg950": {
-        "max": "950px"
+      lg1060: {
+        max: "1060px",
       },
-      "lg912": {
-        "max": "912px"
+
+      lg950: {
+        max: "950px",
       },
-      "lg877": {
-        "max": "877px"
+      lg912: {
+        max: "912px",
       },
-      "md787": {
-        "max": "787px"
+      lg877: {
+        max: "877px",
       },
-      "md677": {
-        "max": "677px"
+      md787: {
+        max: "787px",
       },
-      "sm520": {
-        "max": "520px"
+      md677: {
+        max: "677px",
       },
-      "sm472": {
-        "max": "472px"
+
+      md550: {
+        max: "550px",
       },
-      "sm450": {
-        "max": "450px"
+      sm520: {
+        max: "520px",
       },
-      "sm385": {
-        "max": "385px"
+      sm472: {
+        max: "472px",
       },
-      "sm320": {
-        "max": "320px"
+      sm450: {
+        max: "450px",
       },
+<<<<<<< HEAD
       "mdMin1920": "1920px",
       "mdMin787": "787px"
     },
@@ -87,7 +88,16 @@ export default {
         '1xl': '-4px 10px 12px 0 #DBD1B5',
       }
     }
+=======
+      sm385: {
+        max: "385px",
+      },
+      sm320: {
+        max: "320px",
+      },
+      mdMin787: "787px",
+    },
+>>>>>>> 51a7b7f434f3307a0527089855a0c708c4c03287
   },
   plugins: [],
-}
-
+};
