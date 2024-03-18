@@ -79,16 +79,6 @@ export default {
       sm450: {
         max: "450px",
       },
-<<<<<<< HEAD
-      "mdMin1920": "1920px",
-      "mdMin787": "787px"
-    },
-    extend: {
-      boxShadow: {
-        '1xl': '-4px 10px 12px 0 #DBD1B5',
-      }
-    }
-=======
       sm385: {
         max: "385px",
       },
@@ -97,7 +87,6 @@ export default {
       },
       mdMin787: "787px",
     },
->>>>>>> 51a7b7f434f3307a0527089855a0c708c4c03287
   },
   plugins: [],
 };

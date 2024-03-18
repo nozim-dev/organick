@@ -34,7 +34,7 @@ const Button = ({ text, isIcon, type }) => {
 export default Button;
 
 // Ternary operator
-// 5>6 ? "to'gri" : "Xato"
+// 5>6 ? "to'gri" : "Xato"g
 
 // if(){
 //     "to'gri"
