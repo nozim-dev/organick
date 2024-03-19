@@ -6,12 +6,12 @@
 
 .swiper-pagination-bullet-active {
   background: #7eb693 !important;
-  z-index:1 !important;
+  z-index: 1 !important;
 }
 @media only screen and (max-width: 677px) {
-  .swiper-pagination-bullet{
-    transform: translate(0% , 20px);
-    z-index:1 !important;
+  .swiper-pagination-bullet {
+    transform: translate(0%, 20px);
+    z-index: 1 !important;
   }
 }
 .deactiveMenu {
