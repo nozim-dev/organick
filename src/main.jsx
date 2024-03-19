@@ -11,6 +11,7 @@ import MainShop, { dataLoader } from "./pages/Shop/MainShop.jsx";
 import ShopsLayout from "./Layouts/ShopsLayout.jsx";
 import Item, { postLoader } from "./pages/Shop/Item.jsx";
 import Service from "./pages/Service/Service.jsx";
+import Team from "./pages/Team/Team.jsx";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "service",
         element: <Service />,
+      },
+      {
+        path: "team",
+        element: <Team />,
       },
     ],
   },

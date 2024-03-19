@@ -232,5 +232,43 @@
       "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     }
   ],
-  "Blogs": []
+  "Blogs": [],
+  "Tems": [
+    {
+      "id": 0,
+      "firstName": "Giovani Bacardo",
+      "profession": "Farmer",
+      "img": "backend/Product/images/team1.jpg"
+    },
+    {
+      "id": 1,
+      "firstName": "Marianne Loreno",
+      "profession": "Designer",
+      "img": "backend/Product/images/team2.jpg"
+    },
+    {
+      "id": 2,
+      "firstName": "Riga Pelore",
+      "profession": "Farmer",
+      "img": "backend/Product/images/team3.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "Keira Knightley",
+      "profession": "Farmer",
+      "img": "backend/Product/images/team4.jpg"
+    },
+    {
+      "id": 4,
+      "firstName": "Scott Lawrence",
+      "profession": "Designer",
+      "img": "backend/Product/images/team5.jpg"
+    },
+    {
+      "id": 5,
+      "firstName": "Karen Allen",
+      "profession": "Farmer",
+      "img": "backend/Product/images/team6.jpg"
+    }
+  ]
 }

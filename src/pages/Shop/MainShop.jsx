@@ -3,6 +3,7 @@ import Banner from "./../../Components/Banner/Banner";
 import ShopBanner from "./img/Image.png";
 import { Link, useLoaderData, useNavigation } from "react-router-dom";
 import Card from "./../../Components/Card/Card";
+
 let api = "http://localhost:3000/ShopProducts";
 
 const MainShop = () => {

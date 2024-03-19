@@ -3,15 +3,6 @@ import Banner from "../../Components/Banner/Banner";
 import SingleBanner from "./img/Banner Image.jpg";
 import { useLoaderData } from "react-router-dom";
 
-let api = "http://localhost:3000/ShopProducts";
-
-export const postLoader = async ({ params }) => {
-  const res = await fetch(`${api}/${params.shopId}`);
-  const resJson = await res.json();
-
-  return resJson;
-};
-
 const Item = () => {
   const product = useLoaderData();
   return (
@@ -19,7 +10,7 @@ const Item = () => {
       <Banner title="Shop Single" img={SingleBanner} />
       <section className="w-full max-w-[1400px] flex gap-[88px]">
         <div className="w-full max-w-[600px] h-[600px]">
-          <img className="w-full h-full" src={product.image} alt="rasm" />
+          <img src={product.image} alt="rasm" />
         </div>
         <div>
           <h1>{product.title}</h1>
@@ -102,3 +93,12 @@ const Item = () => {
 };
 
 export default Item;
+
+let api = "http://localhost:3000/ShopProducts";
+
+export const postLoader = async ({ params }) => {
+  const res = await fetch(`${api}/${params.shopId}`);
+  const resJson = await res.json();
+
+  return resJson;
+};
