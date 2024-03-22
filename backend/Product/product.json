@@ -232,7 +232,7 @@
       "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     }
   ],
-  "Blogs": [],
+
   "Tems": [
     {
       "id": 0,
@@ -269,6 +269,47 @@
       "firstName": "Karen Allen",
       "profession": "Farmer",
       "img": "backend/Product/images/team6.jpg"
+    }
+  ],
+
+
+  "Blogs": [
+    {
+      "id": 0,
+      "firstName": "By Rachi Card",
+      "title": "The Benefits of Vitamin D & How to Get It",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+      "img": "backend/Product/images/photoblog.png"
+    },
+    {
+      "id": 1,
+      "firstName": "Marianne Loreno",
+      "profession": "Designer",
+      "img": "backend/Product/images/photoblog1.png"
+    },
+    {
+      "id": 2,
+      "firstName": "Riga Pelore",
+      "profession": "Farmer",
+      "img": "backend/Product/images/photoblog2.png"
+    },
+    {
+      "id": 3,
+      "firstName": "Keira Knightley",
+      "profession": "Farmer",
+      "img": "backend/Product/images/photoblog3.png"
+    },
+    {
+      "id": 4,
+      "firstName": "Scott Lawrence",
+      "profession": "Designer",
+      "img": "backend/Product/images/photoblog4.png"
+    },
+    {
+      "id": 5,
+      "firstName": "Karen Allen",
+      "profession": "Farmer",
+      "img": "backend/Product/images/photoblog5.png"
     }
   ]
 }

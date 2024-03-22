@@ -164,7 +164,7 @@ const Header = () => {
               <NavLink className={style.NavLink} to="/team">
                 Our team
               </NavLink>
-              <NavLink className={style.NavLink} to="/portfolio">
+              <NavLink className={style.NavLink} to="/portfoliosingle">
                 Portfolio
               </NavLink>
               <NavLink className={style.NavLink} to="/contact">
@@ -348,7 +348,7 @@ const Header = () => {
                   <NavLink className={style.NavLink} to="/team">
                     Our team
                   </NavLink>
-                  <NavLink className={style.NavLink} to="/portfolio">
+                  <NavLink className={style.NavLink} to="/portfoliosingle">
                     Portfolio
                   </NavLink>
                   <NavLink className={style.NavLink} to="/contact">

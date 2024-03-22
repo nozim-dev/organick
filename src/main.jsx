@@ -12,6 +12,10 @@ import ShopsLayout from "./Layouts/ShopsLayout.jsx";
 import Item, { postLoader } from "./pages/Shop/Item.jsx";
 import Service from "./pages/Service/Service.jsx";
 import Team from "./pages/Team/Team.jsx";
+import Blogsingle from "./pages/Blog/Blogsingle.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
+import Porfoliosingle from "./pages/Portfolio/Porfoliosingle.jsx";
+import Licenses from "./pages/licenses/Licenses.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +34,19 @@ const router = createBrowserRouter([
       {
         path: "blog",
         element: <Blog />,
+        errorElement: <NotFound />,
+        children: [
+          {
+            path: "/blog",
+            element: <Blog />,
+            loader: dataLoader,
+          },
+          {
+            path: ":blogId",
+            element: <Blogsingle />,
+            loader: postLoader,
+          },
+        ],
       },
       {
         path: "shop",
@@ -53,8 +70,20 @@ const router = createBrowserRouter([
         element: <Service />,
       },
       {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
         path: "team",
         element: <Team />,
+      },
+      {
+        path: "portfoliosingle",
+        element: <Porfoliosingle />,
+      },
+      {
+        path: "licenses",
+        element: <Licenses />,
       },
     ],
   },
