@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogCard = ({ Blogs, id }) => {
   return (
-    <div  key={id} className="flex justify-center align-center items-end mx-auto ">
+    <div key={id} className="flex justify-center align-center items-end mx-auto ">
       <div className="w-full max-w-[677px] ">
         <div className="relative text-center">
           <div className="absolute w-full max-w-[82px] h-[82px] bg-[#FFFFFF] rounded-full mt-[43px] ml-[32px]">

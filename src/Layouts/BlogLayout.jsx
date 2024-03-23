@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-const blogLayout = () => {
+const BlogLayout = () => {
   return (
     <>
       <Outlet />
@@ -9,4 +9,4 @@ const blogLayout = () => {
   );
 };
 
-export default blogLayout;
+export default BlogLayout;
