@@ -10,6 +10,7 @@ const Blogsingle = () => {
     <div>
       <Banner title="Blog single" img={SingleBanner} />
       <section className="w-full max-w-[1400px] flex gap-[88px]">
+        <p>Blogsingle</p>
       </section>
     </div>
   );
