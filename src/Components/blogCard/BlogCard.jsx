@@ -1,8 +1,11 @@
 import React from "react";
 
-const BlogCard = ({ Blogs, id }) => {
+const BlogCard = ({ blogs, id }) => {
   return (
-    <div key={id} className="flex justify-center align-center items-end mx-auto ">
+    <div
+      key={id}
+      className="flex justify-center align-center items-end mx-auto "
+    >
       <div className="w-full max-w-[677px] ">
         <div className="relative text-center">
           <div className="absolute w-full max-w-[82px] h-[82px] bg-[#FFFFFF] rounded-full mt-[43px] ml-[32px]">
@@ -12,7 +15,7 @@ const BlogCard = ({ Blogs, id }) => {
           </div>
         </div>
         <div className="realtive w-full max-w-[677px] h-[524px]">
-          <img src={img} className="w-full rounded-[30px]" alt="" />
+          <img src={blogs.img} className="w-full rounded-[30px]" alt="" />
         </div>
       </div>
       <div className="absolute">
@@ -22,14 +25,12 @@ const BlogCard = ({ Blogs, id }) => {
               <div className="">
                 <img src={Vector} alt="" />
               </div>
-              <p className={`${style.Subtitle}`}> {Blogs.firstName}</p>
+              <p className={`${style.Subtitle}`}> {blogs.firstName}</p>
             </div>
             <h2 className=" text-2.5xl font-Roboto text-blue-700 font-extrabold">
-            {Blogs.title}
+              {blogs.title}
             </h2>
-            <p className={`${style.SubTitle} `}>
-            {Blogs.text}
-            </p>
+            <p className={`${style.SubTitle} `}>{blogs.text}</p>
             <Button
               text="Read More"
               isIcon={true}

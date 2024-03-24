@@ -4,15 +4,15 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import NotFound from "./pages/NotFound/NotFound";
 import About from "./pages/About/About";
-import Blog , { dataLoader1 } from "./pages/Blog/Blog";
+import Blog from "./pages/Blog/Blog";
 import Main from "./pages/Main/Main.jsx";
 import GeneralLayout from "./Layouts/GeneralLayout.jsx";
-import MainShop, { dataLoader } from "./pages/Shop/MainShop.jsx";
+import MainShop from "./pages/Shop/MainShop.jsx";
 import ShopsLayout from "./Layouts/ShopsLayout.jsx";
-import Item, { postLoader } from "./pages/Shop/Item.jsx";
+import Item from "./pages/Shop/Item.jsx";
 import Service from "./pages/Service/Service.jsx";
 import Team from "./pages/Team/Team.jsx";
-import Blogsingle , { postLoader1 } from "./pages/Blog/Blogsingle.jsx";
+import Blogsingle from "./pages/Blog/Blogsingle.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import Porfoliosingle from "./pages/Portfolio/Porfoliosingle.jsx";
 import Licenses from "./pages/licenses/Licenses.jsx";
@@ -40,12 +40,10 @@ const router = createBrowserRouter([
           {
             path: "/blog",
             element: <Blog />,
-            loader: dataLoader1,
           },
           {
             path: ":blogId",
             element: <Blogsingle />,
-            loader: postLoader1,
           },
         ],
       },
@@ -57,12 +55,10 @@ const router = createBrowserRouter([
           {
             path: "/shop",
             element: <MainShop />,
-            loader: dataLoader,
           },
           {
             path: ":shopId",
             element: <Item />,
-            loader: postLoader,
           },
         ],
       },
