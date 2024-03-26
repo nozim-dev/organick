@@ -3,6 +3,7 @@ import SingleBanner from "./images/banner.png";
 import Banner from "../../Components/Banner/Banner";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import Loader from "../../Components/Loader/Loader";
 
 const Blogsingle = () => {
   const [blogs, setBlogs] = useState(null);
@@ -15,7 +16,7 @@ const Blogsingle = () => {
   }, [blogId]);
 
   if (!blogs) {
-    return <div>Loading...</div>;
+    return <Loader />;
   }
 
   return (

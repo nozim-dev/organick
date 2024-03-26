@@ -3,6 +3,7 @@ import Banner from "../../Components/Banner/Banner";
 import SingleBanner from "./img/Banner Image.jpg";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import Loader from "../../Components/Loader/Loader";
 
 const Item = () => {
   const [product, setProduct] = useState(null);
@@ -20,7 +21,7 @@ const Item = () => {
   }, [shopId]);
 
   if (!product) {
-    return <div>Loading...</div>;
+    return <Loader />;
   }
 
   function RandomNumberFunction(card, length) {
