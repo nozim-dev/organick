@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Button = ({ text, isIcon, type }) => {
+const Button = ({ text, isIcon, type, isLink }) => {
   return (
     <Link
       className={`cursor-pointer w-full max-w-[235px] px-[39px] py-[28px] flex items-center justify-center rounded-[16px] gap-[10px] font-Roboto font-bold text-2xl border-[2px] transition-all duration-75 hover:bg-[transparent] md787:px-[29px] md787:py-[18px] sm450:px-[12px] sm450:py-[10px] sm450:max-w-[184px] ${type}`}
+      to={`${isLink == undefined ? "" : isLink}`}
     >
       {text}
       {isIcon ? (

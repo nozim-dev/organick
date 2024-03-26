@@ -1,4 +1,7 @@
 import React from "react";
+import Vektor from "./images/Vector.png";
+import { style } from "../../utils/style";
+import Button from "../Button/Button";
 
 const BlogCard = ({ blogs, id }) => {
   return (
@@ -23,18 +26,19 @@ const BlogCard = ({ blogs, id }) => {
           <div className="w-full block ">
             <div className="w-full flex gap-[6px]">
               <div className="">
-                <img src={Vector} alt="" />
+                <img src={Vektor} alt="" />
               </div>
-              <p className={`${style.Subtitle}`}> {blogs.firstName}</p>
+              <p className={`${style.SubTitle}`}> {blogs.firstName}</p>
             </div>
             <h2 className=" text-2.5xl font-Roboto text-blue-700 font-extrabold">
               {blogs.title}
             </h2>
             <p className={`${style.SubTitle} `}>{blogs.text}</p>
             <Button
+              isLink={blogs.id}
               text="Read More"
               isIcon={true}
-              type="w-full max-w-[245px] text-blue-700 border-hidden py-[15px] sm472:mx-auto "
+              type="w-full max-w-[245px] text-blue-700 border-hidden py-[15px] px-0 md787:px-0 sm450:px-0 !justify-start"
             />
           </div>
         </div>
