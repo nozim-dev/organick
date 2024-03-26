@@ -20,7 +20,7 @@ const MainShop = () => {
       <Banner title="Shop" img={ShopBanner} />
       <div className="justify-center my-[90px] w-full max-w-[1400px] mx-auto flex flex-wrap gap-[20px]">
         {CardData.map((product, id) => (
-          <Link to={product.id} key={id}>
+          <Link to={`${id}`} key={id}>
             <Card product={product} id={id} />
           </Link>
         ))}

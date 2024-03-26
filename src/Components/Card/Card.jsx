@@ -11,7 +11,7 @@ const Card = ({ product, id }) => {
       </span>
       <div className="w-full h-[324px] mt-[13px] bg-white-50">
         <img
-          src={product.urlLink}
+          src={product.imageUrl}
           className="w-full h-full object-contain rounded-[12px] mix-blend-multiply"
           alt=""
         />

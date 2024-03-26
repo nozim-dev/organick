@@ -29,7 +29,6 @@ const Main = () => {
         // success
         // console.log(response.data);
         setProducts(response.data);
-        ``;
       })
       .catch(function (err) {
         // error
@@ -469,7 +468,7 @@ const Main = () => {
 export default Main;
 
 // front-end run qilish: npm run dev
-// backend run qilish: npx json-server backend/Product/product.json
+// backend run qilish: npm run server
 // gitni ulash github bilan
 // git config --global user.name "FIRST_NAME LAST_NAME"
 // git config --global user.email "MY_NAME@example.com"

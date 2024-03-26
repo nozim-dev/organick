@@ -135,7 +135,7 @@ const Header = () => {
           <NavLink to="/about" className={style.NavLink}>
             About
           </NavLink>
-          <NavLink to="/pages" className={`${style.NavLink} relative group`}>
+          <div className={`${style.NavLink} relative group`}>
             <h1 className="flex gap-[8px] items-center">
               Pages
               <span className="w-[8px] h-[6px] flex justify-center items-center ">
@@ -174,7 +174,7 @@ const Header = () => {
                 Lisenses
               </NavLink>
             </div>
-          </NavLink>
+          </div>
           <NavLink to="/shop" className={style.NavLink}>
             Shop
           </NavLink>
@@ -316,8 +316,7 @@ const Header = () => {
               <NavLink to="/about" className={style.NavLink}>
                 About
               </NavLink>
-              <NavLink
-                to="/pages"
+              <div
                 className={`${style.NavLink} group grid justify-center`}
               >
                 <h1 className="w-full flex justify-center gap-[8px] items-center">
@@ -358,7 +357,7 @@ const Header = () => {
                     Lisenses
                   </NavLink>
                 </div>
-              </NavLink>
+              </div>
               <NavLink to="/shop" className={style.NavLink}>
                 Shop
               </NavLink>

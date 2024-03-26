@@ -6,7 +6,7 @@
       "title": "Calabrese Broccoli",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo1.png"
+      "imageUrl": "/backend/Product/images/Photo1.png"
     },
     {
       "id": "1",
@@ -14,7 +14,7 @@
       "title": "Fresh Banana Fruites",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo2.png"
+      "imageUrl": "/backend/Product/images/Photo2.png"
     },
     {
       "id": "2",
@@ -22,7 +22,7 @@
       "title": "White Nuts",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo3.png"
+      "imageUrl": "/backend/Product/images/Photo3.png"
     },
     {
       "id": "3",
@@ -30,7 +30,7 @@
       "title": "Vegan Red Tomato",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo4.png"
+      "imageUrl": "/backend/Product/images/Photo4.png"
     },
     {
       "id": "4",
@@ -38,7 +38,7 @@
       "title": "Mung Bean",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo5.png"
+      "imageUrl": "/backend/Product/images/Photo5.png"
     },
     {
       "id": "5",
@@ -46,7 +46,7 @@
       "title": "Brown Hazelnut",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo6.png"
+      "imageUrl": "/backend/Product/images/Photo6.png"
     },
     {
       "id": "6",
@@ -54,7 +54,7 @@
       "title": "Eggs",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo7.png"
+      "imageUrl": "/backend/Product/images/Photo7.png"
     },
     {
       "id": "7",
@@ -62,7 +62,7 @@
       "title": "Zelco Suji Elaichi Rusk",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo8.png"
+      "imageUrl": "/backend/Product/images/Photo8.png"
     }
   ],
   "offerProduct": [
@@ -72,7 +72,7 @@
       "title": "Mung Bean",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo9.png"
+      "imageUrl": "/backend/Product/images/Photo9.png"
     },
     {
       "id": "1",
@@ -80,7 +80,7 @@
       "title": "Brown Hazelnut",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo10.png"
+      "imageUrl": "/backend/Product/images/Photo10.png"
     },
     {
       "id": "2",
@@ -88,7 +88,7 @@
       "title": "Onion",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo11.png"
+      "imageUrl": "/backend/Product/images/Photo11.png"
     },
     {
       "id": "3",
@@ -96,27 +96,27 @@
       "title": "Calabrese Broccoli",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "image": "backend/Product/images/Photo12.png"
+      "imageUrl": "/backend/Product/images/Photo12.png"
     }
   ],
   "CarouselData": [
     {
       "id": 0,
-      "img": "backend/Product/images/avatarWm.jpg",
+      "img": "/backend/Product/images/avatarWm.jpg",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
       "name": "Sara Taylor",
       "job": "Consumer"
     },
     {
       "id": 1,
-      "img": "backend/Product/images/carausel1.png",
+      "img": "/backend/Product/images/carausel1.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
       "name": "Matt Round",
       "job": "Consumer"
     },
     {
       "id": 2,
-      "img": "backend/Product/images/carausel2.png",
+      "img": "/backend/Product/images/carausel2.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
       "name": "Charle Georg",
       "job": "Consumer"
@@ -129,7 +129,7 @@
       "title": "Calabrese Broccoli",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "urlLink": "backend/Product/images/Photo1.png",
+      "imageUrl": "/backend/Product/images/Photo1.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
@@ -138,7 +138,7 @@
       "title": "Fresh Banana Fruites",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "urlLink": "backend/Product/images/Photo2.png",
+      "imageUrl": "/backend/Product/images/Photo2.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
@@ -147,7 +147,7 @@
       "title": "White Nuts",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "urlLink": "backend/Product/images/Photo3.png",
+      "imageUrl": "/backend/Product/images/Photo3.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
@@ -156,7 +156,7 @@
       "title": "Vegan Red Tomato",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "urlLink": "backend/Product/images/Photo4.png",
+      "imageUrl": "/backend/Product/images/Photo4.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
@@ -165,7 +165,7 @@
       "title": "Mung Bean",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "urlLink": "backend/Product/images/Photo5.png",
+      "imageUrl": "/backend/Product/images/Photo5.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
@@ -174,7 +174,7 @@
       "title": "Brown Hazelnut",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "urlLink": "backend/Product/images/Photo6.png",
+      "imageUrl": "/backend/Product/images/Photo6.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
@@ -183,7 +183,7 @@
       "title": "Eggs",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "urlLink": "backend/Product/images/Photo7.png",
+      "imageUrl": "/backend/Product/images/Photo7.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
@@ -192,7 +192,7 @@
       "title": "Zelco Suji Elaichi Rusk",
       "price": "$13.00",
       "oldPrice": "$20.00",
-      "urlLink": "backend/Product/images/Photo8.png",
+      "imageUrl": "/backend/Product/images/Photo8.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
@@ -201,7 +201,7 @@
       "title": "Mung Bean",
       "price": "$11.00",
       "oldPrice": "$20.00",
-      "urlLink": "backend/Product/images/Photo13.png",
+      "imageUrl": "/backend/Product/images/Photo13.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
@@ -210,7 +210,7 @@
       "title": "White Hazelnut",
       "price": "$12.00",
       "oldPrice": "$20.00",
-      "urlLink": "backend/Product/images/Photo14.png",
+      "imageUrl": "/backend/Product/images/Photo14.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
@@ -219,7 +219,7 @@
       "title": "Fresh Corn",
       "price": "$17.00",
       "oldPrice": "$20.00",
-      "urlLink": "backend/Product/images/Photo15.png",
+      "imageUrl": "/backend/Product/images/Photo15.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     },
     {
@@ -228,7 +228,7 @@
       "title": "Organic Almonds",
       "price": "$15.00",
       "oldPrice": "$20.00",
-      "urlLink": "backend/Product/images/Photo16.png",
+      "imageUrl": "/backend/Product/images/Photo16.png",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
     }
   ],
@@ -237,37 +237,37 @@
       "id": 0,
       "firstName": "Giovani Bacardo",
       "profession": "Farmer",
-      "img": "backend/Product/images/team1.jpg"
+      "img": "/backend/Product/images/team1.jpg"
     },
     {
       "id": 1,
       "firstName": "Marianne Loreno",
       "profession": "Designer",
-      "img": "backend/Product/images/team2.jpg"
+      "img": "/backend/Product/images/team2.jpg"
     },
     {
       "id": 2,
       "firstName": "Riga Pelore",
       "profession": "Farmer",
-      "img": "backend/Product/images/team3.jpg"
+      "img": "/backend/Product/images/team3.jpg"
     },
     {
       "id": 3,
       "firstName": "Keira Knightley",
       "profession": "Farmer",
-      "img": "backend/Product/images/team4.jpg"
+      "img": "/backend/Product/images/team4.jpg"
     },
     {
       "id": 4,
       "firstName": "Scott Lawrence",
       "profession": "Designer",
-      "img": "backend/Product/images/team5.jpg"
+      "img": "/backend/Product/images/team5.jpg"
     },
     {
       "id": 5,
       "firstName": "Karen Allen",
       "profession": "Farmer",
-      "img": "backend/Product/images/team6.jpg"
+      "img": "/backend/Product/images/team6.jpg"
     }
   ],
 
@@ -277,37 +277,37 @@
       "firstName": "By Rachi Card",
       "title": "The Benefits of Vitamin D & How to Get It",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-      "img": "backend/Product/images/photoblog.png"
+      "img": "/backend/Product/images/photoblog.png"
     },
     {
       "id": 1,
       "firstName": "Marianne Loreno",
       "profession": "Designer",
-      "img": "backend/Product/images/photoblog1.png"
+      "img": "/backend/Product/images/photoblog1.png"
     },
     {
       "id": 2,
       "firstName": "Riga Pelore",
       "profession": "Farmer",
-      "img": "backend/Product/images/photoblog2.png"
+      "img": "/backend/Product/images/photoblog2.png"
     },
     {
       "id": 3,
       "firstName": "Keira Knightley",
       "profession": "Farmer",
-      "img": "backend/Product/images/photoblog3.png"
+      "img": "/backend/Product/images/photoblog3.png"
     },
     {
       "id": 4,
       "firstName": "Scott Lawrence",
       "profession": "Designer",
-      "img": "backend/Product/images/photoblog4.png"
+      "img": "/backend/Product/images/photoblog4.png"
     },
     {
       "id": 5,
       "firstName": "Karen Allen",
       "profession": "Farmer",
-      "img": "backend/Product/images/photoblog5.png"
+      "img": "/backend/Product/images/photoblog5.png"
     }
   ]
 }
