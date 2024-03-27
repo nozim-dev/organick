@@ -164,9 +164,7 @@ const Header = () => {
               <NavLink className={style.NavLink} to="/team">
                 Our team
               </NavLink>
-              <NavLink className={style.NavLink} to="/portfoliosingle">
-                Portfolio
-              </NavLink>
+
               <NavLink className={style.NavLink} to="/contact">
                 Contact
               </NavLink>
@@ -178,9 +176,9 @@ const Header = () => {
           <NavLink to="/shop" className={style.NavLink}>
             Shop
           </NavLink>
-          <NavLink to="/projects" className={style.NavLink}>
-            Projects
-          </NavLink>
+          <NavLink className={style.NavLink} to="/portfoliosingle">
+                Projects
+              </NavLink>
           <NavLink to="/blog" className={style.NavLink}>
             News
           </NavLink>
@@ -347,9 +345,7 @@ const Header = () => {
                   <NavLink className={style.NavLink} to="/team">
                     Our team
                   </NavLink>
-                  <NavLink className={style.NavLink} to="/portfoliosingle">
-                    Portfolio
-                  </NavLink>
+
                   <NavLink className={style.NavLink} to="/contact">
                     Contact
                   </NavLink>
@@ -361,7 +357,7 @@ const Header = () => {
               <NavLink to="/shop" className={style.NavLink}>
                 Shop
               </NavLink>
-              <NavLink to="/projects" className={style.NavLink}>
+              <NavLink className={style.NavLink} to="/portfoliosingle">
                 Projects
               </NavLink>
               <NavLink to="/blog" className={style.NavLink}>

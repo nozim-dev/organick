@@ -281,7 +281,7 @@
     {
       "id": "1",
       "firstName": "Marianne Loreno",
-      "title": "The Benefits of Vitamin D & How to Get It",
+      "title": "Our Favorite Summertime Tomato",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
       "profession": "Designer",
       "img": "/backend/Product/images/photoblog1.png"
@@ -289,7 +289,7 @@
     {
       "id": "2",
       "firstName": "Riga Pelore",
-      "title": "The Benefits of Vitamin D & How to Get It",
+      "title": "Benefits of Vitamin C & How to Get It",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
       "profession": "Farmer",
       "img": "/backend/Product/images/photoblog2.png"
@@ -297,7 +297,7 @@
     {
       "id": "3",
       "firstName": "Keira Knightley",
-      "title": "The Benefits of Vitamin D & How to Get It",
+      "title": "Research More Organic Foods",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
       "profession": "Farmer",
       "img": "/backend/Product/images/photoblog3.png"
@@ -305,7 +305,7 @@
     {
       "id": "4",
       "firstName": "Scott Lawrence",
-      "title": "The Benefits of Vitamin D & How to Get It",
+      "title": "Everyday Fresh Fruites",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
       "profession": "Designer",
       "img": "/backend/Product/images/photoblog4.png"
@@ -313,7 +313,7 @@
     {
       "id": "5",
       "firstName": "Karen Allen",
-      "title": "The Benefits of Vitamin D & How to Get It",
+      "title": "Don’t Use Plastic Product! it’s Kill Nature",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
       "profession": "Farmer",
       "img": "/backend/Product/images/photoblog5.png"
