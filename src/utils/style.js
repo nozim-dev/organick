@@ -9,7 +9,4 @@ export const style = {
     SectionSubtitle: "font-Yellowtail text-[36px] mb-[8px] md787:text-[28px]",
     Title: "font-Roboto text-5xl leading-[58.59px] font-extrabold text-blue-700 lg1060:text-4xl md787:text-4xl lg1435:text-4xl lg1435:leading-[46.59px]",
     SubTitle: "font-Open-Sans text-md leading-[29.77px] font-normal text-blue-80 lg1060:text-[16px] lg1435:text-[16px] lg1435:leading-[22.77px] md787:text-[16px]",
-    SectionSubtitle: "font-Yellowtail text-[36px] mb-[8px] md787:text-[28px] sm472:text-[22px]",
-    Title: "font-Roboto text-5xl leading-[58.59px] font-extrabold text-blue-700 lg1060:text-4xl md787:text-4xl",
-    SubTitle: "font-Open-Sans text-md leading-[29.77px] font-normal text-blue-80 lg1060:text-[16px]  md787:text-[16px]",
 }

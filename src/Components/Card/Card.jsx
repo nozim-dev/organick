@@ -1,11 +1,8 @@
 import React from "react";
 
-const Card = ({ product, id }) => {
+const Card = ({ product }) => {
   return (
-    <div
-      key={id}
-      className="w-full max-w-[335px] bg-white-50 rounded-[30px] pl-[30px] pr-[26px] pt-[29px] pb-[17px]"
-    >
+    <div className="w-full max-w-[335px] bg-white-50 rounded-[30px] pl-[30px] pr-[26px] pt-[29px] pb-[17px]">
       <span className="w-full max-w-[96px] text-[15px] text-center rounded-[8px] bg-blue-700 pt-[5px] pb-[6px] px-[12px] text-[#FFFFFF] ">
         {product.category}
       </span>
