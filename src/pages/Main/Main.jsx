@@ -24,7 +24,7 @@ const Main = () => {
 
   useEffect(() => {
     axios
-      .get("https://organick-website.netlify.app/organick/netlify/server/products")
+      .get("http://localhost:3000/products")
       .then(function (response) {
         // success
         // console.log(response.data);
@@ -40,7 +40,7 @@ const Main = () => {
 
   useEffect(() => {
     axios
-      .get("https://organick-website.netlify.app/organick/netlify/server/offerProduct")
+      .get("http://localhost:3000/offerProduct")
       .then(function (response) {
         // success
         // console.log(response.data);
@@ -56,7 +56,7 @@ const Main = () => {
 
   useEffect(() => {
     axios
-      .get("https://organick-website.netlify.app/organick/netlify/server/CarouselData")
+      .get("http://localhost:3000/CarouselData")
       .then(function (response) {
         // success
         // console.log(response.data);

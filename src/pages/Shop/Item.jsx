@@ -6,54 +6,54 @@ import axios from "axios";
 import Loader from "../../Components/Loader/Loader";
 
 const Item = () => {
-  const [product, setProduct] = useState(null);
-  const [CardData, setCardData] = useState([]);
-  const [relatedCardData, setRelatedCardData] = useState([]);
   const { shopId } = useParams();
+  const [cardDetails, setCardDetails] = useState(null);
+  const [relativeCards, setRelativeCards] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/ShopProducts/${shopId}`).then((card) => {
-      setProduct(card.data);
-    });
-    axios.get("http://localhost:3000/ShopProducts").then((card) => {
-      setCardData(card.data);
-    });
+    const fetchCardDetails = async () => {
+      const response = await axios.get(
+        `http://localhost:3000/ShopProducts/${shopId}`
+      );
+      setCardDetails(response.data);
+    };
+
+    const fetchRelativeCards = async () => {
+      const response = await axios.get(
+        `http://localhost:3000/ShopProducts/${shopId}`
+      );
+      // Assuming category is available in card details
+      const relativeCards = response.data.filter(
+        (relativeCard) => relativeCard.id !== shopId
+      ); // Exclude current card
+      let relatives = relativeCards.slice(0, 4); // Limit to 4 relative cards
+      setRelativeCards(relatives);
+    };
+
+    fetchCardDetails();
+    fetchRelativeCards(); // Fetch relatives after card details are loaded
   }, [shopId]);
 
-  if (!product) {
+  if (!cardDetails) {
     return <Loader />;
   }
-
-  function RandomNumberFunction(card, length) {
-    for (let i = 0; i < length; i++) {
-      let randomId = Math.floor(Math.random() * 10);
-      console.log(randomId);
-      let result = card.filter((item) => item.id === randomId);
-      console.log(result);
-      relatedCardData.push(result);
-    }
-  }
-
-  RandomNumberFunction(CardData, 4);
-
-  console.log(relatedCardData);
 
   return (
     <div>
       <Banner title="Shop Single" img={SingleBanner} />
       <section
         className="w-full max-w-[1400px] flex gap-[88px]"
-        key={product.id}
+        key={cardDetails.id}
       >
         <div className="w-full max-w-[600px] h-[600px]">
           <img
             className="w-full h-full"
-            src={product.imageUrl}
-            alt={product.title}
+            src={cardDetails.imageUrl}
+            alt={cardDetails.title}
           />
         </div>
         <div>
-          <h1>{product.title}</h1>
+          <h1>{cardDetails.title}</h1>
           <div className="w-full max-w-[84px] flex">
             <span className="flex justify-center items-center">
               <svg
@@ -131,12 +131,12 @@ const Item = () => {
       <br />
       <br />
       <h1>Related Products</h1>
-      {relatedCardData.map((item) => (
-        <div key={item.id}>
-          <h1>{item.title}</h1>
-          <h3>{item.id}</h3>
+      {relativeCards.length > 0 && (
+        <div key={relativeCards.id}>
+          <h1>{relativeCards.title}</h1>
+          <h3>{relativeCards.id}</h3>
         </div>
-      ))}
+      )}
     </div>
   );
 };
