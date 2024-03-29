@@ -318,5 +318,45 @@
       "profession": "Farmer",
       "img": "/backend/Product/images/photoblog5.png"
     }
+  ],
+
+
+  "Projects": [
+    {
+      "id": "0",
+      "title": "Green & Tasty Lemon",
+      "category": "Fruits",
+      "img": "/backend/Product/images/limon.png"
+    },
+    {
+      "id": "1",
+      "title": "Organic Carrot",
+      "category": "Farmer",
+      "img": "/backend/Product/images/carrot.png"
+    },
+    {
+      "id": "2",
+      "title": "Organic Betel Leaf",
+      "category": "Leaf",
+      "img": "/backend/Product/images/leaf.png"
+    },
+    {
+      "id": "3",
+      "title": "Natural Tommato",
+      "category": "Fruits",
+      "img": "/backend/Product/images/tomato.png"
+    },
+    {
+      "id": "4",
+      "title": "Black Raspberry",
+      "category": "Farmer",
+      "img": "/backend/Product/images/fruit.png"
+    },
+    {
+      "id": "5",
+      "title": "Honey Orange",
+      "category": "Farmer",
+      "img": "/backend/Product/images/limon2.png"
+    }
   ]
 }

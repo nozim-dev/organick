@@ -17,6 +17,9 @@ import Contact from "./pages/Contact/Contact.jsx";
 import Porfoliosingle from "./pages/Portfolio/Porfoliosingle.jsx";
 import Licenses from "./pages/licenses/Licenses.jsx";
 import BlogLayout from "./Layouts/BlogLayout.jsx";
+import Portfolio from "./pages/Portfolio/Portfolio.jsx";
+import PortfolioLayout from "./Layouts/PortfolioLayout.jsx";
+import Cart from "./pages/Cart/Cart.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +34,21 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "portfolio",
+        element: <PortfolioLayout />,
+        errorElement: <NotFound />,
+        children: [
+          {
+            path: "/portfolio",
+            element: <Portfolio />,
+          },
+          {
+            path: ":portfolioId",
+            element: <Porfoliosingle />,
+          },
+        ],
       },
       {
         path: "blog",
@@ -75,12 +93,12 @@ const router = createBrowserRouter([
         element: <Team />,
       },
       {
-        path: "portfoliosingle",
-        element: <Porfoliosingle />,
-      },
-      {
         path: "licenses",
         element: <Licenses />,
+      },
+      {
+        path: "cart",
+        element: <Cart />,
       },
     ],
   },

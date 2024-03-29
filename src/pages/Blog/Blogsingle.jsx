@@ -127,6 +127,6 @@ const Blogsingle = () => {
       </section>
     </div>
   );
-};
+};  
 
 export default Blogsingle;

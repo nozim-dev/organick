@@ -153,11 +153,14 @@ const Item = () => {
               />
             </div>
             <div>
+            
               <Button
+              
                 text="Add To Cart"
                 isIcon={true}
                 type="bg-blue-700 text-[#fff] border-bue-700 hover:text-blue-700"
               />
+              
             </div>
           </div>
         </div>

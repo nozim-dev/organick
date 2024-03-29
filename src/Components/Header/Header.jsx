@@ -176,13 +176,14 @@ const Header = () => {
           <NavLink to="/shop" className={style.NavLink}>
             Shop
           </NavLink>
-          <NavLink className={style.NavLink} to="/portfoliosingle">
-                Projects
-              </NavLink>
+          <NavLink className={style.NavLink} to="/portfolio">
+            Projects
+          </NavLink>
           <NavLink to="/blog" className={style.NavLink}>
             News
           </NavLink>
         </nav>
+        <NavLink to="/cart" className={style.NavLink}>
         <div
           className={`${style.FlexBetween} w-full max-w-[553px] gap-[18px] lg1060:justify-end lg1060:gap-[8px] lg1060:max-w-[368px] lg912:max-w-[326px] md787:max-w-[115px]`}
         >
@@ -266,6 +267,7 @@ const Header = () => {
             </p>
           </div>
         </div>
+        </NavLink>
         {/* mobile navbar */}
         <section className="mdMin787:hidden">
           <div
@@ -314,9 +316,7 @@ const Header = () => {
               <NavLink to="/about" className={style.NavLink}>
                 About
               </NavLink>
-              <div
-                className={`${style.NavLink} group grid justify-center`}
-              >
+              <div className={`${style.NavLink} group grid justify-center`}>
                 <h1 className="w-full flex justify-center gap-[8px] items-center">
                   Pages
                   <span className="w-[8px] h-[6px] flex justify-center items-center ">
@@ -357,7 +357,7 @@ const Header = () => {
               <NavLink to="/shop" className={style.NavLink}>
                 Shop
               </NavLink>
-              <NavLink className={style.NavLink} to="/portfoliosingle">
+              <NavLink className={style.NavLink} to="/portfolio">
                 Projects
               </NavLink>
               <NavLink to="/blog" className={style.NavLink}>

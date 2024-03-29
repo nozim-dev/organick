@@ -1,15 +1,30 @@
-import React from "react";
-import image from "./img/Image.png";
+import React, { useEffect , useState} from "react";
+import { useParams } from "react-router-dom";
 import photo from "./img/Photo.png";
+import Loader from "../../Components/Loader/Loader";
+import axios from "axios";
 
 const Porfoliosingle = () => {
+  const [projects, setProjects] = useState(null);
+  const { portfolioId } = useParams();
+
+  useEffect(() => {
+    axios.get(`http://localhost:3000/Projects/${portfolioId}`).then((PorfolioCard) => {
+      setProjects(PorfolioCard.data);
+    });
+  }, [portfolioId]);
+
+  if (!projects) {
+    return <Loader />;
+  }
+
   return (
-    <div>
+    <div key={projects.id}>
       <section className="w-full max-w-[1920px]  relative flex justify-start items-center mx-auto h-[100vh] max-h-[898px] px-[80px] sm520:px-[15px]">
         <div className="absolute top-0 left-0 w-full h-full">
           <img
             className="w-full h-full object-cover"
-            src={image}
+            src={projects.img}
             alt="Background"
           />
         </div>
@@ -17,9 +32,9 @@ const Porfoliosingle = () => {
           <div className="flex flex-wrap bg-[#FFFFFF] w-full max-w-[1500px] pl-[89px] pt-[78px] pb-[77px] rounded-[30px] md677:p-10 md677:h-full shadow-lg shadow-5-strong transition duration-700 ease-in-out">
             <div className="block lg1400:px-[10px]">
               <h1 className="text-7xl font-Roboto text-blue-700 font-bold">
-                Black Raspberry
+              {projects.title}
               </h1>
-              <p className="w-full text-md font-Open-Sans text-blue-80 font-normal mt-[7px] leading-[29.77px] max-w-[635px]">
+              <p className="w-full text-md font-Open-Sans text-blue-80 font-normal mt-[7px] leading-[29.77px] max-w-[937px]">
                 Established fact that a reader will be distracted by the
                 readable content of a page when looking a layout. The point of
                 using Lorem Ipsum is that it has a more-or-less normal
@@ -32,7 +47,7 @@ const Porfoliosingle = () => {
                 <p className="text-blue-700 font-medium font-Roboto text-2.5xl leading-[29.3px]">
                   Date
                 </p>
-                <p className="w-full text-md font-Open-Sans text-blue-80 font-normal leading-[29.77px] max-w-[635px]">
+                <p className="w-full text-md font-Open-Sans text-blue-80 font-normal leading-[29.77px] max-w-[937px]">
                   December 4, 2022
                 </p>
               </div>
@@ -40,7 +55,7 @@ const Porfoliosingle = () => {
                 <p className="text-blue-700 font-medium font-Roboto text-2.5xl leading-[29.3px]">
                   Client
                 </p>
-                <p className="w-full text-md font-Open-Sans text-blue-80 font-normal leading-[29.77px] max-w-[635px]">
+                <p className="w-full text-md font-Open-Sans text-blue-80 font-normal leading-[29.77px] max-w-[937px]">
                   Kevin Martin
                 </p>
               </div>
@@ -48,7 +63,7 @@ const Porfoliosingle = () => {
                 <p className="text-blue-700 font-medium font-Roboto text-2.5xl leading-[29.3px]">
                   Category
                 </p>
-                <p className="w-full text-md font-Open-Sans text-blue-80 font-normal leading-[29.77px] max-w-[635px]">
+                <p className="w-full text-md font-Open-Sans text-blue-80 font-normal leading-[29.77px] max-w-[937px]">
                   Agriculture , Eco
                 </p>
               </div>
@@ -56,7 +71,7 @@ const Porfoliosingle = () => {
                 <p className="text-blue-700 font-medium font-Roboto text-2.5xl leading-[29.3px]">
                   Service
                 </p>
-                <p className="w-full text-md font-Open-Sans text-blue-80 font-normal leading-[29.77px] max-w-[635px]">
+                <p className="w-full text-md font-Open-Sans text-blue-80 font-normal leading-[29.77px] max-w-[937px]">
                   Organic Products
                 </p>
               </div>
@@ -71,14 +86,14 @@ const Porfoliosingle = () => {
             <h2 className="text-blue-700 font-bold font-Roboto text-3.5xl leading-[29.3px]">
               About The Farm:
             </h2>
-            <p className="w-full text-md font-Open-Sans text-blue-80 mt-[24px] font-normal leading-[29.77px] max-w-[635px]">
+            <p className="w-full text-md font-Open-Sans text-blue-80 mt-[24px] font-normal leading-[29.77px] max-w-[937px]">
               t is a long established fact that a reader will be distracted by
               the readable content of a page when looking a layout. The point of
               using Lorem Ipsum is that it has a more-or-less normal
               distribution of letters, as opposed to using 'Content here,
               content here', making it look like readable English.
             </p>
-            <p className="w-full text-md font-Open-Sans text-blue-80 mt-[44px] font-normal leading-[29.77px] max-w-[635px]">
+            <p className="w-full text-md font-Open-Sans text-blue-80 mt-[44px] font-normal leading-[29.77px] max-w-[937px]">
               Many desktop publishing packages and web page editors now use
               Lorem Ipsum as their default model text, and auncover many web
               sites still in their infancy. Various versions have evolved over
@@ -91,7 +106,7 @@ const Porfoliosingle = () => {
               className="w-full rounded-[20px] object-cover"
               alt=""
             />{" "}
-            <p className="w-full text-md font-Open-Sans text-blue-80 mt-[19px] font-normal leading-[29.77px] max-w-[635px]">
+            <p className="w-full text-md font-Open-Sans text-blue-80 mt-[19px] font-normal leading-[29.77px] max-w-[937px]">
               The Organic Products
             </p>
           </div>
@@ -99,14 +114,14 @@ const Porfoliosingle = () => {
             <h2 className="text-blue-700 font-bold font-Roboto text-3.5xl leading-[29.3px]">
               How To Farm:
             </h2>
-            <p className="w-full text-md font-Open-Sans text-blue-80 mt-[24px] font-normal leading-[29.77px] max-w-[635px]">
+            <p className="w-full text-md font-Open-Sans text-blue-80 mt-[24px] font-normal leading-[29.77px] max-w-[937px]">
               t is a long established fact that a reader will be distracted by
               the readable content of a page when looking a layout. The point of
               using Lorem Ipsum is that it has a more-or-less normal
               distribution of letters, as opposed to using 'Content here,
               content here', making it look like readable English.
             </p>
-            <p className="w-full text-md font-Open-Sans text-blue-80 mt-[44px] font-normal leading-[29.77px] max-w-[635px]">
+            <p className="w-full text-md font-Open-Sans text-blue-80 mt-[44px] font-normal leading-[29.77px] max-w-[937px]">
               Many desktop publishing packages and web page editors now use
               Lorem Ipsum as their default model text, and auncover many web
               sites still in their infancy. Various versions have evolved over
@@ -117,14 +132,14 @@ const Porfoliosingle = () => {
             <h2 className="text-blue-700 font-bold font-Roboto text-3.5xl  leading-[29.3px]">
               Conclusion:
             </h2>
-            <p className="w-full text-md font-Open-Sans text-blue-80 mt-[24px] font-normal leading-[29.77px] max-w-[635px]">
+            <p className="w-full text-md font-Open-Sans text-blue-80 mt-[24px] font-normal leading-[29.77px] max-w-[937px]">
               t is a long established fact that a reader will be distracted by
               the readable content of a page when looking a layout. The point of
               using Lorem Ipsum is that it has a more-or-less normal
               distribution of letters, as opposed to using 'Content here,
               content here', making it look like readable English.
             </p>
-            <p className="w-full text-md font-Open-Sans text-blue-80 mt-[44px] font-normal leading-[29.77px] max-w-[635px]">
+            <p className="w-full text-md font-Open-Sans text-blue-80 mt-[44px] font-normal leading-[29.77px] max-w-[937px]">
               Many desktop publishing packages and web page editors now use
               Lorem Ipsum as their default model text, and auncover many web
               sites still in their infancy. Various versions have evolved over
