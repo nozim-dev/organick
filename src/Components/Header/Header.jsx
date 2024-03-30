@@ -183,7 +183,7 @@ const Header = () => {
             News
           </NavLink>
         </nav>
-        <NavLink to="/cart" className={style.NavLink}>
+
         <div
           className={`${style.FlexBetween} w-full max-w-[553px] gap-[18px] lg1060:justify-end lg1060:gap-[8px] lg1060:max-w-[368px] lg912:max-w-[326px] md787:max-w-[115px]`}
         >
@@ -192,7 +192,7 @@ const Header = () => {
             className="w-full max-w-[376px] border border-[#e0e0e0] rounded-[36px] h-[66px] relative lg1060:h-[40px] lg1060:max-w-[230px] lg912:h-[35px] md787:hidden"
           >
             <input
-              className={`w-full h-full bg-[#fafafa] rounded-[36px] px-[12px] py-10px pr-[68px] ${style.NavLink} placeholder:font-light lg912:pr-[18px] lg912:placeholder:text-[15px] md787:placeholder:invisible`}
+              className={`w-full h-full bg-[#fafafa] rounded-[36px] px-[12px] py-10px pr-[68px] ${style.NavLink} placeholder:font-light lg912:pr-[18px] lg912:placeholder:text-[15px] md787:placeholder:invisible cursor-text`}
               type="text"
               name="search"
               id="search"
@@ -216,58 +216,59 @@ const Header = () => {
               </svg>
             </span>
           </label>
-          <div
-            className={`${style.FlexBetween} w-full max-w-[159px] pl-[6px] pr-[20px] py-[5px] rounded-[33px] gap-[12px] border border-[#e0e0e0] lg1060:gap-[6px] lg1060:justify-start lg1060:max-w-[130px] lg1060:py-[3px] lg1060:pr-[0] lg912:max-w-[115px]`}
-          >
-            <span
-              className={`${style.FlexCenter} w-[56px] h-[56px] rounded-full bg-blue-700 lg1060:w-[40px] lg1060:h-[40px] lg912:w-[32px] lg912:h-[32px]`}
+          <NavLink to="/shop-card" className={style.NavLink}>
+            <div
+              className={`${style.FlexBetween} w-full max-w-[159px] pl-[6px] pr-[20px] py-[5px] rounded-[33px] gap-[12px] border border-[#e0e0e0] lg1060:gap-[6px] lg1060:justify-start lg1060:max-w-[130px] lg1060:py-[3px] lg1060:pr-[0] lg912:max-w-[115px]`}
             >
-              <svg
-                width="27"
-                height="24"
-                className="lg1060:w-[20px] lg1060:h-[18px] lg912:w-[16px] lg912:h-[14px]"
-                viewBox="0 0 27 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                className={`${style.FlexCenter} w-[56px] h-[56px] rounded-full bg-blue-700 lg1060:w-[40px] lg1060:h-[40px] lg912:w-[32px] lg912:h-[32px]`}
               >
-                <path
-                  d="M11.5689 23.0001C12.2439 23.0001 12.7911 22.4529 12.7911 21.7779C12.7911 21.1029 12.2439 20.5557 11.5689 20.5557C10.8939 20.5557 10.3467 21.1029 10.3467 21.7779C10.3467 22.4529 10.8939 23.0001 11.5689 23.0001Z"
-                  fill="white"
-                  stroke="white"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M20.1246 23.0001C20.7996 23.0001 21.3468 22.4529 21.3468 21.7779C21.3468 21.1029 20.7996 20.5557 20.1246 20.5557C19.4496 20.5557 18.9023 21.1029 18.9023 21.7779C18.9023 22.4529 19.4496 23.0001 20.1246 23.0001Z"
-                  fill="white"
-                  stroke="white"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M1.79102 1H5.57291L8.40933 17.0731H23.5369"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M7.90221 13.1837L23.1494 13.2907C23.2587 13.2908 23.3647 13.2529 23.4493 13.1837C23.5339 13.1144 23.5918 13.0179 23.6133 12.9107L25.3151 4.40145C25.3289 4.33283 25.3272 4.26203 25.3102 4.19414C25.2933 4.12625 25.2615 4.06297 25.2171 4.00886C25.1727 3.95476 25.1169 3.91118 25.0536 3.88128C24.9903 3.85138 24.9212 3.83589 24.8513 3.83594L6.35838 3.83594"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </span>
-            <p className="text-md text-blue-700 font-semibold font-Roboto lg1060:text-[16px] lg912:text-[14px]">
-              Cart (0)
-            </p>
-          </div>
+                <svg
+                  width="27"
+                  height="24"
+                  className="lg1060:w-[20px] lg1060:h-[18px] lg912:w-[16px] lg912:h-[14px]"
+                  viewBox="0 0 27 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.5689 23.0001C12.2439 23.0001 12.7911 22.4529 12.7911 21.7779C12.7911 21.1029 12.2439 20.5557 11.5689 20.5557C10.8939 20.5557 10.3467 21.1029 10.3467 21.7779C10.3467 22.4529 10.8939 23.0001 11.5689 23.0001Z"
+                    fill="white"
+                    stroke="white"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M20.1246 23.0001C20.7996 23.0001 21.3468 22.4529 21.3468 21.7779C21.3468 21.1029 20.7996 20.5557 20.1246 20.5557C19.4496 20.5557 18.9023 21.1029 18.9023 21.7779C18.9023 22.4529 19.4496 23.0001 20.1246 23.0001Z"
+                    fill="white"
+                    stroke="white"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M1.79102 1H5.57291L8.40933 17.0731H23.5369"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M7.90221 13.1837L23.1494 13.2907C23.2587 13.2908 23.3647 13.2529 23.4493 13.1837C23.5339 13.1144 23.5918 13.0179 23.6133 12.9107L25.3151 4.40145C25.3289 4.33283 25.3272 4.26203 25.3102 4.19414C25.2933 4.12625 25.2615 4.06297 25.2171 4.00886C25.1727 3.95476 25.1169 3.91118 25.0536 3.88128C24.9903 3.85138 24.9212 3.83589 24.8513 3.83594L6.35838 3.83594"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <p className="text-md text-blue-700 font-semibold font-Roboto lg1060:text-[16px] lg912:text-[14px]">
+                Cart (0)
+              </p>
+            </div>
+          </NavLink>
         </div>
-        </NavLink>
         {/* mobile navbar */}
         <section className="mdMin787:hidden">
           <div

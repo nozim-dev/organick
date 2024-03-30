@@ -19,7 +19,7 @@ import Licenses from "./pages/licenses/Licenses.jsx";
 import BlogLayout from "./Layouts/BlogLayout.jsx";
 import Portfolio from "./pages/Portfolio/Portfolio.jsx";
 import PortfolioLayout from "./Layouts/PortfolioLayout.jsx";
-import Cart from "./pages/Cart/Cart.jsx";
+import ShopCard from "./pages/Cart/ShopCard";
 
 const router = createBrowserRouter([
   {
@@ -97,8 +97,8 @@ const router = createBrowserRouter([
         element: <Licenses />,
       },
       {
-        path: "cart",
-        element: <Cart />,
+        path: "shop-card",
+        element: <ShopCard />,
       },
     ],
   },
@@ -109,3 +109,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
+// Search 
+// Card qo'shish 
+// deploy backendi birgalikda

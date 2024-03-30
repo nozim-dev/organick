@@ -96,36 +96,40 @@ const Main = () => {
         </div>
       </section>
       <section className="relative w-full flex justify-center gap-[36px] mt-[196px] lg1400:px-[15px]">
-        <div className="flex items-center">
-          <img
-            className="w-[682px] object-cover rounded-[30px] "
-            src={Background1}
-            alt="Background"
-          />
-          <div className="absolute ml-[54px] mt-[54px]">
-            <h5 className="w-full font-Yellowtail text-[36px] text-[#ffff] mb-[8px]">
-              Natural !!
-            </h5>
-            <h1 className="w-full font-Roboto font-extrabold text-4xl text-[white] mb-[27px]">
-              Get Garden <br />
-              Fresh Fruits
-            </h1>
+        <div data-aos="flip-right">
+          <div className="flex items-center">
+            <img
+              className="w-[682px] object-cover rounded-[30px] "
+              src={Background1}
+              alt="Background"
+            />
+            <div className="absolute ml-[54px] mt-[54px]">
+              <h5 className="w-full font-Yellowtail text-[36px] text-[#ffff] mb-[8px]">
+                Natural !!
+              </h5>
+              <h1 className="w-full font-Roboto font-extrabold text-4xl text-[white] mb-[27px]">
+                Get Garden <br />
+                Fresh Fruits
+              </h1>
+            </div>
           </div>
         </div>
-        <div className="flex items-center ">
-          <img
-            className="w-[682px] object-cover rounded-[30px] "
-            src={Background2}
-            alt="Background"
-          />
+        <div data-aos="flip-right">
+          <div className="flex items-center ">
+            <img
+              className="w-[682px] object-cover rounded-[30px] "
+              src={Background2}
+              alt="Background"
+            />
 
-          <div className=" absolute  ml-[54px] mt-[54px]">
-            <h5 className=" w-full font-Yellowtail text-[36px] text-[#68A47F]  mb-[8px]">
-              Offer !!
-            </h5>
-            <h1 className="w-full font-Roboto font-extrabold text-4xl text-blue-700 mb-[27px]">
-              Get 10% off <br /> on Vegetables
-            </h1>
+            <div className=" absolute  ml-[54px] mt-[54px]">
+              <h5 className=" w-full font-Yellowtail text-[36px] text-[#68A47F]  mb-[8px]">
+                Offer !!
+              </h5>
+              <h1 className="w-full font-Roboto font-extrabold text-4xl text-blue-700 mb-[27px]">
+                Get 10% off <br /> on Vegetables
+              </h1>
+            </div>
           </div>
         </div>
       </section>
@@ -230,7 +234,7 @@ const Main = () => {
               <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
-                loop={true}
+                loop={false}
                 pagination={{
                   clickable: true,
                 }}
@@ -240,8 +244,8 @@ const Main = () => {
                 modules={[Pagination, Autoplay]}
                 className="mySwiper"
               >
-                {CarouselData.map((carousel, id) => (
-                  <SwiperSlide key={id}>
+                {CarouselData.map((carousel) => (
+                  <SwiperSlide key={carousel.id}>
                     <div className="h-[365px]">
                       <div className="w-[115px] h-[115px] rounded-full mx-auto mb-[20px]">
                         <img
