@@ -1,7 +1,6 @@
 import React from "react";
-import Button from "../Button/Button";
 import { style } from "../../utils/style";
-
+import { NavLink } from "react-router-dom";
 const PorfolioCard = ({ projects, id }) => {
   return (
     <div
@@ -9,16 +8,12 @@ const PorfolioCard = ({ projects, id }) => {
       className="block justify-center align-center items-center mx-auto"
     >
       <div className="block w-full max-w-[677px] relative ">
-        <div className="flex w-full ">
+        <div className="flex w-full">
           <img src={projects.img} className="w-full rounded-[30px]" alt="" />
-        </div>         
+        </div>
+        <NavLink to={projects.id} className={style.NavLink}>
         <div className="bg-blue-700 flex items-center place-content-center  justify-center">
-
-          <button className="absolute top-0 w-full max-w-[400px] hover:backdrop-blur-xl bg-white/1 font-bold mt-[40px] pt-[100px] py-[170px] px-[200px] rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300">
-          <Button
-              isLink={projects.id}
-              type="w-full border-none "
-            />
+          <button className="absolute top-0 w-full max-w-[400px] hover:backdrop-blur-xl bg-white/1 font-bold mt-[40px] pt-[170px] py-[170px] px-[200px] rounded-[20px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300">
             <svg
               width="10"
               height="13"
@@ -36,6 +31,7 @@ const PorfolioCard = ({ projects, id }) => {
             </svg>
           </button>
         </div>
+        </NavLink>
       </div>
       <div className="block">
         <div className=" w-full py-[21px] ">
@@ -48,7 +44,6 @@ const PorfolioCard = ({ projects, id }) => {
             >
               {projects.category}
             </h3>
-
           </div>
         </div>
       </div>
