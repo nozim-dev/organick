@@ -20,6 +20,7 @@ import BlogLayout from "./Layouts/BlogLayout.jsx";
 import Portfolio from "./pages/Portfolio/Portfolio.jsx";
 import PortfolioLayout from "./Layouts/PortfolioLayout.jsx";
 import ShopCard from "./pages/Cart/ShopCard";
+import Search from "./pages/Search/Search.jsx";
 
 const router = createBrowserRouter([
   {
@@ -99,6 +100,10 @@ const router = createBrowserRouter([
       {
         path: "shop-card",
         element: <ShopCard />,
+      },
+      {
+        path: "search-product",
+        element: <Search />,
       },
     ],
   },

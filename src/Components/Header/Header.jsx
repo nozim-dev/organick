@@ -187,17 +187,12 @@ const Header = () => {
         <div
           className={`${style.FlexBetween} w-full max-w-[553px] gap-[18px] lg1060:justify-end lg1060:gap-[8px] lg1060:max-w-[368px] lg912:max-w-[326px] md787:max-w-[115px]`}
         >
+          <NavLink to="/search-product" className={style.NavLink}>
           <label
             htmlFor="search"
-            className="w-full max-w-[376px] border border-[#e0e0e0] rounded-[36px] h-[66px] relative lg1060:h-[40px] lg1060:max-w-[230px] lg912:h-[35px] md787:hidden"
+            className="w-full max-w-[376px] h-[66px] relative lg1060:h-[40px] lg1060:max-w-[230px] lg912:h-[35px] md787:hidden"
           >
-            <input
-              className={`w-full h-full bg-[#fafafa] rounded-[36px] px-[12px] py-10px pr-[68px] ${style.NavLink} placeholder:font-light lg912:pr-[18px] lg912:placeholder:text-[15px] md787:placeholder:invisible cursor-text`}
-              type="text"
-              name="search"
-              id="search"
-              placeholder="Search anything..."
-            />
+
             <span
               className={`${style.FlexCenter} cursor-pointer w-[56px] h-[56px] rounded-full bg-green-300 absolute top-[50%] right-[6px] translate-y-[-50%] lg1060:w-[32px] lg1060:h-[32px] lg1060:right-[3px]`}
             >
@@ -216,6 +211,7 @@ const Header = () => {
               </svg>
             </span>
           </label>
+          </NavLink>
           <NavLink to="/shop-card" className={style.NavLink}>
             <div
               className={`${style.FlexBetween} w-full max-w-[159px] pl-[6px] pr-[20px] py-[5px] rounded-[33px] gap-[12px] border border-[#e0e0e0] lg1060:gap-[6px] lg1060:justify-start lg1060:max-w-[130px] lg1060:py-[3px] lg1060:pr-[0] lg912:max-w-[115px]`}
