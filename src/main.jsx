@@ -110,6 +110,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </React.StrictMode>
 );
 
-// Search 
-// Card qo'shish 
+// Search
+// Card qo'shish
 // deploy backendi birgalikda
