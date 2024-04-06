@@ -21,6 +21,7 @@ import Portfolio from "./pages/Portfolio/Portfolio.jsx";
 import PortfolioLayout from "./Layouts/PortfolioLayout.jsx";
 import ShopCard from "./pages/Cart/ShopCard";
 import Search from "./pages/Search/Search.jsx";
+import SearchLayout from "./Layouts/SearchLayout.jsx";
 
 const router = createBrowserRouter([
   {
@@ -103,7 +104,17 @@ const router = createBrowserRouter([
       },
       {
         path: "search-product",
-        element: <Search />,
+        element: <SearchLayout />,
+        children: [
+          {
+            path: "/search-product",
+            element: <Search />,
+          },
+          {
+            path: ":shopId",
+            element: <Item />,
+          },
+        ],
       },
     ],
   },

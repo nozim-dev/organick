@@ -1,5 +1,5 @@
 import Banner from "../../Components/Banner/Banner";
-import CardBanner from "./img/Image.png";
+import CardBanner from "./img/banner.png";
 import pistachos from "./img/Photo3.png";
 import shopbag from "./img/shopping-bag.png";
 import Button from "../../Components/Button/Button";
@@ -137,12 +137,12 @@ const ShopCard = () => {
                 </h5>
               </div>
               <div className="w-full flex justify-center ">
-              <Button
-                text="Formalization"
-                type="h-[70px] mt-[2.50rem] text-white bg-green-300 text-blue-700 hover:text-green-300 border-green-300 sm472:mx-auto"
-              /></div>
+                <Button
+                  text="Formalization"
+                  type="h-[70px] mt-[2.50rem] text-white bg-green-300 text-blue-700 hover:text-green-300 border-green-300 sm472:mx-auto"
+                />
+              </div>
             </div>
-            
           </div>
         </div>
       </section>

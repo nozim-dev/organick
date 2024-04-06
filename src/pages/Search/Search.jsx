@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import Card from "../../Components/Card/Card";
 import { style } from "../../utils/style";
-import Button from "../../Components/Button/Button";
-
 import Banner from "./../../Components/Banner/Banner";
 import ShopBanner from "./img/Image.png";
+import { Link } from "react-router-dom";
+
 const Search = () => {
   const [products, setProducts] = useState([]);
+  const [SearchResult, setSearchResult] = useState(null);
+  const SearchValue = useRef();
 
   useEffect(() => {
     axios
       .get("http://localhost:3000/products")
       .then(function (response) {
         // success
-        // console.log(response.data);
         setProducts(response.data);
       })
       .catch(function (err) {
@@ -22,6 +23,21 @@ const Search = () => {
         console.log(err);
       });
   }, []);
+
+  const SearchFunction = () => {
+    const DataOfProducts = products.filter((product) =>
+      product.title
+        .toLowerCase()
+        .includes(SearchValue.current.value.toLowerCase())
+    );
+
+    if (DataOfProducts.length > 0) {
+      setSearchResult(DataOfProducts);
+    } else if (DataOfProducts.length === 0) {
+      setSearchResult(null);
+    }
+  };
+
   return (
     <div>
       <Banner title="Search item" img={ShopBanner} />
@@ -29,16 +45,19 @@ const Search = () => {
         <div className="translate-y-[-80%]">
           <label
             htmlFor="search"
-            className="left-[20%]  relative lg1060:h-[40px] lg1060:max-w-[230px] lg912:h-[35px] md787:hidden"
+            className="left-[20%]  relative lg1060:h-[40px] lg1060:max-w-[230px] lg912:h-[35px] md787:hidden "
           >
             <input
-              className={`  bg-[#fafafa] rounded-[36px] px-[12px] h-[73px] pr-[590px] ${style.NavLink} placeholder:font-light lg912:pr-[18px] lg912:placeholder:text-[22px] md787:placeholder:invisible cursor-text`}
+              ref={SearchValue}
+              className={`pl-[25px] bg-[#fafafa] rounded-[36px] px-[12px] h-[73px] pr-[590px] ${style.NavLink} placeholder:font-light lg912:pr-[18px] lg912:placeholder:text-[22px] md787:placeholder:invisible cursor-text`}
               type="text"
               name="search"
               id="search"
               placeholder="Search..."
+              onChange={SearchFunction}
             />
             <span
+              onClick={SearchFunction}
               className={`${style.FlexCenter} cursor-pointer w-[70px] h-[70px] rounded-full bg-green-300 absolute top-[50%] right-[0px] translate-y-[-50%] lg1060:w-[32px] lg1060:h-[32px] lg1060:right-[3px]`}
             >
               <svg
@@ -58,15 +77,26 @@ const Search = () => {
           </label>
         </div>
         <div className="justify-center my-[20px] w-full max-w-[1920px] mx-auto flex flex-wrap gap-[20px]">
-          {products.map((product, id) => (
-            <Card product={product} id={id} key={id} />
-          ))}
+          {SearchResult ? (
+            SearchResult.map((product) => (
+              <div data-aos="flip-right" key={product.id}>
+                <Link to={`${product.id}`}>
+                  <Card product={product} id={product.id} />
+                </Link>
+              </div>
+            ))
+          ) : SearchResult === undefined ? (
+            <h1 className="text-[42px]">Mahsulot topilmadi !</h1>
+          ) : (
+            products.map((product, id) => (
+              <div data-aos="flip-right" key={id}>
+                <Link to={`${id}`}>
+                  <Card product={product} id={id} />
+                </Link>
+              </div>
+            ))
+          )}
         </div>
-        <Button
-          text="Load More"
-          isIcon={true}
-          type="bg-blue-700 text-[#fff] border-bue-700 hover:text-blue-700 mx-auto mt-[122px]"
-        />
       </section>
     </div>
   );
