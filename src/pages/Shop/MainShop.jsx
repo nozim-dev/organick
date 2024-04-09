@@ -25,8 +25,8 @@ const MainShop = () => {
       <Banner title="Shop" img={ShopBanner} />
       <div className="justify-center my-[90px] w-full max-w-[1400px] mx-auto flex flex-wrap gap-[20px]">
         {CardData.map((product, id) => (
-          <div data-aos="flip-right">
-            <Link to={`${id}`} key={id}>
+          <div data-aos="flip-right" key={id}>
+            <Link to={`${id}`}>
               <Card product={product} id={id} />
             </Link>
           </div>

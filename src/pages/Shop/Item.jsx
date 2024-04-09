@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import Banner from "../../Components/Banner/Banner";
 import SingleBanner from "./img/Banner Image.jpg";
 import { Link, useParams } from "react-router-dom";
@@ -7,11 +7,15 @@ import Loader from "../../Components/Loader/Loader";
 import { style } from "../../utils/style";
 import Button from "./../../Components/Button/Button";
 import Card from "../../Components/Card/Card";
+import { ProductContext } from "../../contexts/Context";
 
 const Item = () => {
   const { shopId } = useParams();
   const [cardDetails, setCardDetails] = useState(null);
   const [relativeCards, setRelativeCards] = useState([]);
+  const { productCount, setProductCount, setProductData, productData } =
+    useContext(ProductContext);
+  const ItemCount = useRef();
 
   useEffect(() => {
     const fetchCardDetails = async () => {
@@ -38,6 +42,38 @@ const Item = () => {
   if (!cardDetails) {
     return <Loader />;
   }
+
+  const AddToCard = () => {
+    setProductCount(productCount + Number(ItemCount.current.value));
+
+    console.log(productData);
+
+    // check if the item is already in the cart
+    const isItemInCart = productData.find((cartItem) => cartItem.id === shopId);
+
+    if (isItemInCart) {
+      setProductData(
+        // if the item is already in the cart, increase the count of the item
+        productData.map(
+          (productItem) =>
+            productItem.id === shopId
+              ? {
+                  ...productItem,
+                  count: productItem.count + Number(ItemCount.current.value),
+                }
+              : productItem // otherwise, return the cart item
+        )
+      );
+    } else {
+      setProductData([
+        ...productData,
+        {
+          ...cardDetails,
+          count: Number(ItemCount.current.value),
+        },
+      ]); // if the item is not in the cart, add the item to the cart with new key count with value
+    }
+  };
 
   return (
     <div>
@@ -150,11 +186,12 @@ const Item = () => {
                 max={5}
                 maxLength={5}
                 minLength={1}
+                ref={ItemCount}
               />
             </div>
             <div>
               <Button
-                isLink="/shop-card"
+                isEvent={AddToCard}
                 text="Add To Cart"
                 isIcon={true}
                 type="bg-blue-700 text-[#fff] border-bue-700 hover:text-blue-700"

@@ -2,14 +2,17 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
+import Context from "../contexts/Context";
 
 const GeneralLayout = () => {
   return (
-    <div className="">
-      <Header />
-      <Outlet />
-      <Footer />
-    </div>
+    <>
+      <Context>
+        <Header />
+        <Outlet />
+        <Footer />
+      </Context>
+    </>
   );
 };
 

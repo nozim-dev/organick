@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { style } from "../../utils/style";
 import { NavLink } from "react-router-dom";
+import { ProductContext } from "../../contexts/Context";
 
 const Header = () => {
+  const { productCount } = useContext(ProductContext);
   const [isHidden, setHidden] = useState(false);
 
   function OpenMenu() {
@@ -213,7 +215,7 @@ const Header = () => {
           </NavLink>
           <NavLink to="/shop-card" className={style.NavLink}>
             <div
-              className={`${style.FlexBetween} w-full max-w-[159px] pl-[6px] pr-[20px] py-[5px] rounded-[33px] gap-[12px] border border-[#e0e0e0] lg1060:gap-[6px] lg1060:justify-start lg1060:max-w-[130px] lg1060:py-[3px] lg1060:pr-[0] lg912:max-w-[115px]`}
+              className={`${style.FlexBetween} w-full pl-[6px] pr-[20px] py-[5px] rounded-[33px] gap-[12px] border border-[#e0e0e0] lg1060:gap-[6px] lg1060:justify-start  lg1060:py-[3px] lg1060:pr-[0]`}
             >
               <span
                 className={`${style.FlexCenter} w-[56px] h-[56px] rounded-full bg-blue-700 lg1060:w-[40px] lg1060:h-[40px] lg912:w-[32px] lg912:h-[32px]`}
@@ -259,7 +261,7 @@ const Header = () => {
                 </svg>
               </span>
               <p className="text-md text-blue-700 font-semibold font-Roboto lg1060:text-[16px] lg912:text-[14px]">
-                Cart (0)
+                Cart ({productCount})
               </p>
             </div>
           </NavLink>
