@@ -11,7 +11,7 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 
 const MainShop = () => {
-  let api = `${process.env.REACT_APP_API_URL}/ShopProducts`;
+  let api = `https://organick-server-h6p8.onrender.com/ShopProducts`;
   const [CardData, setCardData] = useState([]);
 
   useEffect(() => {

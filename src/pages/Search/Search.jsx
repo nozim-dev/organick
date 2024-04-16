@@ -13,7 +13,7 @@ const Search = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/products`)
+      .get(`https://organick-server-h6p8.onrender.com/products`)
       .then(function (response) {
         // success
         setProducts(response.data);

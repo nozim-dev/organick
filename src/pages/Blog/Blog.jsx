@@ -8,7 +8,7 @@ const Blog = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/Blogs`).then((res) => {
+    axios.get(`https://organick-server-h6p8.onrender.com/Blogs`).then((res) => {
       setBlogs(res.data);
     });
   }, []);

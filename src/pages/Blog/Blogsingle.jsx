@@ -9,7 +9,7 @@ const Blogsingle = () => {
   const { blogId } = useParams();
 
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/Blogs/${blogId}`).then((blogCard) => {
+    axios.get(`https://organick-server-h6p8.onrender.com/Blogs/${blogId}`).then((blogCard) => {
       setBlogs(blogCard.data);
     });
   }, [blogId]);

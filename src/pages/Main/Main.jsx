@@ -24,10 +24,9 @@ const Main = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/products`)
+      .get(`https://organick-server-h6p8.onrender.com/products`)
       .then(function (response) {
         // success
-        // console.log(response.data);
         setProducts(response.data);
       })
       .catch(function (err) {
@@ -36,11 +35,12 @@ const Main = () => {
       });
   }, []);
 
+
   const [offerProduct, setofferProduct] = useState([]);
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/offerProduct`)
+      .get(`https://organick-server-h6p8.onrender.com/offerProduct`)
       .then(function (response) {
         // success
         // console.log(response.data);
@@ -56,7 +56,7 @@ const Main = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/CarouselData`)
+      .get(`https://organick-server-h6p8.onrender.com/CarouselData`)
       .then(function (response) {
         // success
         // console.log(response.data);

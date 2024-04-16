@@ -8,7 +8,7 @@ const Portfolio = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/Projects`).then((res) => {
+    axios.get(`https://organick-server-h6p8.onrender.com/Projects`).then((res) => {
       setProjects(res.data);
     });
   }, []);

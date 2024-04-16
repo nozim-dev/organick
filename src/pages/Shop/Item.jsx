@@ -19,14 +19,14 @@ const Item = () => {
   useEffect(() => {
     const fetchCardDetails = async () => {
       const response = await axios.get(
-        `${process.env.REACT_APP_API_URL}/ShopProducts/${shopId}`
+        `https://organick-server-h6p8.onrender.com/ShopProducts/${shopId}`
       );
       setCardDetails(response.data);
     };
 
     const fetchRelativeCards = async () => {
       const response = await axios.get(
-        `${process.env.REACT_APP_API_URL}/ShopProducts/`
+        `https://organick-server-h6p8.onrender.com/ShopProducts/`
       );
 
       const relativeCards = response.data.filter(
