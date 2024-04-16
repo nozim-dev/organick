@@ -24,7 +24,7 @@ const Main = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/products")
+      .get(`${process.env.REACT_APP_API_URL}/products`)
       .then(function (response) {
         // success
         // console.log(response.data);
@@ -40,7 +40,7 @@ const Main = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/offerProduct")
+      .get(`${process.env.REACT_APP_API_URL}/offerProduct`)
       .then(function (response) {
         // success
         // console.log(response.data);
@@ -56,7 +56,7 @@ const Main = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/CarouselData")
+      .get(`${process.env.REACT_APP_API_URL}/CarouselData`)
       .then(function (response) {
         // success
         // console.log(response.data);

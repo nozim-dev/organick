@@ -11,7 +11,7 @@ const Team = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/Tems")
+      .get(`${process.env.REACT_APP_API_URL}/Tems`)
       .then(function (response) {
         // success
         // console.log(response.data);

@@ -4,7 +4,7 @@ import BlogBanner from "./images/banner.png";
 import BlogCard from "../../Components/blogCard/BlogCard";
 import axios from "axios";
 
-let api = "http://localhost:3000/Blogs";
+let api = `${process.env.REACT_APP_API_URL}/Blogs`;
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);

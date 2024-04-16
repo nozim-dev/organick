@@ -9,7 +9,7 @@ const Porfoliosingle = () => {
   const { portfolioId } = useParams();
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/Projects/${portfolioId}`).then((PorfolioCard) => {
+    axios.get(`${process.env.REACT_APP_API_URL}/Projects/${portfolioId}`).then((PorfolioCard) => {
       setProjects(PorfolioCard.data);
     });
   }, [portfolioId]);

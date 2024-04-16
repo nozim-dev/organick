@@ -13,7 +13,7 @@ const Search = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/products")
+      .get(`${process.env.REACT_APP_API_URL}/products`)
       .then(function (response) {
         // success
         setProducts(response.data);

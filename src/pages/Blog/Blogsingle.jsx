@@ -9,7 +9,7 @@ const Blogsingle = () => {
   const { blogId } = useParams();
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/Blogs/${blogId}`).then((blogCard) => {
+    axios.get(`${process.env.REACT_APP_API_URL}/Blogs/${blogId}`).then((blogCard) => {
       setBlogs(blogCard.data);
     });
   }, [blogId]);

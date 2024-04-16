@@ -11,7 +11,7 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 
 const MainShop = () => {
-  let api = "http://localhost:3000/ShopProducts";
+  let api = `${process.env.REACT_APP_API_URL}/ShopProducts`;
   const [CardData, setCardData] = useState([]);
 
   useEffect(() => {

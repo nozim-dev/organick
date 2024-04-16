@@ -19,13 +19,13 @@ const Item = () => {
   useEffect(() => {
     const fetchCardDetails = async () => {
       const response = await axios.get(
-        `http://localhost:3000/ShopProducts/${shopId}`
+        `${process.env.REACT_APP_API_URL}/ShopProducts/${shopId}`
       );
       setCardDetails(response.data);
     };
 
     const fetchRelativeCards = async () => {
-      const response = await axios.get(`http://localhost:3000/ShopProducts/`);
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/ShopProducts/`);
 
       const relativeCards = response.data.filter(
         (relativeCard) => relativeCard.id !== shopId

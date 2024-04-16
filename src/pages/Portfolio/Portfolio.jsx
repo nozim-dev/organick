@@ -3,7 +3,7 @@ import axios from "axios";
 import PorfolioCard from "../../Components/PorfolioCard/PorfolioCard";
 import Banner from "../../Components/Banner/Banner";
 import PortfolioBanner from "./img/Image.png";
-let api = "http://localhost:3000/Projects";
+let api = `${process.env.REACT_APP_API_URL}/Projects`;
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
