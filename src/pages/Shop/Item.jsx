@@ -25,7 +25,9 @@ const Item = () => {
     };
 
     const fetchRelativeCards = async () => {
-      const response = await axios.get(`${process.env.REACT_APP_API_URL}/ShopProducts/`);
+      const response = await axios.get(
+        `${process.env.REACT_APP_API_URL}/ShopProducts/`
+      );
 
       const relativeCards = response.data.filter(
         (relativeCard) => relativeCard.id !== shopId

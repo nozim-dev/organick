@@ -3,13 +3,12 @@ import axios from "axios";
 import PorfolioCard from "../../Components/PorfolioCard/PorfolioCard";
 import Banner from "../../Components/Banner/Banner";
 import PortfolioBanner from "./img/Image.png";
-let api = `${process.env.REACT_APP_API_URL}/Projects`;
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get(api).then((res) => {
+    axios.get(`${process.env.REACT_APP_API_URL}/Projects`).then((res) => {
       setProjects(res.data);
     });
   }, []);
