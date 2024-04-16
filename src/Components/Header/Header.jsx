@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { ProductContext } from "../../contexts/Context";
 
 const Header = () => {
-  const { productCount } = useContext(ProductContext);
+  const { productData } = useContext(ProductContext);
   const [isHidden, setHidden] = useState(false);
 
   function OpenMenu() {
@@ -261,7 +261,7 @@ const Header = () => {
                 </svg>
               </span>
               <p className="text-md text-blue-700 font-semibold font-Roboto lg1060:text-[16px] lg912:text-[14px]">
-                Cart ({productCount})
+                Cart ({productData.length ? productData.length : "0"})
               </p>
             </div>
           </NavLink>

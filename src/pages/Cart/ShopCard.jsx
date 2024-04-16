@@ -6,9 +6,7 @@ import { style } from "../../utils/style";
 import { useContext } from "react";
 import { ProductContext } from "../../contexts/Context";
 const ShopCard = () => {
-  const { productData } = useContext(ProductContext);
-
-  console.log(productData);
+  const { productData, RemoveItem, getCartTotal } = useContext(ProductContext);
 
   return (
     <>
@@ -16,14 +14,17 @@ const ShopCard = () => {
       <section className="w-full max-w-[1920px] mx-auto mt-[113px] flex justify-center ">
         <div className="w-full max-w-[1400px] block mt-[40px]">
           <div className="w-full mx-auto flex mt-[27px] ">
-            <h1 className={`${style.NavLogo} text-green-300`}>Savatingiz,</h1>
-            <h1 className={`${style.NavLogo} pl-[10px] `}>1 ta mahsulot</h1>
+            <h1 className={`${style.NavLogo} text-green-300`}>Savatingizda,</h1>
+            <h1 className={`${style.NavLogo} pl-[10px] `}>
+              {productData.length ? productData.length : "0"} ta mahsulot
+              mavjud.
+            </h1>
           </div>
           <div className="w-full flex flex-wrap gap-[15px]">
             <div className="w-full max-w-[900px] mt-[60px]">
-              {productData.map((product) => (
+              {productData.map((product, id) => (
                 <div
-                  key={product.id}
+                  key={id}
                   className="w-full flex mt-[12px] border border-green-300 rounded-[30px] "
                 >
                   <div className="relative bg-white-50 rounded-[30px]">
@@ -110,19 +111,25 @@ const ShopCard = () => {
                             />
                           </svg>
                         </div>
-                        <div className="rounded-[5px] w-[35px] h-[35px] border-green-300 flex items-center justify-center border-2 text-2xl font-Open-Sans font-semibold text-[#000] leading-[20.43px]">
+                        <div className="text-2xl font-Open-Sans font-semibold text-[#B8B8B8] leading-[20.43px]">
+                          soni:
+                        </div>
+                        <div className="rounded-[5px] w-[35px] h-[35px] border-green-300 flex items-center justify-center border-2 text-2xl font-Open-Sans font-semibold text-[#565656] leading-[20.43px]">
                           {product.count}
                         </div>
                       </div>
                       <div className="flex gap-[9px] mt-[13px] items-center">
                         <del className="text-2xl font-Open-Sans font-semibold text-[#B8B8B8] leading-[20.43px]">
-                          {product.oldPrice}
+                          ${product.oldPrice}.00
                         </del>
                         <h5 className="text-2.5xl font-bold text-[#7EB693] font-Open-Sans leading-[24.51px] ">
-                          {product.price}
+                          ${product.price}.00
                         </h5>
                         <div>
-                          <span className="w-full max-w-[520px] drop-shadow-xl hover:drop-shadow active:filter-none ">
+                          <span
+                            onClick={() => RemoveItem(product.id)}
+                            className="w-full max-w-[520px] drop-shadow-xl hover:drop-shadow active:filter-none cursor-pointer"
+                          >
                             <img
                               className="w-full max-w-[60px] object-cover float-end"
                               src={shopbag}
@@ -136,26 +143,26 @@ const ShopCard = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full max-w-[400px] border border-green-300  rounded-[30px]">
+            <div className="w-full mt-[72px] max-w-[400px] max-h-[350px] border border-green-300 rounded-[30px]">
               <div className="w-full px-[10px] ">
                 <div className="text-center p-[5px] text-[white] rounded-[30px] bg-green-300">
                   Orders
                 </div>
               </div>
               <h5 className="text-2.5xl font-bold text-[#7EB693] font-Open-Sans leading-[24.51px] px-[1rem] py-[1rem] ">
-                Products (0):
+                Products ({productData.length ? productData.length : "0"}):
               </h5>
               <div className="w-full  flex justify-between">
                 <h5 className="text-2xl font-Open-Sans font-semibold text-[#B8B8B8] leading-[20.43px] px-[1rem] ">
                   Total:
                 </h5>
                 <h5 className="text-2xl font-Open-Sans font-semibold text-[#B8B8B8] leading-[20.43px] px-[1rem] ">
-                  $13.00
+                  ${getCartTotal()}.00
                 </h5>
               </div>
-              <div className="w-full flex justify-center ">
+              <div className="w-full flex justify-center">
                 <Button
-                  text="Formalization"
+                  text="Sotib olish!"
                   type="h-[70px] mt-[2.50rem] text-white bg-green-300 text-blue-700 hover:text-green-300 border-green-300 sm472:mx-auto"
                 />
               </div>
