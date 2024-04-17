@@ -7,6 +7,7 @@ import axios from "axios";
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import Loader from "../../Components/Loader/Loader";
 // ..
 AOS.init();
 
@@ -15,22 +16,29 @@ const MainShop = () => {
   const [CardData, setCardData] = useState([]);
 
   useEffect(() => {
-    axios.get(api).then((card) => {
-      setCardData(card.data);
-    });
+    axios
+      .get(api)
+      .then((card) => {
+        setCardData(card.data);
+      })
+      .catch((error) => console.log(error.statusText));
   }, []);
 
   return (
     <div>
       <Banner title="Shop" img={ShopBanner} />
       <div className="justify-center my-[90px] w-full max-w-[1400px] mx-auto flex flex-wrap gap-[20px]">
-        {CardData.map((product, id) => (
-          <div data-aos="flip-right" key={id}>
-            <Link to={`${id}`}>
-              <Card product={product} id={id} />
-            </Link>
-          </div>
-        ))}
+        {CardData.length > 0 ? (
+          CardData.map((product, id) => (
+            <div data-aos="flip-right" key={id}>
+              <Link to={`${id}`}>
+                <Card product={product} id={id} />
+              </Link>
+            </div>
+          ))
+        ) : (
+          <Loader />
+        )}
       </div>
     </div>
   );
