@@ -1,3 +1,4 @@
+import React from "react";
 import Banner from "../../Components/Banner/Banner";
 import CardBanner from "./img/banner.png";
 import shopbag from "./img/shopping-bag.png";
