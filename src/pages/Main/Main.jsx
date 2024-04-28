@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Background from "./images/background.png";
 import Background1 from "./images/Photo.jpg";
 import Background2 from "./images/Photo1.jpg";
@@ -18,16 +18,18 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Card from "../../Components/Card/Card";
+import { ProductContext } from "../../contexts/Context";
 
 const Main = () => {
+  const { isDarkMode } = useContext(ProductContext);
+
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/products")
+      .get(`https://organick-server-h6p8.onrender.com/products`)
       .then(function (response) {
         // success
-        // console.log(response.data);
         setProducts(response.data);
       })
       .catch(function (err) {
@@ -40,7 +42,7 @@ const Main = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/offerProduct")
+      .get(`https://organick-server-h6p8.onrender.com/offerProduct`)
       .then(function (response) {
         // success
         // console.log(response.data);
@@ -56,7 +58,7 @@ const Main = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/CarouselData")
+      .get(`https://organick-server-h6p8.onrender.com/CarouselData`)
       .then(function (response) {
         // success
         // console.log(response.data);
@@ -69,7 +71,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div>
+    <div className={`${isDarkMode ? "bg-[white]" : "bg-[black]"}`}>
       <section className="w-full relative flex justify-start items-center max-w-[1920px] mx-auto h-[100vh] max-h-[898px] px-[80px] sm520:px-[15px]">
         <div className="absolute top-0 left-0 w-full h-full">
           <img

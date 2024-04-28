@@ -3,13 +3,12 @@ import axios from "axios";
 import PorfolioCard from "../../Components/PorfolioCard/PorfolioCard";
 import Banner from "../../Components/Banner/Banner";
 import PortfolioBanner from "./img/Image.png";
-let api = "http://localhost:3000/Projects";
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get(api).then((res) => {
+    axios.get(`https://organick-server-h6p8.onrender.com/Projects`).then((res) => {
       setProjects(res.data);
     });
   }, []);

@@ -19,10 +19,10 @@ const Card = ({ product }) => {
       <div className="flex justify-between items-center mt-[6px]">
         <div className="flex gap-[8px] items-center">
           <del className="text-[15px] font-Open-Sans font-semibold text-[#B8B8B8] leading-[20.43px]">
-            {product.oldPrice}
+            ${product.oldPrice}.00
           </del>
           <h5 className="text-[18px] font-bold text-blue-700 font-Open-Sans leading-[24.51px] ">
-            {product.price}
+            ${product.price}.00
           </h5>
         </div>
         <div className="flex items-center gap-[3px]">

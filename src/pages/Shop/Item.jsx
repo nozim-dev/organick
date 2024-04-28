@@ -11,22 +11,23 @@ import { ProductContext } from "../../contexts/Context";
 
 const Item = () => {
   const { shopId } = useParams();
-  const [cardDetails, setCardDetails] = useState(null);
   const [relativeCards, setRelativeCards] = useState([]);
-  const { productCount, setProductCount, setProductData, productData } =
-    useContext(ProductContext);
   const ItemCount = useRef();
+
+  const { setCardDetails, cardDetails, AddToCard } = useContext(ProductContext);
 
   useEffect(() => {
     const fetchCardDetails = async () => {
       const response = await axios.get(
-        `http://localhost:3000/ShopProducts/${shopId}`
+        `https://organick-server-h6p8.onrender.com/ShopProducts/${shopId}`
       );
       setCardDetails(response.data);
     };
 
     const fetchRelativeCards = async () => {
-      const response = await axios.get(`http://localhost:3000/ShopProducts/`);
+      const response = await axios.get(
+        `https://organick-server-h6p8.onrender.com/ShopProducts/`
+      );
 
       const relativeCards = response.data.filter(
         (relativeCard) => relativeCard.id !== shopId
@@ -42,38 +43,6 @@ const Item = () => {
   if (!cardDetails) {
     return <Loader />;
   }
-
-  const AddToCard = () => {
-    setProductCount(productCount + Number(ItemCount.current.value));
-
-    console.log(productData);
-
-    // check if the item is already in the cart
-    const isItemInCart = productData.find((cartItem) => cartItem.id === shopId);
-
-    if (isItemInCart) {
-      setProductData(
-        // if the item is already in the cart, increase the count of the item
-        productData.map(
-          (productItem) =>
-            productItem.id === shopId
-              ? {
-                  ...productItem,
-                  count: productItem.count + Number(ItemCount.current.value),
-                }
-              : productItem // otherwise, return the cart item
-        )
-      );
-    } else {
-      setProductData([
-        ...productData,
-        {
-          ...cardDetails,
-          count: Number(ItemCount.current.value),
-        },
-      ]); // if the item is not in the cart, add the item to the cart with new key count with value
-    }
-  };
 
   return (
     <div>
@@ -165,10 +134,10 @@ const Item = () => {
           </div>
           <div className="flex gap-[9px] mt-[13px] items-center">
             <del className="text-2xl font-Open-Sans font-semibold text-[#B8B8B8] leading-[20.43px]">
-              {cardDetails.oldPrice}
+              ${cardDetails.oldPrice}.00
             </del>
             <h5 className="text-2.5xl font-bold text-blue-700 font-Open-Sans leading-[24.51px] ">
-              {cardDetails.price}
+              ${cardDetails.price}.00
             </h5>
           </div>
           <p className={`${style.SubTitle} mt-[27px]`}>{cardDetails.text}</p>
@@ -191,7 +160,7 @@ const Item = () => {
             </div>
             <div>
               <Button
-                isEvent={AddToCard}
+                isEvent={() => AddToCard(shopId, ItemCount)}
                 text="Add To Cart"
                 isIcon={true}
                 type="bg-blue-700 text-[#fff] border-bue-700 hover:text-blue-700"

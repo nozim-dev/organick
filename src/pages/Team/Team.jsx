@@ -11,7 +11,7 @@ const Team = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/Tems")
+      .get(`https://organick-server-h6p8.onrender.com/Tems`)
       .then(function (response) {
         // success
         // console.log(response.data);

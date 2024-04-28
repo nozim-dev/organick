@@ -9,7 +9,7 @@ const Porfoliosingle = () => {
   const { portfolioId } = useParams();
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/Projects/${portfolioId}`).then((PorfolioCard) => {
+    axios.get(`https://organick-server-h6p8.onrender.com/Projects/${portfolioId}`).then((PorfolioCard) => {
       setProjects(PorfolioCard.data);
     });
   }, [portfolioId]);
