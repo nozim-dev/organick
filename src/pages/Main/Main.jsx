@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Background from "./images/background.png";
 import Background1 from "./images/Photo.jpg";
 import Background2 from "./images/Photo1.jpg";
@@ -18,8 +18,11 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Card from "../../Components/Card/Card";
+import { ProductContext } from "../../contexts/Context";
 
 const Main = () => {
+  const { isDarkMode } = useContext(ProductContext);
+
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -34,7 +37,6 @@ const Main = () => {
         console.log(err);
       });
   }, []);
-
 
   const [offerProduct, setofferProduct] = useState([]);
 
@@ -69,7 +71,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div>
+    <div className={`${isDarkMode ? "bg-[white]" : "bg-[black]"}`}>
       <section className="w-full relative flex justify-start items-center max-w-[1920px] mx-auto h-[100vh] max-h-[898px] px-[80px] sm520:px-[15px]">
         <div className="absolute top-0 left-0 w-full h-full">
           <img

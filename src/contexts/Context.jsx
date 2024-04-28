@@ -3,6 +3,7 @@ import { createContext, useEffect, useState } from "react";
 export const ProductContext = createContext("");
 
 const Context = ({ children }) => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const [cardDetails, setCardDetails] = useState(null);
   const [productData, setProductData] = useState(
     localStorage.getItem("items")
@@ -67,6 +68,8 @@ const Context = ({ children }) => {
     cardDetails,
     RemoveItem,
     getCartTotal,
+    isDarkMode,
+    setIsDarkMode,
   };
 
   return (

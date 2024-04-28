@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { ProductContext } from "../../contexts/Context";
 
 const Header = () => {
-  const { productData } = useContext(ProductContext);
+  const { productData, setIsDarkMode, isDarkMode } = useContext(ProductContext);
   const [isHidden, setHidden] = useState(false);
 
   function OpenMenu() {
@@ -17,7 +17,11 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full ${style.FlexCenter} py-[66px] lg1550:py-[20px] lg1550:px-[15px] lg1060:py-[11px] lg1550:px-[6px]`}
+      className={`w-full ${
+        style.FlexCenter
+      } py-[66px] lg1550:py-[20px] lg1550:px-[15px] lg1060:py-[11px] ${
+        isDarkMode ? "bg-[white]" : "bg-[black]"
+      }`}
     >
       <div
         className={`w-full max-w-[1595px] ${style.FlexBetween} gap-[15px] md787:gap-[12px] `}
@@ -186,6 +190,36 @@ const Header = () => {
           </NavLink>
         </nav>
 
+        <div
+          className="w-[42px] cursor-pointer"
+          onClick={() =>
+            isDarkMode ? setIsDarkMode(false) : setIsDarkMode(true)
+          }
+        >
+          {isDarkMode ? (
+            <svg
+              viewBox="0 0 60 80"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M40 0C47.28 0 54.12 2 60 5.4C48.04 12.32 40 25.2 40 40C40 54.8 48.04 67.68 60 74.6C54.12 78 47.28 80 40 80C17.92 80 0 62.08 0 40C0 17.92 17.92 0 40 0Z"
+                fill="black"
+              />
+            </svg>
+          ) : (
+            <svg
+              viewBox="0 0 88 88"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M44 24C32.96 24 24 32.96 24 44C24 55.04 32.96 64 44 64C55.04 64 64 55.04 64 44C64 32.96 55.04 24 44 24ZM4 48H12C14.2 48 16 46.2 16 44C16 41.8 14.2 40 12 40H4C1.8 40 0 41.8 0 44C0 46.2 1.8 48 4 48ZM76 48H84C86.2 48 88 46.2 88 44C88 41.8 86.2 40 84 40H76C73.8 40 72 41.8 72 44C72 46.2 73.8 48 76 48ZM40 4V12C40 14.2 41.8 16 44 16C46.2 16 48 14.2 48 12V4C48 1.8 46.2 0 44 0C41.8 0 40 1.8 40 4ZM40 76V84C40 86.2 41.8 88 44 88C46.2 88 48 86.2 48 84V76C48 73.8 46.2 72 44 72C41.8 72 40 73.8 40 76ZM19.96 14.32C18.4 12.76 15.84 12.76 14.32 14.32C12.76 15.88 12.76 18.44 14.32 19.96L18.56 24.2C20.12 25.76 22.68 25.76 24.2 24.2C25.72 22.64 25.76 20.08 24.2 18.56L19.96 14.32ZM69.44 63.8C67.88 62.24 65.32 62.24 63.8 63.8C62.24 65.36 62.24 67.92 63.8 69.44L68.04 73.68C69.6 75.24 72.16 75.24 73.68 73.68C75.24 72.12 75.24 69.56 73.68 68.04L69.44 63.8ZM73.68 19.96C75.24 18.4 75.24 15.84 73.68 14.32C72.12 12.76 69.56 12.76 68.04 14.32L63.8 18.56C62.24 20.12 62.24 22.68 63.8 24.2C65.36 25.72 67.92 25.76 69.44 24.2L73.68 19.96ZM24.2 69.44C25.76 67.88 25.76 65.32 24.2 63.8C22.64 62.24 20.08 62.24 18.56 63.8L14.32 68.04C12.76 69.6 12.76 72.16 14.32 73.68C15.88 75.2 18.44 75.24 19.96 73.68L24.2 69.44Z"
+                fill="white"
+              />
+            </svg>
+          )}
+        </div>
         <div
           className={`flex items-center justify-end w-full max-w-[553px] gap-[18px] lg1060:justify-end lg1060:gap-[8px] lg1060:max-w-[368px] lg912:max-w-[326px] md787:max-w-[115px]`}
         >
